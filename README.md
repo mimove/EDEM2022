@@ -15,7 +15,7 @@ Entre otros...
 
 Tendremos que hacer 4 data projects:
 
-- Data project 1: Empezará en noviembre de este año
+- Data project 1: 
 - Data project 2:
 - Data project 3:
 - Data project 4:
