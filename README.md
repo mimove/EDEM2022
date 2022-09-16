@@ -4,7 +4,9 @@
 
 En el Máster de EDEM vamos a aprender los siguientes lenguajes de programación:
 
-[![N|Solid](//upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/121px-Python-logo-notext.svg.png)](https://www.python.org/) [![N|Solid](//upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png)](https://en.wikipedia.org/wiki/Linux/)
+- Linux
+- Python
+- Git
 
 Entre otros...
 
@@ -31,6 +33,4 @@ done
 echo $x
 ```
 
-# EDEM2022
-Miguel Moratilla
-Clase de Git
+
