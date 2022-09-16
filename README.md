@@ -1,6 +1,6 @@
 # MASTER DATA  [![N|Solid](https://edem.eu/wp-content/plugins/edem-shortcodes/public/img/logo-Edem.png)](/https://edem.eu/en/)   2022
 
-## _Fichero Miguel Moratilla_
+
 
 En el Máster de EDEM vamos a aprender los siguientes lenguajes de programación:
 
