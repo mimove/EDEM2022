@@ -4,9 +4,12 @@
 
 En el Máster de EDEM vamos a aprender los siguientes lenguajes de programación:
 
-- Linux
-- Python
-- Git
+| Programa | Web |
+| ------ | ------ |
+| Linux | [https://linux.org][PlDb] |
+| Git | [https://git-scm.com/][PlGh] |
+| Python | [https://www.python.org/][PlGd] |
+
 
 Entre otros...
 
@@ -32,5 +35,4 @@ do
 done
 echo $x
 ```
-
 
