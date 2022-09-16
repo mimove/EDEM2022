@@ -6,9 +6,9 @@ En el Máster de EDEM vamos a aprender los siguientes lenguajes de programación
 
 | Programa | Web |
 | ------ | ------ |
-| Linux | [https://linux.org][PlDb] |
-| Git | [https://git-scm.com/][PlGh] |
-| Python | [https://www.python.org/][PlGd] |
+| Linux | [https://linux.org] |
+| Git | [https://git-scm.com/] |
+| Python | [https://www.python.org/] |
 
 
 Entre otros...
