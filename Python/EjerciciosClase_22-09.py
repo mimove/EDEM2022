@@ -174,3 +174,5 @@ EJERCICIO PARA JUEVES:
 
 Hacer aplicación de consola que vaya pidiendo datos: Nombre, email, contraseña, edad y aceptar. Crear un diccionario del usuario con estos datos
 '''
+
+

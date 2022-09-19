@@ -1,7 +1,5 @@
 # MASTER DATA  [![N|Solid](https://edem.eu/wp-content/plugins/edem-shortcodes/public/img/logo-Edem.png)]()   2022
 
-
-
 En el Máster de EDEM vamos a aprender los siguientes lenguajes de programación:
 
 | Programa | Web |
@@ -19,4 +17,3 @@ Tendremos que hacer 4 data projects:
 - Data project 2:
 - Data project 3:
 - Data project 4:
-  
