@@ -130,7 +130,7 @@ The parameter of accum is a string which includes only letters from a..z and A..
             
     return result """
 
-# Best Practices 
+""" # Best Practices 
 
 def accum(s):
     output = ""
@@ -138,4 +138,27 @@ def accum(s):
         output+=(s[i]*(i+1))+"-"
     return output.title()[:-1]
                           
-print(accum('addas'))
+print(accum('addas')) """
+
+
+""" def find_average(numbers):
+    
+    suma = 0
+    if numbers == []:
+        return 0
+    else:
+        for i in numbers:
+            suma = suma + i
+
+        return suma/len(numbers)
+
+print(find_average([])) """
+
+
+""" # Best practices
+
+def find_average(array):
+    try:
+        return sum(array) / len(array)
+    except ZeroDivisionError:
+        return 0 """
