@@ -172,5 +172,5 @@ print(f'Hola: {name}, tienes {edad} años')
 '''
 EJERCICIO PARA JUEVES:
 
-Hacer aplicación de consola que vaya pidiendo datos: Nombres, email, contraseña, edad y aceptar. Crear un diccionario del usuario con estos datos
+Hacer aplicación de consola que vaya pidiendo datos: Nombre, email, contraseña, edad y aceptar. Crear un diccionario del usuario con estos datos
 '''
