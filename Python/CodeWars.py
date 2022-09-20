@@ -619,18 +619,37 @@ print(is_pangram('The quick brown fox jumps over the lazy dog'))
 """ print(rgb(201,25,0)) """
     
 
-    
+
+#-------------------------------------#
+
+# You need to write regex that will validate a password to make sure it meets the following criteria:
+
+# At least six characters long
+# contains a lowercase letter
+# contains an uppercase letter
+# contains a digit
+# only contains alphanumeric characters (note that '_' is not alphanumeric)
+
+#-------------------------------------#
 
 
+# Best Practice
+
+""" from re import search
 
 
+regex = (
+    '^'            # start line
+    '(?=.*\d)'     # must contain one digit from 0-9
+    '(?=.*[a-z])'  # must contain one lowercase characters
+    '(?=.*[A-Z])'  # must contain one uppercase characters
+    '[a-zA-Z\d]'   # permitted characters (alphanumeric only)
+    '{6,}'         # length at least 6 chars
+    '$'            # end line
+)
 
 
-
-
-
-
-
+print(bool(search(regex, 'fjd3IR9'))) """
 
 
 
@@ -649,7 +668,7 @@ print(is_pangram('The quick brown fox jumps over the lazy dog'))
 ####### Code to count the number of excercises done ##########
 ##############################################################
 
-fp=open('G:\Mi unidad\Personal\MASTER DATA\GitHub\EDEM2022\Python\CodeWars.py')
+fp=open('Python\CodeWars.py')
 c = 0
 for line in fp:
     if line.startswith('#------------------------------------------------'):
