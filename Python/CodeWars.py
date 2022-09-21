@@ -655,6 +655,43 @@ print(bool(search(regex, 'fjd3IR9'))) """
 
 
 
+#-------------------------------------#
+
+# You have a positive number n consisting of digits. You can do at most one operation: Choosing the index of a digit in the number, remove this digit at that index and insert it back to another or at the same place in the number in order to find the smallest number you can get.
+
+# Task:
+# Return an array or a tuple or a string depending on the language (see "Sample Tests") with
+
+# the smallest number you got
+# the index i of the digit d you took, i as small as possible
+# the index j (as small as possible) where you insert this digit d to have the smallest number.
+# Examples:
+# smallest(261235) --> [126235, 2, 0] or (126235, 2, 0) or "126235, 2, 0"
+# 126235 is the smallest number gotten by taking 1 at index 2 and putting it at index 0
+
+#-------------------------------------#
+
+
+# Best solution        
+
+""" def smallest(n):
+    s = str(n)
+    min1, from1, to1 = n, 0, 0
+    for i in range(len(s)):
+        removed = s[:i] + s[i+1:]
+        for j in range(len(removed)+1):
+            num = int(removed[:j] + s[i] + removed[j:])
+            if (num < min1):
+                min1, from1, to1 = num, i, j
+    return [min1, from1, to1] 
+
+
+
+
+print(smallest(209917)) """
+
+
+
 
 
 
@@ -670,8 +707,12 @@ print(bool(search(regex, 'fjd3IR9'))) """
 
 fp=open('Python\CodeWars.py')
 c = 0
+nc = 0
 for line in fp:
     if line.startswith('#------------------------------------------------'):
         c+=1
+    elif line.startswith('#-------------------------------------#'):
+        nc += 1
         
 print('Num exercises done:', int(c/2))
+print('Num excercises not completed: ', int(nc/2))
