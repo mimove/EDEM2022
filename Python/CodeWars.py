@@ -692,6 +692,179 @@ print(smallest(209917)) """
 
 
 
+#------------------------------------------------
+
+# Welcome.
+
+# In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+
+# If anything in the text isn't a letter, ignore it and don't return it.
+
+# "a" = 1, "b" = 2, etc.
+
+# Example
+# alphabet_position("The sunset sets at twelve o' clock.")
+# Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" ( as a string )
+
+#------------------------------------------------
+
+
+
+""" def alphabet_position(text):
+    import string
+    
+    posiletter = ''
+    for i in text:
+        if i.lower() in string.ascii_lowercase:
+            posiletter += str(string.ascii_letters.index(i.lower()) + 1) + ' '
+    
+    return posiletter[:-1] 
+
+
+
+
+print(alphabet_position("The sunset sets at twelve o' clock.")) """
+
+
+ # Best practice 
+
+"""def alphabet_position(text):
+    return ' '.join(str(ord(c) - 96) for c in text.lower() if c.isalpha()) """
+
+
+
+
+
+
+
+
+#------------------------------------------------
+
+# We want to create a function that will add numbers together when called in succession.
+
+# add(1)(2) # equals 3
+# We also want to be able to continue to add numbers to our chain.
+
+# add(1)(2)(3) # 6
+# add(1)(2)(3)(4); # 10
+# add(1)(2)(3)(4)(5) # 15
+# and so on.
+
+# A single call should be equal to the number passed in.
+
+# add(1) # 1
+# We should be able to store the returned values and reuse them.
+
+# addTwo = add(2)
+# addTwo # 2
+# addTwo + 5 # 7
+# addTwo(3) # 5
+# addTwo(3)(5) # 10
+# We can assume any number being passed in will be valid whole number.
+
+#------------------------------------------------
+
+# Defining a class is required in order to call a function with multiple () arguments like add()()()...
+
+""" class add(int):
+    def __call__(i,n):
+        return add(i+n)
+    
+
+print(add(3)(5)(12))
+
+addTwo = add(2)
+
+print(addTwo) """
+
+
+
+
+
+#------------------------------------------------
+
+# Sum of Pairs
+# Given a list of integers and a single sum value, return the first two values (parse from the left please) in order of appearance that add up to form the sum.
+
+# If there are two or more pairs with the required sum, the pair whose second element has the smallest index is the solution.
+
+# sum_pairs([11, 3, 7, 5],         10)
+# #              ^--^      3 + 7 = 10
+# == [3, 7]
+
+# sum_pairs([4, 3, 2, 3, 4],         6)
+# #          ^-----^         4 + 2 = 6, indices: 0, 2 *
+# #             ^-----^      3 + 3 = 6, indices: 1, 3
+# #                ^-----^   2 + 4 = 6, indices: 2, 4
+# #  * the correct answer is the pair whose second value has the smallest index
+# == [4, 2]
+
+# sum_pairs([0, 0, -2, 3], 2)
+# #  there are no pairs of values that can be added to produce 2.
+# == None/nil/undefined (Based on the language)
+
+# sum_pairs([10, 5, 2, 3, 7, 5],         10)
+# #              ^-----------^   5 + 5 = 10, indices: 1, 5
+# #                    ^--^      3 + 7 = 10, indices: 3, 4 *
+# #  * the correct answer is the pair whose second value has the smallest index
+# == [3, 7]
+# Negative numbers and duplicate numbers can and will appear.
+
+# Note: There will also be lists tested of lengths upwards of 10,000,000 elements. Be sure your code doesn't time out.
+
+#------------------------------------------------
+
+
+
+""" def sum_pairs(ints, s):
+    from itertools import combinations
+    
+    comb = set(list(combinations(ints,2)))
+    
+    listIndex = list()
+    listNum = list()
+       
+    for t in comb:
+        
+        if sum(t) == s:
+            listNum.append([t[0], t[1]])
+            listIndex.append(ints.index(t[1],ints.index(t[0])+1))
+
+    if listNum == []:
+        return None    
+        
+    min_index = listIndex.index(min(listIndex))  
+    
+    print(comb)  
+    return listNum[min_index]
+
+
+print(sum_pairs([10, 5, 2, 3, 7, 5], 10)) """
+
+
+
+
+# Fast version. We loop only once through the list so the computational time is O(n) instead of O(n^2)
+
+""" def sum_pairs(lst, s):
+    cache = set()
+    for i in lst:
+        if s - i in cache:
+            return [s - i, i]
+        cache.add(i) """
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
