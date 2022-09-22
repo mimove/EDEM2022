@@ -2,9 +2,9 @@
 
 ## _Clase 17/09/2022_
 
-En este curso aprendemos las bases de la programación en Python, que es el lenguaje en el que se está centrando tod el desarrollo de data analytics.
+En este curso aprendemos las bases de la programación en Python, que es el lenguaje en el que se está centrando todo el desarrollo de data analytics.
 
-Una librería es un conjunto de códigos que ya hanhecho otras personas y que tú puedes utilizar.
+Una librería es un conjunto de códigos que ya han hecho otras personas y que tú puedes utilizar.
 
 La importancia de la programación es entender muy bien los fundamentos para adaptarse a los cambios que ocurren cada 2 o 3 años.
 
@@ -12,7 +12,7 @@ Python tiene un tipado débil o inferido. Esto quiere decir que yo puedo cambiar
 
 Tipos de nombrar variables:
 - Snake case: utilizando _ por ejemplo: new_user
-- Came case: utilizando mayus para cada nueva palabra por ejemplo newUser
+- Camel case: utilizando mayus para cada nueva palabra por ejemplo newUser
 
 
 Para tipar las variables se utiliza el siguiente comando newUser:str para definir un string. Esto no cambia nada de como se definen las variables en Python, ya que al intérprete le da igual. Para lo que se utiliza es para la documentación del código y que sea mucho más fácil de mantener a largo plazo.
@@ -79,4 +79,4 @@ misNumeros.sort()
 estoy haciendo un paso por "Referencia" y esto modificando mi lista de misNumeros
 
 
-
+## _Clase 22/09/2022_
