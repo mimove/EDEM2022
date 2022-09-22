@@ -1,178 +1,107 @@
-#Este es mi primer programa de codigo
 
-from audioop import reverse
+#------------------------------------------------
+
+# EJERCICIO PARA JUEVES:
+
+# Hacer aplicación de consola que vaya pidiendo datos: Nombre, email, contraseña, edad y aceptar. Crear un diccionario del usuario con estos datos
 
+#------------------------------------------------
 
-print('Hola mundo')
 
+################################################
+#  función para comprobar si contraseña valida #
+################################################
 
-'''
-VARIABLES
-'''
+def is_valid(password):
+    import string
+    alpha = set(string.ascii_lowercase + string.ascii_uppercase)
+    digits = set(string.digits)
+    non_alpha = set('#@%.?!')
+    password_chars = set(password)
 
-user = 'Miguel'
+    # We substract the set of letters (resp. digits, non_alpha)
+    # from the set of chars used in password
+    # If any of the letters is used in password, this should be
+    # smaller than the original set 
+    all_classes_used = all([len(password_chars - char_class) != len(password_chars) 
+                            for char_class in [alpha, digits, non_alpha] ])
 
-user = 200
+    # We remove all letters, digits and non_alpha from the
+    # set of chars composing the password, nothing should be left.
+    all_chars_valid = len(password_chars - alpha - digits - non_alpha) == 0
 
+    return all_classes_used and all_chars_valid
 
-print('Hola ', user)
+################################################
 
-newUser:str = "Pepe"
+while True:
 
-print(newUser[0:2])
+    name = input('Dime tu nombre: ')
 
-newUser = 3
+    email = input('Introduce email: ')
 
+    while '@' not in email or '.' not in email:
+        print('Email introducido incorrecto: ')
+        email = input('Introduce email: ')
+        
+    from getpass import getpass
 
-user = "Juan"
+    password = getpass(prompt='Introduce contraseña: ')
+    
+    
 
+    while len(password) < 8 or is_valid(password) == False:
+        print('La contraseña tiene que tener al menos 8 caracteres, 1 minúscula, 1 mayúscula, 1 número y un caracter especial')
+        password = getpass(prompt='Introduce contraseña: ')
+    
+    passhow = ''
+    for i in range(len(password)):
+        if i > 1 and i < len(password) - 2:
+            passhow += '*' 
+        else:
+            passhow += password[i]
 
-print(f"Hola {user}!")
+    age = 0
 
-user = 'Pepe'
-edad = 25
-print(f"{user} tiene {edad} años")
+    while True: 
+        try:
+            age = int(input('Introduce tu edad: '))
+        except:
+            print('Introduce un número')
+            continue
+        else:
+            if age > 5 and age < 100:
+                break
+            else:
+                print('Edad introducida fuera de rango (5 a 100 años)')
+            
+    
+    check = input('¿Estás seguro que los datos son correctos? (Si/No): ')
+   
+    
+    while check.lower() != 'si' and check.lower() != 'no':
+        print('Responde con Si o No')
+        check = input('¿Estás seguro de que los datos son correctos? (Si/No): ')
+        
+    if check.lower() == 'si':
+        break 
+    elif check.lower() == 'no':
+        continue
+          
 
-bienvenida = f"Hola {user}"
 
-print(f"""{bienvenida},
-tu edad es {edad}""")
 
+datos = {'nombre':name.capitalize(), 'email':email, 'contraseña': passhow, 'edad':age}
+        
+        
 
+print(f'''Los datos introducidos son:
+      Nombre: {datos["nombre"]}
+      Email: {datos["email"]}
+      Contraseña: {datos["contraseña"]}
+      Edad: {datos["edad"]}''')
 
 
 
-'''
-bool
-int
-float
-complex
-str
-list [ ..., ... ]
-tuple  (..., ...)
-dict {key:value, key:value, ...:...}
-range
-set
-frozenset
-bytes
 
-'''
-
-
-'''
-BOOL
-'''
-
-casado: bool = True
-
-print(f'Casado? {casado}')
-
-
-
-'''
-LIST
-'''
-
-miLista = ["Martin", "Juan", "Pablo"]
-
-
-print(*miLista[0:2])
-
-#print(*miLista)
-
-
-'''for nombre in range(len(miLista)):
-  print(miLista[nombre])'''
-  
-  
-
-#Lista de la compra con 5 elementos
-
-listaCompra = ['pan', 'leche', 'huevos', 'pescado', 'tomates']
-
-
-print(f'Los 2 últimos elementos de la lista son', *listaCompra[3:5])
-
-print(f'Los 2 últimos elementos de la lista son 3', *listaCompra[len(listaCompra)-2:])
-
-
-'''
-RANGOS
-'''
-
-
-miRango = range(0,11,2)
-
-print(*miRango)
-
-
-'''
-DICCIONARIO
-'''
-persona = {'nombre':'Martin', 
-           'age':31, 
-           'dni':'12345H',
-           'casado':True} 
-
-
-print(persona['dni'])
-
-print(f'El dni de {persona["nombre"]} es {persona["dni"]}')  
-
-
-
-'''
-SET
-'''
-
-misNumeros = [1,2,3,4,5,6,7,8,9,3,2,5,3]
-
-misNumerosNoRepetidos = set(misNumeros)
-
-print(*misNumerosNoRepetidos)
-  
-  
-miOtroSetDeDatos = ["b","a","a","a","b"]
-
-miOtroSetDeDatosSet = set(miOtroSetDeDatos)
-
-print(*miOtroSetDeDatosSet)
-
-
-# Como ordenar listas
-
-otrosDatosOrdenados = sorted(miOtroSetDeDatos)
-
-
-print(*otrosDatosOrdenados)
-
-# Como invertir
-
-otrosDatosInvertidos = reversed(miOtroSetDeDatos)
-
-print(*otrosDatosInvertidos)
-
-
-'''
-USER INPUTS
-'''
-
-
-name = input('Dime tu nombre: ')
-
-print(f'Has escrito: {name}')
-
-
-edad = int(input('¿Cuál es tu edad? '))
-
-print(f'Hola: {name}, tienes {edad} años')
-
-
-
-'''
-EJERCICIO PARA JUEVES:
-
-Hacer aplicación de consola que vaya pidiendo datos: Nombre, email, contraseña, edad y aceptar. Crear un diccionario del usuario con estos datos
-'''
-
-
+    
