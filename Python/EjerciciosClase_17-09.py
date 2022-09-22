@@ -1,6 +1,6 @@
 #Este es mi primer programa de codigo
 
-from audioop import reverse
+
 
 
 print('Hola mundo')
