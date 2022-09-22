@@ -80,3 +80,6 @@ estoy haciendo un paso por "Referencia" y esto modificando mi lista de misNumero
 
 
 ## _Clase 22/09/2022_
+
+
+
