@@ -305,24 +305,24 @@ else:
  """
 
 
-""" # With function
+# With function
 
- def bisiesto(year):
+def bisiesto(year):
     
     if year%100 == 0 and year%400 != 0:
-        return print(f'El año {year} no es bisiesto')
+        return False
     
     elif year%4 == 0 or (year%100 == 0 and year%400 == 0):
-        return print(f'El año {year} es bisiesto')
+        return True
     
     else:
-        return print(f'El año {year} no es bisiesto')
+        return False
     
 
-    
+
 bisiesto(1700)    
 bisiesto(2000)
-bisiesto(2022) """
+bisiesto(2022)
 
 
 
