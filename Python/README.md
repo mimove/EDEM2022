@@ -139,3 +139,10 @@ PALABRAS RESERVADAS DE PYTHON
 - True
 - False
 - None
+
+<br />
+<br />
+<br />
+
+
+## _Clase 23/09/2022_
