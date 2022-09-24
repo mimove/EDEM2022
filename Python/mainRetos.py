@@ -7,41 +7,9 @@
 
 #------------------------------------------------
 # Reto 1
-# Desde tu cuenta de replit.com crea un nuevo proyecto. En dicho proyecto, dentro del archivo main.py crea variables que representen los siguientes datos de un contacto:
-# Nombre
-# Apellidos
-# Edad
-# Email
-# Teléfono
-# Casado (verdadero o falso)
-# Con Hijos (verdadero o falso)
-# Lista de amigos
-# Películas vistas (diccionario con clave y valor. El valor será el título de la película)
-# Una vez hayas creado todas las variables, muéstralas por consola haciendo uso de la función print()
 #------------------------------------------------
 
-
-''' name:str = 'Manuel'
-surname:str = 'Lopez'
-age:int = 22
-email:str = 'manuel.lopez@gmail.com'
-phone:int = 666111222
-married:bool = False
-kids:bool = False
-amigos:list = ['Juan', 'Pepe', 'Jose', 'Paco', 'Javi']
-films:dict = {'film1':'El señor de los anillos', 'film2':'Harry Potter', 'film3':'Inside Out', 'film4':'Toy Story'}
-
-print(f"""Los datos del contacto son
-Nombre: {name}
-Apellido: {surname}
-Edad: {age}
-Email: {email}
-Tlf: {phone}
-¿Casado?: {married}
-¿Hijos?: {kids}
-Lista amigos: {amigos}
-Películas: {films}""") '''
-
+import retos.basico.reto1
 
 #------------------------------------------------
 # Reto 2
@@ -294,10 +262,7 @@ primo(4) """
 
 year:int = int(input('Introduce un año: '))
 
-if year%100 == 0 and year%400 != 0:
-    print(f'El año {year} no es bisiesto')
-    
-elif year%4 == 0 or (year%100 == 0 and year%400 == 0):
+if (year%4 == 0 and year%100 != 0) or year%400 == 0:
     print(f'El año {year} es bisiesto')
     
 else:
@@ -307,12 +272,9 @@ else:
 
 # With function
 
-def bisiesto(year):
+""" def bisiesto(year):
     
-    if year%100 == 0 and year%400 != 0:
-        return False
-    
-    elif year%4 == 0 or (year%100 == 0 and year%400 == 0):
+    if (year%4 == 0 and year%100 != 0) or year%400 == 0:
         return True
     
     else:
@@ -323,7 +285,7 @@ def bisiesto(year):
 bisiesto(1700)    
 bisiesto(2000)
 bisiesto(2022)
-
+ """
 
 
 
@@ -1253,7 +1215,7 @@ print(eliminar('Madrid', 5)) #Madri """
 ####### Code to count the number of excercises done ##########
 ##############################################################
 
-fp=open('Python\Retos.py')
+""" fp=open('EDEM2022\Python\mainRetos.py')
 c = 0
 nc = 0
 for line in fp:
@@ -1263,4 +1225,4 @@ for line in fp:
         nc += 1
         
 print('\nRetos superados:', int(c/2))
-print('Retos incompletos: ', int(nc/2),'\n')
+print('Retos incompletos: ', int(nc/2),'\n') """
