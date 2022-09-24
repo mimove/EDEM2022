@@ -10,6 +10,6 @@
 def impares1line(a,b):
     return [ i for i in range(a,b) if i%2 ]
 
-print(impares1line(2,8))
+
 
 

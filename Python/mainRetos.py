@@ -7,51 +7,32 @@
 
 #------------------------------------------------
 # Reto 1
+# Desde tu cuenta de replit.com crea un nuevo proyecto. En dicho proyecto, dentro del archivo main.py crea variables que representen los siguientes datos de un contacto:
+# Nombre
+# Apellidos
+# Edad
+# Email
+# Teléfono
+# Casado (verdadero o falso)
+# Con Hijos (verdadero o falso)
+# Lista de amigos
+# Películas vistas (diccionario con clave y valor. El valor será el título de la película)
+# Una vez hayas creado todas las variables, muéstralas por consola haciendo uso de la función print()
 #------------------------------------------------
 
-import retos.basico.reto1
-
+""" import retos.basico.reto1
+ """
+ 
+ 
 #------------------------------------------------
 # Reto 2
 # Escribe un programa capaz de mostrar todos los números impares desde un número de inicio y otro final.
 # Por ejemplo: teniendo numero_inicial = 2 y numero_final = 8, el programa debe imprimir por consola: [3, 5, 7]
 #------------------------------------------------
 
-""" # One line loop
+""" from retos.basico.reto2 import impares1line
 
-numero_inicial = 2
-numero_final = 8
-
-limpar = [ i for i in range(numero_inicial,numero_final) if i%2 ]
-
-print(limpar)
-
-# Nested loop
-limpar = list()
-for i in range(numero_inicial,numero_final):
-    if i%2 :
-        limpar.append(i)
-
-print(limpar) """
-
-""" # One line loop function
-
-def impares1line(a,b):
-    return [ i for i in range(a,b) if i%2 ]
-
-print(impares1line(2,8))
-
-
-# Nested loop and condition function
-
-def impares(a,b):
-    limpar = list()
-    for i in range(a,b):
-        if i%2 :
-            limpar.append(i)
-    return(limpar)
-
-print(impares(2,8)) """
+print(impares1line(2,8)) """
 
 
 
@@ -60,21 +41,9 @@ print(impares(2,8)) """
 # Escribe un programa que sea capaz de mostrar los números del 1 al 100 en orden inverso.
 #------------------------------------------------
 
+""" from retos.basico.reto3 import show100to1
 
-""" # One line loop range 100 to 0
-print([i for i in range(100,0,-1)])
-
-
-
-# Nested loops range 1 to 100
-rev = list()
-
-for i in range(1, 101):
-    rev.append(i)
-
-rev.reverse()
-
-print(rev) """
+print(show100to1()) """
 
 
 
@@ -84,35 +53,13 @@ print(rev) """
 # Por ejemplo: teniendo [1,2,3,4,5] el programa debe mostrar por pantalla [5,4,3,2,1]
 #------------------------------------------------
 
-""" # One line option
+""" from retos.basico.reto4 import invList, invListMethod, invListFunction
 
-lista = [1,2,3,4,5]
+print(invList([1,2,3,4,5,6]))
 
-print(lista[len(lista)::-1])
+print(invListMethod([1,2,3,4,5,6])) 
 
-# Reverse option function reversed and method reverse()
-print([*reversed(lista)])
-
-lista.reverse()
-print(lista) """
-
-
-""" # One line option function
-def invlist(lst):
-    return lst[len(lst)::-1]
-    
-print(invlist([1,2,3,4,5,6]))
-
-
-# Reverse option function reversed and method reverse() function
-
-def invlist(lst):
-    lst.reverse()
-    return lst
-    
-print(invlist([1,2,3,4,5,6])) """
-
-
+print([*invListFunction([1,2,3,4,5,6])])  """
 
 #------------------------------------------------
 # Reto 5
@@ -124,17 +71,9 @@ print(invlist([1,2,3,4,5,6])) """
 # NOTA: Para pedir por pantalla y guardarlo en una variable llamada password debes hacer uso de password:str = input('Introduce una contraseña')
 #------------------------------------------------
 
+from retos.basico.reto5 import correctPass
 
-
-""" while True:
-    password = input('Introduce contraseña: ')
-    
-    if password == 'admin':
-        break
-    else:
-        print('Contraseña incorrecta. Vuelva a intentarlo') """
-
-
+correctPass()
 
 
 
@@ -145,17 +84,10 @@ print(invlist([1,2,3,4,5,6])) """
 #------------------------------------------------
 
 
+""" from retos.basico.reto6 import over18
 
-""" age = int(input('Introduce tu edad: '))
-
-if age >= 18:
-    print('Eres mayor de edad')
-else:
-    print('Te quedan {} años para ser mayor de edad'.format(18-age)) """
-
-
-
-
+over18()
+ """
 
 #------------------------------------------------
 # Reto 7
@@ -522,7 +454,7 @@ print(eliminar('Madrid', 5)) #Madri """
 
 
 #-------------------------------------#
-# Reto 1
+# Reto 1 ****OBLIGATORIO****
 # Una tienda vende Discos de música (unos muñecos muy graciosos). Con la idea de vender un stock almacenado durante meses, 
 # se decide que discos de género "Black Metal" y "Electro" tienen un descuento del 30%.
 # Cada disco (usa un diccionario para esto) tendrá:
