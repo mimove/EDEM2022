@@ -13,7 +13,7 @@ print(f'la raíz cuadrada de {numero} es {m.isqrt(numero)}')
 
 
 
-""" from math import sqrt as raiz, isqrt as raiz_entera, cos as coseno, sin, tan
+from math import sqrt as raiz, isqrt as raiz_entera, cos as coseno, sin, tan
 
 
 numero :int = 16
@@ -22,7 +22,10 @@ print(f'la raíz cuadrada de {numero} es {raiz(numero)}')
 #imprime 4.0
 
 from math import*
-print(cos(2*pi)) """
+print(cos(2*pi))
+
+
+
 
 
 

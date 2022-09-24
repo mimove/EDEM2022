@@ -575,6 +575,7 @@ Los módulos se almacenan en archivos .py y los paquetes se organizan en carpeta
 La forma de importar paquetes, subpaquetes y modulos es:
 
 
+
 ```py
 # Este es el programa main.py
 from utilidades.interacciones.cordialidad import saludar, despedida
@@ -590,7 +591,6 @@ print(f'{despedida("Pedro")}')
 ```
 
 Esto lo que importa es las funciones saludar y despedida, del módulo cordialidad, del subpaquete (carpeta) interacciones que está dentro del paquete utilidades. Y también importa la función puntuación, que está dentro de módulos kpis del paquete utilidades.
-
 
 
 
