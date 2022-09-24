@@ -1,4 +1,10 @@
-# Notas clases Python (** Utilizar codewars.com para practicar y w3schools.com para tutoriales)
+# Notas clases Python 
+
+(** Utilizar codewars.com para practicar y w3schools.com para tutoriales. Kaggle para obtener datos y practicar.)
+
+
+<br/>
+<br/>
 
 ## _Clase 17/09/2022_
 
@@ -465,3 +471,141 @@ print(calendar.day_name[0])
 
 print(calendar.month_name[1])
 ```
+
+<br/>
+
+<br/>
+
+<br/>
+
+## _Clase 24/09/2022_
+
+
+Existen librerías que contienen paquetes y estos a su vez contienen módulos con funciones. Esto nos sirve para poder organizar nuestro código.
+
+
+Las librerías suelen ser externas a nuestro proyecto. La diferencia entre una librería y un framework es que la librería la instalas y te ofrece una serie de funcionalidades que antes no tenía, mientras que el framework hace lo mismo que la librería, pero te impone una forma de trabajar. Ejemplos de framework son Django o Flask. Sirven para utilizar Python en otro tipo de proyectos. Django se utiliza por ejemplo para construir páginas web.
+
+<br />
+
+## Buenas prácticas
+
+Tener siempre los import en primber lugar, luego las funciones y luego el scripting. El orden de los import va de más genérico a menos genérico:
+
+```py
+import <nombre modulo1>
+import <nombre modulo2>
+.
+.
+.
+from <nombre modulo3> import <nombre funcion1> <nombre funcion2>
+from <nombre modulo4> import <nombre funcion>
+.
+.
+.
+
+
+def <nombre funcion1>(<variables>):
+  .
+  .
+  .
+
+  return <output>
+
+def <nombre funcion2>(<variables>):
+  .
+  .
+  .
+
+  return <output>
+.
+.
+.
+
+
+# El resto del script aquí
+.
+.
+.
+
+```
+
+
+Todo esto después se carga en main.py.
+
+
+Uno de las librerías que más usaremos es request, que sirve para hacer peticiones a paginas http y https para obtener datos. Por ejemplo, utilizando la función get en la página [randomuser.me][df1]  puedo obtener datos de un usuario generado aleatoriamente.
+
+
+
+
+Si quiero cargar todo un modulo puedo ejecutar lo siguiente:
+
+```py
+from <modulo> import*
+```
+
+
+Esto nos posibilita utilizar las funciones del modulo sin poner el nombre del modulo antes. Ejemplo
+
+```py
+import math as m
+
+print(m.cos(2*m.pi))
+```
+
+```py
+from math import*
+print(cos(2*pi))
+```
+
+No obstante, esta manera de importar no está recomendada, ya que puede haber módulos que tengan los mismos nombres en las funciones.
+
+
+Cuando tenemos un proyecto de cierto tamaño, se suele crear un archivo requirements.txt donde se encuentran todas las librerias que hay que instalar junto con la versión de las mismas que se utiliza. Después, el usuario simplemente tiene que hacer un pip install requirements.txt para installar esas librerías requeridas.
+
+
+
+
+
+
+
+Los módulos se almacenan en archivos .py y los paquetes se organizan en carpetas. Los modulos pueden ir dentro de los paquetes. Los paquetes hay que inicializarlos utilizando un archivo que se llama `__init__.py` . Los `__init__` también se pueden utilizar en clases para inicializar funciones. Los archivos `__init__.py` pueden estar vacíos, pero lo normal es añadirles algunos import.
+
+La forma de importar paquetes, subpaquetes y modulos es:
+
+
+```py
+# Este es el programa main.py
+from utilidades.interacciones.cordialidad import saludar, despedida
+from utilidades.kpis import puntuacion
+
+
+#import utilidades.interacciones.cordialidad as ut
+
+puntos = puntuacion(5)
+ 
+print(f'{saludar("Pedro")} tu puntuación es de {puntos}')
+print(f'{despedida("Pedro")}')
+```
+
+Esto lo que importa es las funciones saludar y despedida, del módulo cordialidad, del subpaquete (carpeta) interacciones que está dentro del paquete utilidades. Y también importa la función puntuación, que está dentro de módulos kpis del paquete utilidades.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[df1]: <https://randomuser.me/>
