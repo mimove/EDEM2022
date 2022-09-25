@@ -2,7 +2,7 @@
 # Retos planteados en el módulo de Python del Máster de Data Analytics de la universidad de EDEM
 
 #################################################
-#######           NIVEL FÁCIL            ########
+#######           NIVEL BÁSICO           ########
 #################################################
 
 #------------------------------------------------
@@ -20,19 +20,19 @@
 # Una vez hayas creado todas las variables, muéstralas por consola haciendo uso de la función print()
 #------------------------------------------------
 
-""" import retos.basico.reto1
- """
+""" from retos.basico.reto1 import contact
  
- 
+contact() """
+
 #------------------------------------------------
 # Reto 2
 # Escribe un programa capaz de mostrar todos los números impares desde un número de inicio y otro final.
 # Por ejemplo: teniendo numero_inicial = 2 y numero_final = 8, el programa debe imprimir por consola: [3, 5, 7]
 #------------------------------------------------
 
-""" from retos.basico.reto2 import impares1line
+""" from retos.basico.reto2 import odd1line
 
-print(impares1line(2,8)) """
+print(odd1line(2,8)) """
 
 
 
@@ -71,9 +71,9 @@ print([*invListFunction([1,2,3,4,5,6])])  """
 # NOTA: Para pedir por pantalla y guardarlo en una variable llamada password debes hacer uso de password:str = input('Introduce una contraseña')
 #------------------------------------------------
 
-from retos.basico.reto5 import correctPass
+""" from retos.basico.reto5 import correctPass
 
-correctPass()
+correctPass() """
 
 
 
@@ -97,27 +97,9 @@ over18()
 #------------------------------------------------
 
 
-# With a program
+""" from retos.basico.reto7 import compare
 
-""" password:str = 'asbcs322#@'
-texto:str  = 'asbcs322#@'
-
-if password.lower() == texto.lower():
-    print('Ambas string son iguales')
-else:
-    print('Las dos string son diferentes') """
-    
-    
-# With a function
-""" def compara(password,texto):
-    
-    if password.lower() == texto.lower():
-        print('Ambas string son iguales')
-    else:
-        print('Las dos string son diferentes')
-
-
-compara('asbcs322#@','asbcs322#@') """
+compare('asbcs322#@','AsBcS322#@')  """
 
 
 #------------------------------------------------
@@ -125,52 +107,15 @@ compara('asbcs322#@','asbcs322#@') """
 # Escribe un programa que pueda decirte si un número (número entero) es primo o no
 #------------------------------------------------
 
+""" from retos.basico.reto8 import prime
+       
 
-""" # With program
-
-n:int = int(input('Introduce numero: '))
-
-num = n
-        
-if n==1 or n==-1:
-    print(f'{n} es primo')
-    
-elif n==0:
-    print('0 no es ni primo ni no primo')
-    
-        
-if n < 0: n*= -1
-        
-for i in range(2,n):
-    
-    if n%i == 0 :
-        print(f'{num} no es primo')
-        break
-    else:    
-        print(f'{num} es primo') """
+prime(4) 
+prime(1) 
+prime(0) 
+prime(-4)  """
 
 
-""" # With function
- def primo(n):
-    
-    num = n
-    
-    if n==1 or n==-1:
-        return print(f'{n} es primo')
-    elif n==0:
-        return print('0 no es ni primo ni no primo')
-    
-    if n < 0: n*= -1
-    
-    for i in range(2,n):
-        
-        if n%i == 0 :
-            return print(f'{num} no es primo')
-    
-    return print(f'{num} es primo')
-        
-
-primo(4) """
         
 
 #------------------------------------------------
@@ -179,44 +124,13 @@ primo(4) """
 #------------------------------------------------
 
 
-# Explanation of leap year:
-
-# In the Gregorian calendar, a normal year consists of 365 days. Because the actual length of a sidereal year 
-# (the time required for the Earth to revolve once about the Sun) is actually 365.2425 days, a "leap year" of 366 days
-# is used once every four years to eliminate the error caused by three normal (but short) years. Any year that is evenly
-# divisible by 4 is a leap year: for example, 1988, 1992, and 1996 are leap years.
-
-# However, there is still a small error that must be accounted for. To eliminate this error, the Gregorian calendar stipulates
-# that a year that is evenly divisible by 100 (for example, 1900) is a leap year only if it is also evenly divisible by 400.
+""" from retos.basico.reto9 import leapYear
 
 
-""" # With program
-
-year:int = int(input('Introduce un año: '))
-
-if (year%4 == 0 and year%100 != 0) or year%400 == 0:
-    print(f'El año {year} es bisiesto')
-    
-else:
-    print(f'El año {year} no es bisiesto')
- """
-
-
-# With function
-
-""" def bisiesto(year):
-    
-    if (year%4 == 0 and year%100 != 0) or year%400 == 0:
-        return True
-    
-    else:
-        return False
-    
-
-
-bisiesto(1700)    
-bisiesto(2000)
-bisiesto(2022)
+leapYear(1700)
+leapYear(2000)
+leapYear(2020)
+leapYear(2022)
  """
 
 
@@ -232,12 +146,9 @@ bisiesto(2022)
 # {'titulo':'El Más Allá','aka':'E tu vivrai nel terrore - Laldilà','director':'Lucio Fulci', 'año':1981, 'país':'Italia'}
 #------------------------------------------------
 
-""" variable = {'titulo':'El Más Allá','aka':'E tu vivrai nel terrore - Laldilà','director':'Lucio Fulci', 'año':1981, 'país':'Italia'}
-contenido = variable['titulo'] + ' ' + variable['aka'] + ' ' + variable['director'] + ' ' + str(variable['año']) + ' ' + variable['país']
+""" from retos.basico.reto10 import printContent
 
-print(contenido) """
-
-
+printContent() """
 
 
 
@@ -252,12 +163,13 @@ print(contenido) """
 # E introduzca esos valores en una variable GLOBAL llamada "pelicula"
 #------------------------------------------------
 
-""" titulo:str = input('Titulo de la película: ')
-director:str = input('Director de la película: ')
-year:int = int(input('Año de la película: '))
-pais:str = input('País de la película: ')
+""" from retos.basico.reto11 import filmData
 
-pelicula = {'titulo':titulo, 'director':director, 'año':year, 'pais':pais}
+global pelicula
+
+datos = list(filmData())
+
+pelicula = {'titulo': datos[0], 'director': datos[1], 'año': datos[2], 'país': datos[3] }
 
 print(pelicula) """
 
@@ -269,16 +181,9 @@ print(pelicula) """
 # Escribe un programa que almacene en una lista (Array) todos los nombres de los alumnos del curso Programación para No Programadores y los muestre en por pantalla.
 #------------------------------------------------
 
-""" nombres = list()
-while True:  
-    nombre = input('Introduce nombre alumno (escribe Fin para terminar): ')
-    if nombre == 'Fin': 
-        break      
-    else:
-        nombres.append(nombre)
-        
+""" from retos.basico.reto12 import namesClass
 
-print(nombres) """
+print(namesClass()) """
     
 
 
@@ -294,17 +199,16 @@ print(nombres) """
 #------------------------------------------------
 
 
-""" def areatri(b,h):
-    return float(b)*float(h)/2
+""" from retos.basico.reto13 import areacirc, areatri
 
+b: float = 5.2
+h: float = 4.0
 
-print(areatri(5.2,3.2))
+print('El área del de base {}cm y altura {}cm es {}cm cuadrados'.format(b, h, areatri(b,h)))
 
-def areacirc(r):
-    import math
-    return r**2*math.pi
+r: float = 5.2
+print(f'El área de un círculo de radio {r}cm es aproximada a 2 decimales {round(areacirc(r),2)}cm cuadrados')  """
 
-print(areacirc(5.2)) """
 
 
 
@@ -314,15 +218,12 @@ print(areacirc(5.2)) """
 #------------------------------------------------
 
 
-""" def areacirc(r):
-    import math
-    return r**2*math.pi
+""" from retos.basico.reto14 import volcil
 
+r: float = 5.2
+h: float = 10.0
 
-def volcil(r,h):
-    return areacirc(r) * h
-
-print(volcil(3.2,5))  """
+print('El volumen de un cilindro de radio {}cm y altura {}cm es aproximando con dos decimales {}cm cúbicos'.format(r, h, round(volcil(r,h),2))) """
 
 
 
@@ -333,19 +234,7 @@ print(volcil(3.2,5))  """
 # Escribe una función que reciba una muestra de números en una lista y devuelva otra lista con sus cuadrados.
 #------------------------------------------------
 
-""" # One line loop
-def nums(lst):
-    return [i**2 for i in lst]
-
-print(nums([2,4,5,2,1,2,2]))
-
-# Nested loop
-def nums(lst):
-    sqlst = list()
-    for i in lst:
-        sqlst.append(i**2)
-    
-    return sqlst
+""" from retos.basico.reto15 import nums
 
 print(nums([2,4,5,2,1,2,2])) """
 
@@ -358,11 +247,13 @@ print(nums([2,4,5,2,1,2,2])) """
 #------------------------------------------------
 
 """ from datetime import date
+from retos.basico.reto16 import diffDates
 
 d1 = date(2013,1,1)
 d2 = date(2013,9,13)
 
-print('La diferencia entre {} y {} es de {} días'.format(d2, d1, abs(d2-d1).days)) """
+
+print('La diferencia entre {} y {} es de {} días'.format(d2, d1, diffDates(d2,d1)))  """
 
 
 
@@ -383,36 +274,9 @@ print('La diferencia entre {} y {} es de {} días'.format(d2, d1, abs(d2-d1).day
 #------------------------------------------------
 
 
-""" tupla = (2, 4, 3, 5, 4, 6, 7, 8, 6, 1)
+""" from retos.basico.reto17 import operTuple
 
-# Encontrar los elementos de 3 a 5
-
-print(tupla[3:6])
-
-# Encontrar los 6 primeros elementos
-
-print(tupla[:6])
-
-# Muestra la tupla desde el 5 elemento hasta el final
-
-print(tupla[5:])
-
-# Muestra toda la tupla haciendo uso de [:]
-
-print(tupla[:])
-
-# Muestra todos los elementos desde la posición 2 a la 9 de dos en dos
-
-print(tupla[2:10:2])
-
-# Devuelve la tupla con un salto cada 4 elementos
-
-print(tupla[::4])
-
-
-# Usa un step negativo para mostrar la tupla desde la posición 9 a la 2
-
-print(tupla[9:1:-1]) """
+operTuple() """
 
 
 #------------------------------------------------
@@ -428,14 +292,11 @@ print(tupla[9:1:-1]) """
 # print(eliminar('Madrid', 5)) #Madri
 #------------------------------------------------
 
+""" from retos.basico.reto18 import eliminate
 
-""" def eliminar(str,n):
-    return str[:n]+str[n+1:]
-
-
-print(eliminar('Madrid', 0)) #adrid
-print(eliminar('Madrid', 3)) #Madid
-print(eliminar('Madrid', 5)) #Madri """
+print(eliminate('Madrid', 0)) #adrid
+print(eliminate('Madrid', 3)) #Madid
+print(eliminate('Madrid', 5)) #Madri  """
     
     
 
@@ -713,7 +574,7 @@ print(eliminar('Madrid', 5)) #Madri """
 
 
 #-------------------------------------#
-# Reto 11
+# Reto 11  ****OBLIGATORIO****
 # Una empresa quiere gestionar su cartera de clientes. Escribe un programa que guarde los clientes en un diccionario u objeto literal en el que disponga de:
 # NIF (string), nombre (string), apellidos (string), teléfono (string), email (string) y preferente (boolean)
 # El programa debe mostrar las siguientes opciones para que escoja el usuario:

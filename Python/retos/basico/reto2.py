@@ -7,8 +7,7 @@
 
 # One line loop function
 
-def impares1line(a,b):
-    return [ i for i in range(a,b) if i%2 ]
+def odd1line(a: int,b: int)->list:  return [ i for i in range(a,b) if i%2 ]
 
 
 
