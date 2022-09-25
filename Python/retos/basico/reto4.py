@@ -7,19 +7,19 @@
 
 # Reverse option function using ini, end, step
 
-def invList(lst):  return lst[len(lst)::-1]
+def invList(lst: list)->list:  return lst[len(lst)::-1]
     
 
 
 
 # Reverse option function reversed and method reverse() function
 
-def invListMethod(lst):
+def invListMethod(lst: list)->list:
     lst.reverse()
     return lst
 
 
-def invListFunction(lst):
+def invListFunction(lst: list)->list:
     
     return reversed(lst)
 
