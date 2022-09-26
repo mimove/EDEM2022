@@ -27,7 +27,7 @@ def buyMusic(discs: list):
     orderDiscs: list = list()
     orderTotal: float = 0.00
     savedMoney: float = 0.00
-    discAdded: list = list()
+    
     
     print('#######################################################')
     print('                  DISCOS DISPONIBLES                   ')
@@ -38,12 +38,18 @@ def buyMusic(discs: list):
     print('#######################################################\n')
     
     while True:
-        discNum = int(input('Introduce el numero del disco que quieres comprar (0 para terminar compra): '))
+        try:
+            discNum = int(input('Introduce el numero del disco que quieres comprar (0 para terminar compra): '))
+        except ValueError:
+            print('Lo siento, no has introducido un número')
+            continue
         
         if discNum == 0:
             break
         
-        if discNum in discAdded:
+        discNum -= 1 # I have to substract 1 becuase the disc selected by the user is discNum-1 in the list discs due to the indexing of Python.
+        
+        if discs[discNum] in orderDiscs:
             print('Disco ya añadido al carrito, por favor selecciona otro disco')
             continue
         elif discNum > len(discs) or discNum < 0:
@@ -51,20 +57,15 @@ def buyMusic(discs: list):
             continue
         
             
-        confirmed = input(f'Ha seleccionado el disco {discs[discNum-1]}, ¿es correcto? (si/no): ')
+        confirmed = input(f'Ha seleccionado el disco {discs[discNum]}, ¿es correcto? (si/no): ')
         
         while confirmed.lower() != 'si':
             if confirmed.lower() == 'no':
                 break
             else:
-                print('Lo siento no le entiendo, vuelva a intentarlo')
-                confirmed = input(f'Ha seleccionado el disco {discs[discNum-1]}, ¿es correcto? (si/no): ')
+                print('Lo siento no te entiendo, vuelve a intentarlo')
+                confirmed = input(f'Ha seleccionado el disco {discs[discNum]}, ¿es correcto? (si/no): ')
                   
-            
-        discAdded.append(discNum) # Stored number of the disc added to check in next iteration if disc already added.
-            
-        discNum -= 1 # I have to substract 1 becuase the disc selected by the user is discNum-1 in the list discs due to the indexing of Python.
-            
         orderDiscs.append(discs[discNum]) 
             
         if discs[discNum]['genero'] == 'Black Metal' or discs[discNum]['genero'] == 'Electro':
