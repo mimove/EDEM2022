@@ -204,10 +204,10 @@ print(namesClass()) """
 b: float = 5.2
 h: float = 4.0
 
-print('El área del de base {}cm y altura {}cm es {}cm cuadrados'.format(b, h, areatri(b,h)))
+print('El área del de base {}cm y altura {}cm es {}cm cuadrados'.format(b, h, areaTri(b,h)))
 
 r: float = 5.2
-print(f'El área de un círculo de radio {r}cm es aproximada a 2 decimales {round(areacirc(r),2)}cm cuadrados')  """
+print(f'El área de un círculo de radio {r}cm es aproximada a 2 decimales {round(areaCirc(r),2)}cm cuadrados')  """
 
 
 
@@ -218,12 +218,12 @@ print(f'El área de un círculo de radio {r}cm es aproximada a 2 decimales {roun
 #------------------------------------------------
 
 
-""" from retos.basico.reto14 import volcil
+""" from retos.basico.reto14 import volCil
 
 r: float = 5.2
 h: float = 10.0
 
-print('El volumen de un cilindro de radio {}cm y altura {}cm es aproximando con dos decimales {}cm cúbicos'.format(r, h, round(volcil(r,h),2))) """
+print('El volumen de un cilindro de radio {}cm y altura {}cm es aproximando con dos decimales {}cm cúbicos'.format(r, h, round(volCil(r,h),2))) """
 
 
 
@@ -337,7 +337,7 @@ print(eliminate('Madrid', 5)) #Madri  """
 #------------------------------------------------
 
 
-from retos.medio.reto1 import buyMusic
+""" from retos.medio.reto1 import buyMusic
 from random import shuffle
 
 listDiscs: list = [{'album':'AMERICAN IDIOT' , 'artista':'GREEN DAY' , 'año': 2004, 'precio': 51.64, 'genero': 'Pop'}, 
@@ -363,7 +363,7 @@ listDiscs: list = [{'album':'AMERICAN IDIOT' , 'artista':'GREEN DAY' , 'año': 2
                    {'album':'BATHORY' , 'artista':'BATHORY' , 'año': 1984, 'precio': 16.29, 'genero': 'Black Metal'}]
 shuffle(listDiscs)
 
-buyMusic(listDiscs)
+buyMusic(listDiscs) """
 
 
 
@@ -511,19 +511,70 @@ buyMusic(listDiscs)
 # (6) Finalizar Programa
 #-------------------------------------#
 
+from retos.medio.reto11 import addCustomer, removeCustomer, showCustomerNIF, showAll, preferCustomer
+from time import sleep # Using of sleep to give some time to the user for reading the data
 
 
 
 
+listCustomers = [{'NIF': '55597586P', 'nombre': 'Francisco-Jose', 'apellidos': 'Costas Chaparro', 'telefono': '618-492-937', 'email':'fj.costas@gmail.com','preferente': False},
+                 {'NIF': '80325916A', 'nombre': 'Elisabet', 'apellidos': 'Serra Mas', 'telefono': '692-442-735', 'email':'eli-serra@hotmail.com','preferente': True},
+                 {'NIF': '76426557H', 'nombre': 'Mirian', 'apellidos': 'Plaza Romero', 'telefono': '625-774-905', 'email':'mirian.plaza@gmail.com','preferente': False},
+                 {'NIF': '42158567G', 'nombre': 'Octavio', 'apellidos': 'Enriquez Carrero', 'telefono': '652-954-474', 'email':'ocenca@icloud.com','preferente': False},
+                 {'NIF': '01375122K', 'nombre': 'Iago', 'apellidos': 'Mosquera Cabello', 'telefono': '664-969-306', 'email':'iagomosquera96@gmail.com','preferente': True}]
+
+
+while True:
+    try:
+        print('\n###############################################')
+        print('##          OPCIONES DISPONIBLES             ##')
+        print('###############################################')
+        print('##                                           ##')
+        print('## (1) Añadir un cliente                     ##')
+        print('##                                           ##')
+        print('## (2) Eliminar cliente por NIF              ##')
+        print('##                                           ##')
+        print('## (3) Mostrar Cliente por NIF               ##')
+        print('##                                           ##')
+        print('## (4) Listar TODOS los clientes             ##')
+        print('##                                           ##')
+        print('## (5) Mostrar los clientes preferentes      ##')
+        print('##                                           ##')
+        print('## (6) Finalizar Programa                    ##')
+        print('##                                           ##')
+        print('###############################################\n')
+        
+        option = int(input('Introduzca el número de la opción: '))
+        
+        if option < 1 or option > 6:
+            print('La opción introducida no existe. Vuelva a intentarlo')
+            continue
+        elif option == 1:
+            addCustomer(listCustomers)
+            sleep(1)
+        elif option == 2:
+            removeCustomer(listCustomers)
+            sleep(1)
+        elif option == 3:
+            showCustomerNIF(listCustomers)
+            sleep(1)
+        elif option == 4:
+            showAll(listCustomers)
+        elif option == 5:
+            preferCustomer(listCustomers)
+        elif option == 6:
+            print('Programa cerrado correctamente')
+            quit()
+
+    except ValueError:
+        print('Lo siento, no ha introducido un número')
+        continue
+
+    
 
 
 
-
-
-
-
-
-
+    
 
 
 #-------------------------------------#
