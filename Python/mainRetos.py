@@ -511,7 +511,7 @@ buyMusic(listDiscs) """
 # (6) Finalizar Programa
 #-------------------------------------#
 
-from retos.medio.reto11 import addCustomer, removeCustomer, showCustomerNIF, showAll, preferCustomer
+""" from retos.medio.reto11 import addCustomer, removeCustomer, showCustomerNIF, showAll, preferCustomer
 from time import sleep # Using of sleep to give some time to the user for reading the data
 
 
@@ -568,7 +568,7 @@ while True:
 
     except ValueError:
         print('Lo siento, no ha introducido un número')
-        continue
+        continue """
 
     
 
