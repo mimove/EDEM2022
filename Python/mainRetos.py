@@ -340,7 +340,9 @@ print(eliminate('Madrid', 5)) #Madri  """
 """ from retos.medio.reto1 import buyMusic
 from random import shuffle
 
-listDiscs: list = [{'album':'AMERICAN IDIOT' , 'artista':'GREEN DAY' , 'año': 2004, 'precio': 51.64, 'genero': 'Pop'}, 
+#list with 21 discs
+
+longListDiscs: list = [{'album':'AMERICAN IDIOT' , 'artista':'GREEN DAY' , 'año': 2004, 'precio': 51.64, 'genero': 'Pop'}, 
                    {'album':'BACK TO BLACK' , 'artista':'AMY WINEHOUSE' , 'año': 2006, 'precio': 23.99, 'genero': 'Pop'},
                    {'album':'IS THIS IT' , 'artista':'THE STROKES' , 'año': 2001, 'precio': 17.88, 'genero': 'Pop'},
                    {'album':'KID A' , 'artista':'RADIOHEAD' , 'año': 2000, 'precio': 31.37, 'genero': 'Electro'},
@@ -361,9 +363,33 @@ listDiscs: list = [{'album':'AMERICAN IDIOT' , 'artista':'GREEN DAY' , 'año': 2
                    {'album':'BLACK METAL' , 'artista':'VENOM' , 'año': 1982, 'precio': 17.95, 'genero': 'Black Metal'},
                    {'album':'FILOSOFEM' , 'artista':'BURZUM' , 'año': 1996, 'precio': 17.22, 'genero': 'Black Metal'},
                    {'album':'BATHORY' , 'artista':'BATHORY' , 'año': 1984, 'precio': 16.29, 'genero': 'Black Metal'}]
-shuffle(listDiscs)
 
-buyMusic(listDiscs) """
+
+shortListDiscs: list = [{'album':'AMERICAN IDIOT' , 'artista':'GREEN DAY' , 'año': 2004, 'precio': 51.64, 'genero': 'Pop'}, 
+                   {'album':'BACK TO BLACK' , 'artista':'AMY WINEHOUSE' , 'año': 2006, 'precio': 23.99, 'genero': 'Pop'},
+                   {'album':'KID A' , 'artista':'RADIOHEAD' , 'año': 2000, 'precio': 31.37, 'genero': 'Electro'},
+                   {'album':'RANDOM ACCESS MEMORIES' , 'artista':'DAFT PUNK' , 'año': 2013, 'precio': 11.99, 'genero': 'Electro'},
+                   {'album':'TALENTO DE BARRIO' , 'artista':'DADDY YANKEE' , 'año': 2008, 'precio': 11.99, 'genero': 'Reggaeton'},
+                   {'album':'YHLQMDLG' , 'artista':'BAD BUNNY' , 'año': 2020, 'precio': 21.86, 'genero': 'Reggaeton'},
+                   {'album':'UNTITLED (IV)' , 'artista':'LED ZEPPELIN' , 'año': 1971, 'precio': 14.99, 'genero': 'Rock'},
+                   {'album':'APPETITE FOR DESTRUCTION' , 'artista':"GUNS N'ROSES" , 'año': 1987, 'precio': 30.11, 'genero': 'Rock'},
+                   {'album':'HIGHWAY TO HELL' , 'artista':'AC/DC' , 'año': 1979, 'precio': 20.50, 'genero': 'Metal'},
+                   {'album':'THE NUMBER OF THE BEAST' , 'artista':'IRON MAIDEN' , 'año': 1982, 'precio': 17.99, 'genero': 'Metal'},
+                   {'album':'ALTARS OF MADNESS' , 'artista':'MORBID ANGEL' , 'año': 1989, 'precio': 26.09, 'genero': 'Death Metal'},
+                   {'album':'DIVUS DE MORTUUS' , 'artista':'NECROVORE' , 'año': 1987, 'precio': 36.80, 'genero': 'Death Metal'},
+                   {'album':'BLACK METAL' , 'artista':'VENOM' , 'año': 1982, 'precio': 17.95, 'genero': 'Black Metal'},
+                   {'album':'FILOSOFEM' , 'artista':'BURZUM' , 'año': 1996, 'precio': 17.22, 'genero': 'Black Metal'}]
+
+
+
+
+
+
+shuffle(shortListDiscs)
+
+buyMusic(shortListDiscs) """
+
+
 
 
 
@@ -374,13 +400,10 @@ buyMusic(listDiscs) """
 # Una vez el usuario decida no introducir más elementos al carrito, debe mostrar por pantalla la lista de la compra y el coste total.
 #-------------------------------------#
 
+from retos.medio.reto2 import reto2
 
 
-
-
-
-
-
+reto2()
 
 
 #-------------------------------------#
@@ -498,7 +521,7 @@ buyMusic(listDiscs) """
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 11  ****OBLIGATORIO****
 # Una empresa quiere gestionar su cartera de clientes. Escribe un programa que guarde los clientes en un diccionario u objeto literal en el que disponga de:
 # NIF (string), nombre (string), apellidos (string), teléfono (string), email (string) y preferente (boolean)
@@ -509,20 +532,22 @@ buyMusic(listDiscs) """
 # (4) Listar TODOS os clientes
 # (5) Mostrar ÚNICAMENTE los clientes preferentes
 # (6) Finalizar Programa
-#-------------------------------------#
+#------------------------------------------------
 
-from retos.medio.reto11 import addCustomer, removeCustomer, showCustomerNIF, showAll, preferCustomer
+""" from retos.medio.reto11 import addCustomer, removeCustomer, showCustomerNIF, showAll, preferCustomer
 from time import sleep # Using of sleep to give some time to the user for reading the data
 
 
+#Creating list of customers to test the program
 
-
-listCustomers = [{'NIF': '55597586P', 'nombre': 'Francisco-Jose', 'apellidos': 'Costas Chaparro', 'telefono': '618-492-937', 'email':'fj.costas@gmail.com','preferente': False},
+listCustomers: list = [{'NIF': '55597586P', 'nombre': 'Francisco-Jose', 'apellidos': 'Costas Chaparro', 'telefono': '618-492-937', 'email':'fj.costas@gmail.com','preferente': False},
                  {'NIF': '80325916A', 'nombre': 'Elisabet', 'apellidos': 'Serra Mas', 'telefono': '692-442-735', 'email':'eli-serra@hotmail.com','preferente': True},
                  {'NIF': '76426557H', 'nombre': 'Mirian', 'apellidos': 'Plaza Romero', 'telefono': '625-774-905', 'email':'mirian.plaza@gmail.com','preferente': False},
                  {'NIF': '42158567G', 'nombre': 'Octavio', 'apellidos': 'Enriquez Carrero', 'telefono': '652-954-474', 'email':'ocenca@icloud.com','preferente': False},
                  {'NIF': '01375122K', 'nombre': 'Iago', 'apellidos': 'Mosquera Cabello', 'telefono': '664-969-306', 'email':'iagomosquera96@gmail.com','preferente': True}]
 
+
+#Main console of the program
 
 while True:
     try:
@@ -546,6 +571,8 @@ while True:
         
         option = int(input('Introduzca el número de la opción: '))
         
+        # Conditions depending on user option
+        
         if option < 1 or option > 6:
             print('La opción introducida no existe. Vuelva a intentarlo')
             continue
@@ -568,7 +595,7 @@ while True:
 
     except ValueError:
         print('Lo siento, no ha introducido un número')
-        continue
+        continue """
 
     
 
