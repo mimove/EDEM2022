@@ -337,7 +337,7 @@ print(eliminate('Madrid', 5)) #Madri  """
 #------------------------------------------------
 
 
-from retos.medio.reto1 import buyMusic
+""" from retos.medio.reto1 import buyMusic
 from random import shuffle
 
 #list with 21 discs
@@ -387,7 +387,7 @@ shortListDiscs: list = [{'album':'AMERICAN IDIOT' , 'artista':'GREEN DAY' , 'añ
 
 shuffle(shortListDiscs)
 
-buyMusic(shortListDiscs)
+buyMusic(shortListDiscs) """
 
 
 
@@ -400,13 +400,10 @@ buyMusic(shortListDiscs)
 # Una vez el usuario decida no introducir más elementos al carrito, debe mostrar por pantalla la lista de la compra y el coste total.
 #-------------------------------------#
 
+from retos.medio.reto2 import reto2
 
 
-
-
-
-
-
+reto2()
 
 
 #-------------------------------------#
@@ -524,7 +521,7 @@ buyMusic(shortListDiscs)
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 11  ****OBLIGATORIO****
 # Una empresa quiere gestionar su cartera de clientes. Escribe un programa que guarde los clientes en un diccionario u objeto literal en el que disponga de:
 # NIF (string), nombre (string), apellidos (string), teléfono (string), email (string) y preferente (boolean)
@@ -535,7 +532,7 @@ buyMusic(shortListDiscs)
 # (4) Listar TODOS os clientes
 # (5) Mostrar ÚNICAMENTE los clientes preferentes
 # (6) Finalizar Programa
-#-------------------------------------#
+#------------------------------------------------
 
 """ from retos.medio.reto11 import addCustomer, removeCustomer, showCustomerNIF, showAll, preferCustomer
 from time import sleep # Using of sleep to give some time to the user for reading the data
