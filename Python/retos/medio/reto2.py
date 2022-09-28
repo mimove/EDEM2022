@@ -24,6 +24,8 @@ def reto2():
         dictGroceries['precio'].append(price)
         
         
+        
+        
         finish = input('¿Quieres terminar? ')
         
         if finish == 'si':
