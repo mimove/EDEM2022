@@ -1,4 +1,7 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 # FUNDAMENTOS DEL DATO
 =======
 # FUNDAMENTOS GENERALES
@@ -124,5 +127,8 @@ Cada tipo de fichero por buenas prácticas tiene que tener como contenido el for
 ## ****CheatSheet**
 
 Deberíamos tener las cheatsheet de GIT, Python y UNIX impresas.
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
