@@ -508,13 +508,13 @@ print(palindrome()) """
 # Escribe un programa que pida 5 precios al usuario y los almacene en una lista de precios. Al finalizar, deberá mostrar por consola la media de los precios introducidos.
 #------------------------------------------------
 
-from retos.medio.reto7 import averagePrices
+""" from retos.medio.reto7 import averagePrices
 
 
 listUser, meanList = averagePrices()
 
 
-print(f'La lista es: {listUser}. La media de los precios de la lista es: {meanList}€')
+print(f'La lista es: {listUser}. La media de los precios de la lista es: {meanList}€') """
 
 
 
@@ -524,10 +524,16 @@ print(f'La lista es: {listUser}. La media de los precios de la lista es: {meanLi
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 8
 # Escribe una función que reciba un número entero positivo y devuelva su factorial.
-#-------------------------------------#
+#------------------------------------------------
+
+# from math import factorial # Already implemented in Python print(factorial(12))
+
+""" from retos.medio.reto8 import factorialNumber
+
+print(factorialNumber(12)) """
 
 
 
