@@ -549,9 +549,16 @@ print(factorialNumber(12)) """
 #-------------------------------------#
 
 
+from retos.medio.reto9 import decToBin, binToDec
+
+
+print(decToBin(25121))
 
 
 
+
+
+print(binToDec('10001011100111010111010011110000'))
 
 
 
