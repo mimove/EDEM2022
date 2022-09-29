@@ -447,7 +447,7 @@ for i in range(len(listaContribuyentes)):
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 4
 # Escribe un programa que almacene lenguajes de programación en una lista.
 # El programa deberá preguntar por consola si el usuario conoce o no el lenguaje. El usuario deberá responder "sí" o "no" y cualquier otra respuesta no será tenida en cuenta, preguntando de nuevo la misma pregunta:
@@ -457,10 +457,14 @@ for i in range(len(listaContribuyentes)):
 # TypeScript: sí
 # Python: sí
 # Dart: no
-#-------------------------------------#
+#------------------------------------------------
+
+from retos.medio.reto4 import programLanguage
+
+languages: list = ['JavaScript', 'TypeScript', 'Python', 'Dart', 'Go', 'React']
 
 
-
+print(programLanguage(languages))
 
 
 
