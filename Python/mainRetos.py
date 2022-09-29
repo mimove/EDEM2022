@@ -459,23 +459,30 @@ for i in range(len(listaContribuyentes)):
 # Dart: no
 #------------------------------------------------
 
-from retos.medio.reto4 import programLanguage
+""" from retos.medio.reto4 import programLanguage
 
 languages: list = ['JavaScript', 'TypeScript', 'Python', 'Dart', 'Go', 'React']
 
 
-print(programLanguage(languages))
+print(programLanguage(languages)) """
 
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 5
 # Escribe un programa que realice lo mismo que el programa del reto 4, pero que elimine de la lista aquellos lenguajes que el usuario conoce y únicamente muestre aquellos que no conoce.
-#-------------------------------------#
+#------------------------------------------------
 
 
+from retos.medio.reto4 import programLanguage
+from retos.medio.reto5 import languageUnknown
 
+languages: list = ['JavaScript', 'TypeScript', 'Python', 'Dart', 'Go', 'React']
+
+userLanguage = programLanguage(languages)
+
+print(languageUnknown(userLanguage))
 
 
 
