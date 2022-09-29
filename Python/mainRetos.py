@@ -400,12 +400,12 @@ buyMusic(shortListDiscs) """
 # Una vez el usuario decida no introducir más elementos al carrito, debe mostrar por pantalla la lista de la compra y el coste total.
 #------------------------------------------------
 
-from retos.medio.reto2 import reto2
+""" from retos.medio.reto2 import reto2
 
-reto2()
+reto2() """
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 3
 # El nuevo gobierno ha decidido replantear el sistema de pago de impuestos. Ha pensado que a partir de ahora:
 # si una persona es mayor de 16 años y menor de 70 ésta debe pagar impuestos.
@@ -414,13 +414,36 @@ reto2()
 # Si supera los 2000€ esta persona deberá pagar el 50% en concepto de impuestos
 # si la persona es menor de 16 años, no tiene que pagar impuestos
 # Escribe un programa capaz de calcular la cantidad de impuestos, o endeudamiento, de una lista de personas** durante un año entero (12 meses)
-#-------------------------------------#
+#------------------------------------------------
 
 
 
+""" from retos.medio.reto3 import payTax
 
 
 
+listaContribuyentes = [{'edad': 15, 'salario': 7000},
+                       {'edad': 72, 'salario': 22000},
+                       {'edad': 23, 'salario': 11000},
+                       {'edad': 27, 'salario': 15000},
+                       {'edad': 34, 'salario': 27000},
+                       {'edad': 22, 'salario': 55000},
+                       {'edad': 21, 'salario': 48000},
+                       {'edad': 56, 'salario': 120000},
+                       {'edad': 44, 'salario': 19000},
+                       {'edad': 32, 'salario': 14000},
+                       {'edad': 27, 'salario': 9000},
+                       {'edad': 47, 'salario': 38000},
+                       {'edad': 55, 'salario': 48000}]
+
+payTax(listaContribuyentes)
+
+
+print('\n€€€€€€€€€€€€€€€€€€€€€€€€€€')
+print('€€ LISTA CONTRIBUYENTES €€')
+print('€€€€€€€€€€€€€€€€€€€€€€€€€€\n')
+for i in range(len(listaContribuyentes)):
+    print(f'Persona {i}: Edad: {listaContribuyentes[i]["edad"]} Sueldo anual: {listaContribuyentes[i]["salario"]}€ (Salario mensual: {round(listaContribuyentes[i]["salario"]/12,2)}€)  Impuestos a pagar: {listaContribuyentes[i]["impuestos"]}€\n') """
 
 
 
