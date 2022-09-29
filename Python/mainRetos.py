@@ -474,7 +474,7 @@ print(programLanguage(languages)) """
 # Escribe un programa que realice lo mismo que el programa del reto 4, pero que elimine de la lista aquellos lenguajes que el usuario conoce y únicamente muestre aquellos que no conoce.
 #------------------------------------------------
 
-
+""" 
 from retos.medio.reto4 import programLanguage
 from retos.medio.reto5 import languageUnknown
 
@@ -482,22 +482,23 @@ languages: list = ['JavaScript', 'TypeScript', 'Python', 'Dart', 'Go', 'React']
 
 userLanguage = programLanguage(languages)
 
-print(languageUnknown(userLanguage))
+print(languageUnknown(userLanguage)) """
 
 
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 6
 # Escribe un programa que pida al usuario una palabra por consola y devuelva si se trata de un palíndormo**
 # ** Palíndromo: Palabra o expresión que es igual si se lee de izquierda a derecha que de derecha a izquierda
-#-------------------------------------#
+#------------------------------------------------
 
 
+""" from retos.medio.reto6 import palindrome
 
 
-
+print(palindrome()) """
 
 
 
