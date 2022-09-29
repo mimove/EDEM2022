@@ -503,10 +503,18 @@ print(palindrome()) """
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 7
 # Escribe un programa que pida 5 precios al usuario y los almacene en una lista de precios. Al finalizar, deberá mostrar por consola la media de los precios introducidos.
-#-------------------------------------#
+#------------------------------------------------
+
+from retos.medio.reto7 import averagePrices
+
+
+listUser, meanList = averagePrices()
+
+
+print(f'La lista es: {listUser}. La media de los precios de la lista es: {meanList}€')
 
 
 
