@@ -806,13 +806,6 @@ La best practice es crear una clase por cada archivo de Python. Los nombres de l
 Cuando yo en una lista hago nombreLista.sort() puedo hacer esto porque el data structure list() es una clase propia de Python.
 
 
-<br>
-<br>
-
-
-
-## Librería Pandas
-
 
 
 
