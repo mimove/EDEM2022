@@ -604,7 +604,28 @@ Esto lo que importa es las funciones saludar y despedida, del módulo cordialida
 Muchas de las librerías están centradas en estadística, matemáticas, tratamiento de datos big data o machine learning. TensorFlow por ejemplo está centrada en desarrollo de Machine Learning. Otro ejemplo es Scikit-Learn. En tercer lugar estarías Keras y en cuarto PyTorch. 
 
 
+La librería requests es de las que más vamos a usar para obtener datos de url. Para obtener los datos se hace:
 
+```py
+import requests
+
+requests.get('URL')
+```
+
+En Python esto se puede definir como:
+
+```py
+URL_BASE = 'https://api.chucknorris.io/'
+
+endPoint = 'jokes/random'
+```
+
+Esta función devuelve un tipo de objeto que se llama Response, que se ha creado en una clase.
+
+Las URLs continen una base y un endpoint. Por ejemplo, la URL <https://api.chucknorris.io/jokes/random> su base sería <https://api.chucknorris.io/> y el endpoint jokes/random.
+
+
+Las clases pueden tener métodos (funciones) que son propias de dicho objeto. Al crear objetos estoy "creando" un nuevo tipo de dato
 
 
 
