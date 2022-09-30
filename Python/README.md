@@ -594,11 +594,14 @@ Esto lo que importa es las funciones saludar y despedida, del módulo cordialida
 
 
 
+<br>
+<br>
 
+## _Clase 30/09/2022_
 
+### **Librerías externas**
 
-
-
+Muchas de las librerías están centradas en estadística, matemáticas, tratamiento de datos big data o machine learning. TensorFlow por ejemplo está centrada en desarrollo de Machine Learning. Otro ejemplo es Scikit-Learn. En tercer lugar estarías Keras y en cuarto PyTorch. 
 
 
 
