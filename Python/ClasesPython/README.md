@@ -599,7 +599,9 @@ Esto lo que importa es las funciones saludar y despedida, del módulo cordialida
 
 ## _Clase 30/09/2022_
 
-### **Librerías externas**
+<br>
+
+## **Librerías externas**
 
 Muchas de las librerías están centradas en estadística, matemáticas, tratamiento de datos big data o machine learning. TensorFlow por ejemplo está centrada en desarrollo de Machine Learning. Otro ejemplo es Scikit-Learn. En tercer lugar estarías Keras y en cuarto PyTorch. 
 
@@ -625,11 +627,194 @@ Esta función devuelve un tipo de objeto que se llama Response, que se ha creado
 Las URLs continen una base y un endpoint. Por ejemplo, la URL <https://api.chucknorris.io/jokes/random> su base sería <https://api.chucknorris.io/> y el endpoint jokes/random.
 
 
+<br>
+
+## **Clases**
+
 Las clases pueden tener métodos (funciones) que son propias de dicho objeto. Al crear objetos estoy "creando" un nuevo tipo de dato
 
 
+En este ejemplo:
+
+```py
+import requests
+
+def obtenerChiste():
+
+  URL = 'https://api.chucknorris.io/jokes/random'
+  
+  respuesta = requests.get(url = URL)
+
+  
+
+  # Extraemos los datos en formato JSON
+
+  datos = respuesta.json()
+  
+  # Obtenemos valor en la clave 'value' del JSON que nos interesa
+  
+  frase_chuck: str = datos['value']
+
+  return frase_chuck
+```
+
+La clase Response se almacena en respuesta, y respuesta.json() es un método que nos devuelve un json de la URL. En el caso de Python los json son equivalentes a diccionarios, y por lo tanto se pueden acceder a sus valores haciendo uso de sus claves como en datos['value']
+
+
+Para poder usar tipos de datos de clases y poder tipar mi código, necesito hacer uso de lo siguiente:
+
+```py
+
+from requests.models import Response
+
+URL = 'https://api.chucknorris.io/jokes/random'
+  
+respuesta: Response = requests.get(url = URL)
+
+```
+
+Esto ayuda a documentar el código y poder utilizar funciones de editores como Visual Studio Code para autocompletar los parámetros que necesita la función.
+
+
+<br>
+<br>
+
+
+## Creación de Objetos. Programación orientada a objetos
+
+La programación orientada a objetos es uno de los tres paradigmas esenciales de la programación y está presente en todos los lenguajes modernos.
+
+Se utiliza para estructurar nuestros datos y reutilizar el código que planteemos. Si necesitamos crear una variable más compleja que listas, diccionarios o tuplas crear clases es una de las mejores opciones.
+
+Los objetos tiene atributos y métodos. Un ejemplo de ambos sería:
+
+```py
+respuesta = requests.get(url = URL)
+
+respuesta.json() # Esto es un método (función) del objeto respuesta
+
+respuesta.status_code # Esto es un atributo (variables) del objeto respuesta
+```
+
+Las esctructuras internas (atributos y métodos) de la clase pueden ser privadas (solo se puede hacer en el ámbito de la clase) o públicas (pueden verse desde dentro y fuera de la clase).
+
+Un ejemplo podría ser un coche, que tiene como atributos marca, modelo, color, matricula, id del seguro, titular y velocidad, por ejemplo. En cuanto a los métodos, podrían ser arrancar, frenar o acelerar.
+
+Al proceso de creación de clases se le llama modelado de datos y es una de las primeras fases imprescindibles cuando se plantea el diseño de una aplicación.
+
+Antes de crear una clase, se suele hacer un gráfico para establecer el nombre, variables y métodos de la clase. Esto se crea utilizando una herramienta que se llama UML. 
+
+
+Una clase solo hay que crearla si tiene tanto atributos como métodos, si solo tiene atributos no tiene sentido.
+
+Ejemplo de objeto:
+
+```py
+# COCHE
+
+# Atributos
+
+marca: str
+modelo: str
+color: str
+# .
+# .
+# .
+
+# -------------------
+
+# Métodos
+
+arrancar(): None
+frenar(): None
+acelerar(): None
+```
+
+
+
+Cuando nosotros instanciamos una clase, estamos creando un objeto. Por ejemplo el objeto de tipo Coche se instanciaría así:
+
+```py
+coche1: Coche =
+coche2: Coche =
+```
+
+A partir de este momento coche1 y coche2 no son una variable normal, son un objeto de una clase.
+
+
+Al instanciar estamos reservando espación de memoria para gestionar los atributos y métodos de esa clase.
+
+
+Las clases tienen un método constructor y un método destructor. El constructor otorga valores a los atributos de la clase e inicializarlo. La sintaxis es:
+
+```py
+class Nombre:
+  atributo_1: tipo
+  atributo_2: tipo
+
+  def __init__(self, _propiedades):
+    self_atributos = _propiedades
+
+  def metodo_1(self):
+    # codigo
+  
+  def metodo_2(self):
+    # codigo
+```
+
+
+Las best practices es poner los atributos siempre arriba y los métodos debajo.
+
+
+_Ejemplo clase Alumno_:
+
+```py
+class Alumno:
+  nombre: str
+  email: str
+
+  def __init__(self, n, e): # Constructor
+    self.nombre = n # Self hace referencia a acceder al atributo dentro del método
+    self.email = e
+  
+
+  def asistir_clase(self,id): # (self) es necesario llamarlo para poder acceder a los atributos
+
+    print(f'{self.nombre} ha asistido a clase') # Accedo al nombre del alumno con {self.nombre}
+    #codigo
+
+  
+  def horas_perdidas(id):
+    self.asistir_clase(1) # Los atributos (self) se pasan por defecto.
+    #codigo
+```
+
+La palabra reservada self hace referencia al propio método (es una referencia a sí misma y se pone siempre al principio).
+
+
+Para crear el objeto sería:
+
+```py
+alumno1: Alumno = new Alumno('Martin','___@___.com')
+alumno1.asistir_clase(1)
+```
+
+
+La best practice es crear una clase por cada archivo de Python. Los nombres de las clases van en mayúscula
+
+
+Cuando yo en una lista hago nombreLista.sort() puedo hacer esto porque el data structure list() es una clase propia de Python.
+
+
+<br>
+<br>
+
+
+
+## Librería Pandas
 
 
 
 
 [df1]: <https://randomuser.me/>
+
