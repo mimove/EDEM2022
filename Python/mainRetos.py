@@ -721,7 +721,7 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 14
 # Partiendo de las siguientes cadenas de texto:
 # miCodigo = 'print("Hola Mundo")'
@@ -732,16 +732,10 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 # print('Multiplica: 2 * 4: ',multiplicar(2,4))
 # """
 # Haz uso de exec() para ejecutar ambas operaciones
-#-------------------------------------#
+#------------------------------------------------
 
 
-
-
-
-
-
-
-
+""" import retos.medio.reto14 """
 
 
 
