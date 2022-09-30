@@ -543,13 +543,13 @@ print(factorialNumber(12)) """
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 9
 # Escribe una función que convierta un número decimal en binario y otra que convierta un número binario en decimal.
-#-------------------------------------#
+#------------------------------------------------
 
 
-from retos.medio.reto9 import decToBin, binToDec
+""" from retos.medio.reto9 import decToBin, binToDec
 
 
 print(decToBin(25121))
@@ -558,23 +558,32 @@ print(decToBin(25121))
 
 
 
-print(binToDec('10001011100111010111010011110000'))
+print(binToDec('10001011100111010111010011110000')) """
 
 
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 10
 # Escribir una función que calcule el máximo común divisor de dos números y otra que calcule el mínimo común múltiplo.
-#-------------------------------------#
+#------------------------------------------------
 
 
 
+""" from retos.medio.reto10 import maxDiv, minMult
 
 
+# Web to check result http://www.alcula.com/calculators/math/gcd/#gsc.tab=0
 
 
+a = 234
+
+b = 0
+
+print('El máximo común divisor entre {} y {} es {}'.format(a, b, maxDiv(a,b)))
+
+print('El mínimo común múltiplo entre {} y {} es {}'.format(a, b, minMult(a,b))) """
 
 #------------------------------------------------
 # Reto 11  ****OBLIGATORIO****
