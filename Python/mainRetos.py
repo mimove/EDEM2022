@@ -673,10 +673,8 @@ while True:
 # Escribe un script de código que haga al usuario introducir 8 alturas de edificios (deben ser float) y que saque por consola las 3 más altas (haz uso de sorted).
 #------------------------------------------------
 
-
-import retos.medio.reto12 
-
-
+""" 
+import retos.medio.reto12  """
 
 
 
@@ -684,22 +682,36 @@ import retos.medio.reto12
 
 
 
-
-
-
-
-#-------------------------------------#
+#------------------------------------------------
 # Reto 13
 # Escribe un programa que sea capaz de encontrar la diferencia completa entre dos fechas, mostrando días, horas, minutos y segundos.
-#-------------------------------------#
+#------------------------------------------------
+
+""" from retos.medio.reto13 import diffDateTime
+
+from datetime import datetime
+
+#######################
+# Option 1
+
+date1 = datetime(2017, 12, 28, 23, 14, 55) # Start date before end date
+date2 = datetime(2018, 8, 5, 1, 5, 0)
+
+#######################
+
+#######################
+# Option 2
+#######################
+
+date1 = datetime(2019, 1, 23, 5, 20, 0) # Start date after than end date
+date2 = datetime(2015, 8, 30, 20, 55, 55)
+
+#######################
+
+dDays, dHours, dMinutes, dSeconds = diffDateTime(date1, date2)
 
 
-
-
-
-
-
-
+print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dMinutes} minutos y {dSeconds} segundos') """
 
 
 
