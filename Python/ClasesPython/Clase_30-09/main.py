@@ -91,6 +91,91 @@ print(f'El coche {cocheEncontrado.matricula} va a una velocidad de {cocheEncontr
 # LIBRERÍA PANDAS
 
 import pandas as pd
+import chunk
+import re
+
+# Leer CSV
+
+pokemon_csv_df = pd.read_csv('G:\Mi unidad\Personal\MASTER DATA\GitHub\EDEM2022\Python\ClasesPython\Clase_30-09\pokemon_data.csv', #_df hace referencia a data frame
+                         dtype={"Name": str, # El dtype es opcional
+                                "Type 1":str, 
+                                "Type 2": str,
+                                "Speed": int,
+                                "Generation": int
+                                }) 
+
+
+# Leer de un Excel
+
+pokemon_excel_df = pd.read_excel('G:\Mi unidad\Personal\MASTER DATA\GitHub\EDEM2022\Python\ClasesPython\Clase_30-09\pokemon_data.xlsx')
+
+
+# Leer de un TXT
+
+pokemon_txt_df = pd.read_csv('G:\Mi unidad\Personal\MASTER DATA\GitHub\EDEM2022\Python\ClasesPython\Clase_30-09\pokemon_data.txt',delimiter='\t')
+
+
+
+# Imprimir los valores
+
+""" print(pokemon_csv_df) """
+
+# Imprimir los 5 primeros
+
+""" print(pokemon_csv_df.head(5)) """
+
+
+# Imprimir los 5 ultimos
+
+""" print(pokemon_csv_df.tail(5)) """
+
+
+# Obtener nombres de columnas
+
+""" print(pokemon_csv_df.columns) """
+
+# Obtener nombres de los pokemon
+
+""" nombres = pokemon_csv_df['Name']
+
+print(*nombres) """
+
+# Obtener todos los nombres y sus velocidades
+
+# Opción 1
+
+""" nombres_velocidades = pokemon_csv_df[['Name','Speed']] # Genera un df a partir de la lista con solo 2 columnas con 'Name' y 'Speed'
+
+print(nombres_velocidades) """
+
+
+# Opción 2 **Opción recomendada
+
+""" lista_columnas = ['Name', 'Speed']
+
+nombres_velocidades = pokemon_csv_df[lista_columnas] # Genera un df a partir de la lista con solo 2 columnas con 'Name' y 'Speed'
+
+print(nombres_velocidades) """
+
+
+# Obtener los primeros 5 nombres 
+
+""" primeros_5 = pokemon_csv_df['Name'][:5]
+
+print(primeros_5) """
+
+
+# Obtener primera fila
+
+""" print(pokemon_csv_df.iloc[0]) """
+
+
+# Obtener las 3 primeras filas
+
+print(pokemon_csv_df.iloc[:3])
+
+
+
 
 
 
