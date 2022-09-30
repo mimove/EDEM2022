@@ -668,11 +668,13 @@ while True:
     
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 12
 # Escribe un script de código que haga al usuario introducir 8 alturas de edificios (deben ser float) y que saque por consola las 3 más altas (haz uso de sorted).
-#-------------------------------------#
+#------------------------------------------------
 
+
+import retos.medio.reto12 
 
 
 
