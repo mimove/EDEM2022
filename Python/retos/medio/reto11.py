@@ -182,7 +182,7 @@ def showCustomerNIF(listCustomers: list):
     ¿Es preferente?: {}'''.format(listCustomers[i]['NIF'], listCustomers[i]['nombre'], listCustomers[i]['apellidos'], listCustomers[i]['telefono'], listCustomers[i]['email'], listCustomers[i]['preferente']))
                 
             
-        print('NIF no encontrado, vuelva a intentarlo')
+        print('(#3) NIF no encontrado, vuelva a intentarlo')
  
         
 

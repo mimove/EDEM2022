@@ -337,7 +337,7 @@ print(eliminate('Madrid', 5)) #Madri  """
 #------------------------------------------------
 
 
-""" from retos.medio.reto1 import buyMusic
+from retos.medio.reto1 import buyMusic
 from random import shuffle
 
 #list with 21 discs
@@ -387,7 +387,7 @@ shortListDiscs: list = [{'album':'AMERICAN IDIOT' , 'artista':'GREEN DAY' , 'añ
 
 shuffle(shortListDiscs)
 
-buyMusic(shortListDiscs) """
+buyMusic(shortListDiscs)
 
 
 
@@ -610,7 +610,7 @@ listCustomers: list = [{'NIF': '55597586P', 'nombre': 'Francisco-Jose', 'apellid
                  {'NIF': '42158567G', 'nombre': 'Octavio', 'apellidos': 'Enriquez Carrero', 'telefono': '652-954-474', 'email':'ocenca@icloud.com','preferente': False},
                  {'NIF': '01375122K', 'nombre': 'Iago', 'apellidos': 'Mosquera Cabello', 'telefono': '664-969-306', 'email':'iagomosquera96@gmail.com','preferente': True}]
 
-
+listCustomers= list()
 #Main console of the program
 
 while True:
