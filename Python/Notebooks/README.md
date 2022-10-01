@@ -48,6 +48,12 @@ Los archivos que se suben a Colab son volátiles, al borrar el kernel desaparece
 
 
 
+Todos los Notebooks al principio tienen que tener las lineas de instalar modulos que se escriben así:
+
+```py
+!pip install <modulo>
+```
+
 
 
 
