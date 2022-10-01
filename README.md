@@ -10,7 +10,7 @@ En el Máster de [EDEM][edem] hemos ido aprendiendo diferentes lenguajes de prog
 | Git | Contiene notas del funcionamiento de Git |
 | Python | Contiene tanto las notas y ejercicios realizados en las clases de Python, como archivos con código hecho en plataformas como <codewars.com> para practicar la programación con Python |
 | Unix | Contiene notas de clase y scripts en lenguaje bash ejecutados en terminal |
-|   |   |
+
 
 <br>
 <br>
