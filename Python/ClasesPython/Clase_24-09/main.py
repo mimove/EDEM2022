@@ -39,7 +39,6 @@ from utilidades.kpis import puntuacion
 import utilidades.interacciones.cordialidad as frases
 
 
-
 puntos = puntuacion(5)
  
 print(f'{saludar("Pedro")} tu puntuación es de {puntos}')
