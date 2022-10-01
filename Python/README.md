@@ -2,6 +2,7 @@
 
 En esta carpeta se encuentran los ejercicios y notas tomadas en clase sobre programación en Python en el Máster de Data de EDEM. Se agrupa de la siguiente manera:
 
+<br>
 
 | CARPETA/ARCHIVO | CONTENIDO |
 | ------ | ------ |
