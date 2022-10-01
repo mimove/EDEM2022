@@ -55,6 +55,11 @@ Todos los Notebooks al principio tienen que tener las lineas de instalar modulos
 ```
 
 
+<br>
+
+### Zeppelin
+
+Zeppelin es un Notebook que se ejecuta desde un Docker que hay que levantar primero.
 
 
 
