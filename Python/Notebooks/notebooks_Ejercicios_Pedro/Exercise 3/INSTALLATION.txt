@@ -1,0 +1,9 @@
+1-https://askubuntu.com/questions/1317411/pip-version-returns-syntaxerror-invalid-syntax-after-installation
+
+2-https://issues.apache.org/jira/browse/ZEPPELIN-1979
+
+3-https://github.com/apache/zeppelin/blob/master/docs/interpreter/python.md
+
+3.1 Eso hay que hacerlo dentro de la carpeta de conf, no la de interpreters.
+
+
