@@ -1,12 +1,19 @@
 
-# ZEPPELIN 0.8.2
+# ZEPPELIN 0.8.2 (NO HE CONSEGUIDO QUE FUNCIONE)
+
+1-Instalar pip3 siguiendo el siguiente tutorial
+
+https://askubuntu.com/questions/1317411/pip-version-returns-syntaxerror-invalid-syntax-after-installation
 
 
-1-https://askubuntu.com/questions/1317411/pip-version-returns-syntaxerror-invalid-syntax-after-installation
+3- Cambiar el tamaño de json que se puede subir con instrucciones del siguiente tutorial
 
-2-https://issues.apache.org/jira/browse/ZEPPELIN-1979
+https://issues.apache.org/jira/browse/ZEPPELIN-1979
 
-3-https://github.com/apache/zeppelin/blob/master/docs/interpreter/python.md
+
+3- Cambiar el python que por defecto ejecuta zeppelin a la version 3.5
+
+https://github.com/apache/zeppelin/blob/master/docs/interpreter/python.md
 
 3.1 Eso hay que hacerlo dentro de la carpeta de conf, no la de interpreters.
 
@@ -24,13 +31,10 @@
 
 # ZEPPELIN 0.10.0
 
-1-Instalar pyspark haciendo (tiene que ser la version 3.1.2 ya que a partir de esa no funciona)
+1-Instalar pyspark haciendo
 
-pip3 install pyspark==3.1.2  
-
-Si pyspark ya instalado, hacerlo
-
-pip3 install --force-install pyspark==3.1.2
+pip3 install pyspark
+pip3 install --force-reinstall pyspark==3.1.2
 
 
 2-Instalar vim como root
