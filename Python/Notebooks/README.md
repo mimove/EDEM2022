@@ -59,7 +59,7 @@ Todos los Notebooks al principio tienen que tener las lineas de instalar modulos
 
 ### Zeppelin
 
-Zeppelin es un Notebook que se ejecuta desde un Docker que hay que levantar primero.
+Zeppelin es un Notebook que se ejecuta desde un Docker que hay que levantar primero. Es recomendable usar la version 0.10 de Zeppelin, ya que las anteriores me han dado problemas (ver las notas en INSTALL.txt dentro de la carpeta notebooks_Ejercicios_Pedro)
 
 
 
