@@ -865,23 +865,14 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 
 
 
-
-
-
-
-
-
-
-
-
-#-------------------------------------#
+#------------------------------------------------
 # Reto 20
 # Haciendo uso de enumerate() muestra por consola cada uno de los caracteres de la palabra Valencia junto al índice de su posición.
-#-------------------------------------#
+#------------------------------------------------
 
 
 
-
+""" import retos.medio.reto20 """
 
 
 
