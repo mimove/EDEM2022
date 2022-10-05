@@ -46,7 +46,7 @@ def addCustomer(listCustomers: list)->list:
     while surname == []:
         
         print('(#1) El campo apellidos no puede estar vacío')
-        name: str = input('(#1) Introduzca los apellidos del nuevo cliente (6 volver al menú): ')
+        surname: str = input('(#1) Introduzca los apellidos del nuevo cliente (6 volver al menú): ')
         if surname == '6': return
     
     phone: str = input('(#1) Introduzca el teléfono del nuevo cliente (Formato: ***-***-***) (6 volver al menú): ')

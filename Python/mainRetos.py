@@ -336,7 +336,7 @@ print(eliminate('Madrid', 5)) #Madri  """
 # el dinero que se ahorra el usuario y el coste final de la compra.
 #------------------------------------------------
 
-import pandas as pd
+""" import pandas as pd
 from retos.medio.reto1 import buyMusic
 from random import shuffle
 
@@ -348,7 +348,7 @@ shortListDiscs = df.to_dict('records')
 
 shuffle(shortListDiscs)
 
-buyMusic(shortListDiscs)
+buyMusic(shortListDiscs) """
 
 
 
@@ -561,9 +561,14 @@ print('El mínimo común múltiplo entre {} y {} es {}'.format(a, b, minMult(a,b
 # (6) Finalizar Programa
 #------------------------------------------------
 
+##########################################################
+#################   WITH A MODULE  #######################
+##########################################################
+
+
+
 """ from retos.medio.reto11 import addCustomer, removeCustomer, showCustomerNIF, showAll, preferCustomer
 from time import sleep # Using of sleep to give some time to the user for reading the data
-
 
 #Creating list of customers to test the program
 
@@ -573,7 +578,7 @@ listCustomers: list = [{'NIF': '55597586P', 'nombre': 'Francisco-Jose', 'apellid
                  {'NIF': '42158567G', 'nombre': 'Octavio', 'apellidos': 'Enriquez Carrero', 'telefono': '652-954-474', 'email':'ocenca@icloud.com','preferente': False},
                  {'NIF': '01375122K', 'nombre': 'Iago', 'apellidos': 'Mosquera Cabello', 'telefono': '664-969-306', 'email':'iagomosquera96@gmail.com','preferente': True}]
 
-listCustomers= list()
+#listCustomers= list()
 #Main console of the program
 
 while True:
@@ -622,9 +627,94 @@ while True:
 
     except ValueError:
         print('Lo siento, no ha introducido un número')
-        continue """
+        continue  """
 
     
+
+##########################################################
+#################   WITH A CLASS  ########################
+##########################################################
+
+import pandas as pd
+from time import sleep # Using of sleep to give some time to the user for reading the data
+from retos.medio.models.Clients import Clients
+
+
+
+#Creating list of customers to test the program from an existing csv file
+
+listCustomers_df = pd.read_csv('./medio/files_reto11/customers.csv')
+
+customers=list()
+
+keys = list(listCustomers_df.columns) #List with the names of the keys for the dictionary.
+
+for i in range(len(listCustomers_df)):
+    customers.append({keys[0]:listCustomers_df[keys[0]][i], 
+                      keys[1]:listCustomers_df[keys[1]][i],
+                      keys[2]:listCustomers_df[keys[2]][i], 
+                      keys[3]:listCustomers_df[keys[3]][i], 
+                      keys[4]:listCustomers_df[keys[4]][i], 
+                      keys[5]:listCustomers_df[keys[5]][i]})
+
+
+#Main console of the program
+
+while True:
+    try:
+        print('\n###############################################')
+        print('##          OPCIONES DISPONIBLES             ##')
+        print('###############################################')
+        print('##                                           ##')
+        print('## (1) Añadir un cliente                     ##')
+        print('##                                           ##')
+        print('## (2) Eliminar cliente por NIF              ##')
+        print('##                                           ##')
+        print('## (3) Mostrar Cliente por NIF               ##')
+        print('##                                           ##')
+        print('## (4) Listar TODOS los clientes             ##')
+        print('##                                           ##')
+        print('## (5) Mostrar los clientes preferentes      ##')
+        print('##                                           ##')
+        print('## (6) Finalizar Programa                    ##')
+        print('##                                           ##')
+        print('###############################################\n')
+        
+        option = int(input('Introduzca el número de la opción: '))
+        
+        # Conditions depending on user option
+        
+        if option < 1 or option > 6:
+            print('La opción introducida no existe. Vuelva a intentarlo')
+            continue
+        elif option == 1:
+            Clients.addCustomer(customers) 
+            newList = pd.json_normalize(customers)
+            newList.to_csv('./medio/files_reto11/customers_modified.csv',index=False)   
+            sleep(1)
+        elif option == 2:
+            Clients.removeCustomer(customers)
+            newList = pd.json_normalize(customers)
+            newList.to_csv('./medio/files_reto11/customers_modified.csv',index=False)
+            sleep(1)
+        elif option == 3:
+            Clients.showCustomerNIF(customers)
+            sleep(1)
+        elif option == 4:
+            Clients.showAll(customers)
+        elif option == 5:
+            Clients.preferCustomer(customers)
+        elif option == 6:          
+            print('Programa cerrado correctamente')
+            quit()
+
+    except ValueError:
+        print('Lo siento, no ha introducido un número')
+        continue 
+
+
+
+
 
 
 
