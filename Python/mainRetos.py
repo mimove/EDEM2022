@@ -341,17 +341,12 @@ from retos.medio.reto1 import buyMusic
 from random import shuffle
 
 
-
 df = pd.read_csv('./medio/files_reto1/discos_short.csv')
-shortListDiscs = df.to_dict('records')
-
+shortListDiscs = df.to_dict('records') # En el reto11 resuelvo la creación de la lista de diccionarios de otra manera.
 
 shuffle(shortListDiscs)
 
 buyMusic(shortListDiscs) """
-
-
-
 
 
 
@@ -635,7 +630,7 @@ while True:
 #################   WITH A CLASS  ########################
 ##########################################################
 
-import pandas as pd
+""" import pandas as pd
 from time import sleep # Using of sleep to give some time to the user for reading the data
 from retos.medio.models.Clients import Clients
 
@@ -710,7 +705,7 @@ while True:
 
     except ValueError:
         print('Lo siento, no ha introducido un número')
-        continue 
+        continue  """
 
 
 
@@ -825,18 +820,7 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 #-------------------------------------#
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+""" import retos.medio.reto16 """
 
 
 
@@ -846,12 +830,6 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 # Reto 17
 # Crea un script que pueda mostrar la hora actual en milisegundos
 #-------------------------------------#
-
-
-
-
-
-
 
 
 
