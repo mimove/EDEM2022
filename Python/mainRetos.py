@@ -812,12 +812,12 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 16
 # Partiendo de la siguiente lista de tuplas:
 # miLista = [(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
 # Actualiza la lista sin aquellas tuplas que estén vacías.
-#-------------------------------------#
+#------------------------------------------------
 
 
 """ import retos.medio.reto16 """
@@ -826,10 +826,10 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 17
 # Crea un script que pueda mostrar la hora actual en milisegundos
-#-------------------------------------#
+#------------------------------------------------
 
 
 """ import retos.medio.reto17 """
@@ -837,14 +837,14 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 
 
 
-#-------------------------------------#
+#------------------------------------------------
 # Reto 18
 # A partir de la siguiente lista:
 # colores = [("Black", "#000000", "rgb(0, 0, 0)"), ("Red", "#FF0000", "rgb(255, 0, 0)"),("Yellow", "#FFFF00", "rgb(255, 255, 0)")]
 # Crea un script que pueda almacenar cada uno de los elementos (tuplas) de la lista en variable1, variable2 y variable3 para después imprimirlas por consola.
-#-------------------------------------#
+#------------------------------------------------
 
-
+""" import retos.medio.reto18 """
 
 
 
