@@ -832,14 +832,7 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 #-------------------------------------#
 
 
-
-
-
-
-
-
-
-
+""" import retos.medio.reto17 """
 
 
 
@@ -850,11 +843,6 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 # colores = [("Black", "#000000", "rgb(0, 0, 0)"), ("Red", "#FF0000", "rgb(255, 0, 0)"),("Yellow", "#FFFF00", "rgb(255, 255, 0)")]
 # Crea un script que pueda almacenar cada uno de los elementos (tuplas) de la lista en variable1, variable2 y variable3 para después imprimirlas por consola.
 #-------------------------------------#
-
-
-
-
-
 
 
 
