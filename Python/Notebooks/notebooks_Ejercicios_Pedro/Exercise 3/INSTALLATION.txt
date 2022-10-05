@@ -1,3 +1,7 @@
+
+# ZEPPELIN 0.8.2
+
+
 1-https://askubuntu.com/questions/1317411/pip-version-returns-syntaxerror-invalid-syntax-after-installation
 
 2-https://issues.apache.org/jira/browse/ZEPPELIN-1979
@@ -6,4 +10,75 @@
 
 3.1 Eso hay que hacerlo dentro de la carpeta de conf, no la de interpreters.
 
+4. docker commit id <nombre que le quieres dar a la imagen>
+
+5. Stop container
+
+6. Start nuevo container despues de commit
+
+
+
+
+
+
+
+# ZEPPELIN 0.10.0
+
+1-Instalar pyspark haciendo (tiene que ser la version 3.1.2 ya que a partir de esa no funciona)
+
+pip3 install pyspark==3.1.2  
+
+Si pyspark ya instalado, hacerlo
+
+pip3 install --force-install pyspark==3.1.2
+
+
+2-Instalar vim como root
+
+docker exec --user="root" -it zeppelin_single_10 /bin/bash
+
+apt-get update
+apt-get upgrade
+apt-get vim
+
+3-Modificar conf/interpreters.json
+
+
+"spark-submit": {
+      "id": "spark-submit",
+      "name": "spark-submit",
+      "group": "spark-submit",
+      "properties": {
+        "SPARK_HOME": {
+          "name": "SPARK_HOME",
+          "value": "/opt/conda/envs/python_3_with_R/lib/python3.7/site-packages/pyspark",
+          "type": "string",
+          "description": "Location of spark distribution"
+
+
+"spark": {
+      "id": "spark",
+      "name": "spark",
+      "group": "spark",
+      "properties": {
+        "SPARK_HOME": {
+          "name": "SPARK_HOME",
+          "value": "/opt/conda/envs/python_3_with_R/lib/python3.7/site-packages/pyspark",
+          "type": "string",
+          "description": "Location of spark distribution"
+
+
+
+
+4-Crear carpeta data en /opt/zeppelin y copiar archivo .csv en carpeta data
+
+docker cp .\fifa_players.csv zeppelin_single_10:/zeppelin/data
+
+5-Hacer commit para guardar cambios en container
+
+docker commit zeppelin_10 zeppelin_10_mod   
+
+
+
+6-Login en localhost:19999, cargar json y ejecutar.
 
