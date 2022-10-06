@@ -1,4 +1,4 @@
-#-------------------------------------#
+#------------------------------------------------
 # Reto 25
 # Partiendo de la lista:
 # comunidades = ["Madrid", "Aragón",
@@ -8,7 +8,7 @@
 #                     "Murcia", "Cantabria", "País Vasco",
 #                     "Andalucia"]
 # Crea una función que sea capaz de devolver una lista ordenada según la longitud de su nombre.
-#-------------------------------------#
+#------------------------------------------------
 
 
 def sortLenList(listUnsort: list)->list:
