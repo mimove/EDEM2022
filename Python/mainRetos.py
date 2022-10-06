@@ -1010,15 +1010,15 @@ print(wordReverse('Hola')) """
 
 
 
-
-
-#-------------------------------------#
+#------------------------------------------------
 # Reto 29
 # Crea una función capaz de devolver el segundo valor numérico más pequeño de una lista de números
-#-------------------------------------#
+#------------------------------------------------
 
 
+""" from retos.medio.reto29 import secondSmaller
 
+print(secondSmaller([5,2,3,1,5,7,8,9,3,3,1,6,5])) """
 
 
 
