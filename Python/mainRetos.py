@@ -644,13 +644,11 @@ customers=list()
 
 keys = list(listCustomers_df.columns) #List with the names of the keys for the dictionary.
 
+
 for i in range(len(listCustomers_df)):
-    customers.append({keys[0]:listCustomers_df[keys[0]][i], 
-                      keys[1]:listCustomers_df[keys[1]][i],
-                      keys[2]:listCustomers_df[keys[2]][i], 
-                      keys[3]:listCustomers_df[keys[3]][i], 
-                      keys[4]:listCustomers_df[keys[4]][i], 
-                      keys[5]:listCustomers_df[keys[5]][i]})
+    
+    customers.append(vars(Clients(listCustomers_df[keys[0]][i], listCustomers_df[keys[1]][i], listCustomers_df[keys[2]][i], listCustomers_df[keys[3]][i], listCustomers_df[keys[4]][i] , listCustomers_df[keys[5]][i])))
+
 
 
 #Main console of the program
