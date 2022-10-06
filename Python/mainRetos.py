@@ -971,21 +971,14 @@ print(sortLenList1line(comunidades)) """
 
 
 
-
-
-
-
-#-------------------------------------#
+#------------------------------------------------
 # Reto 26
 # Crea una función que reciba una palabra y sea capaz de devolver una palabra del revés.
-#-------------------------------------#
+#------------------------------------------------
 
+from retos.medio.reto26 import wordReverse
 
-
-
-
-
-
+print(wordReverse('Hola'))
 
 
 
