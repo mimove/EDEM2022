@@ -929,6 +929,7 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 #------------------------------------------------
 
 
+""" import retos.medio.reto24 """
 
 
 
@@ -937,15 +938,7 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 
 
 
-
-
-
-
-
-
-
-
-#-------------------------------------#
+#------------------------------------------------
 # Reto 25
 # Partiendo de la lista:
 # comunidades = ["Madrid", "Aragón",
@@ -955,12 +948,23 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 #                     "Murcia", "Cantabria", "País Vasco",
 #                     "Andalucia"]
 # Crea una función que sea capaz de devolver una lista ordenada según la longitud de su nombre.
-#-------------------------------------#
+#------------------------------------------------
+
+""" from retos.medio.reto25 import sortLenList, sortLenList1line
+
+
+comunidades = ["Madrid", "Aragón",
+                    "Valencia", "Cataluña",
+                    "Extremadura", "Castilla y León",
+                    "Castilla La Mancha", "Asturias",
+                    "Murcia", "Cantabria", "País Vasco",
+                    "Andalucia"]
 
 
 
+print(sortLenList(comunidades))
 
-
+print(sortLenList1line(comunidades)) """
 
 
 
