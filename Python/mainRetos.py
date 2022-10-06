@@ -935,9 +935,6 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 
 
 
-
-
-
 #------------------------------------------------
 # Reto 25
 # Partiendo de la lista:
