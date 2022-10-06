@@ -903,6 +903,7 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 # Realiza una iteración para poder pasar de una lista de tuplas a un diccionario llamado miDiccionario
 #------------------------------------------------
 
+""" import retos.medio.reto22 """
 
 
 
@@ -910,23 +911,13 @@ print(f'La diferencia entre las fechas es de: {dDays} días, {dHours} horas, {dM
 
 
 
-
-
-
-
-
-
-
-#-------------------------------------#
+#------------------------------------------------
 # Reto 23
 # Investiga acerca de Counter del módulo collections y haciendo uso del siguiente diccionario, encuentra la moda en las puntuaciones de películas:
 # misPeliculas = {'PeliculaA':81, 'PeliculaB':83, 'PeliculaC':87}
-#-------------------------------------#
+#------------------------------------------------
 
-
-
-
-
+""" import retos.medio.reto23 """
 
 
 
