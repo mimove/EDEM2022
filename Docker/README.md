@@ -145,14 +145,152 @@ Tradicionalmente siempre ha habido 2 enemigos: el desarrollador que quiere impel
 
 
 
-## DOCKER
+## DOCKER Y CONTAINERS
 
 <br>
 
+
+### Intro
+<br>
 Un contenedor es un paquete estándar de software y dependencias.
 
 
 Docker es una manera de empaquetar nuestro software. Esto nos permite empaquetar nuestro desarrollo en el contenedor y utilizarlo en muchos ordenadores y siempre va a funcionar. Esto es gracias a que los container comparten la mayoría del sistema operativo. Los contenedroes solo funcionan en el sistema operativo del que forman parte, esto los hace mucho más ligeros que una máquina virtual. Esta es la mayor diferencia con una máquina virtual, ya que la máquina virtual si que tiene su propio Sistema Operativo. Con Docker Desktop, el programa nos está levantando una máquina virtual que nos permiete trabajar con un contenedor del Sistema Operativo que queramos. También es importante saber que un contenedor no es el sustituto de una máquina virtual. 
+
+<br>
+
+<img src="https://www.netapp.com/media/Screen-Shot-2018-03-20-at-9.24.09-AM_tcm19-56643.png" alt="Container vs Virtual Machine"/>
+
+<br>
+
+<br>
+
+
+### Docker
+
+<br>
+
+Docker sirve para desarrollar, empaquetar y correr aplicaciones que hemos introducido dentro de los contenedores.
+
+
+
+- El Docker Engine solo está disponible en Lunux y es el programa que se encarga de levantar los contenedores en dicho Sistema Operativo
+
+- El Docker Desktop es el equivalente a Docker Engine para Windows.
+
+
+
+Una imagen de un contenedor es inmutable, lo que puedo cambiar es la información del container. Una imagen de Docker es como un CD de instalación. La imagen se puede cargar tanto por nombre como por ID. Se pueden tanto hacer pull de Docker Hub, como pushearlas a Docker Hub.
+
+
+
+Un Docker Container es una instancia ejecutada de una imagen Docker. Te da el mismo aislamiento del sistema operativo del ordenador que una máquina virtual. El container también añade capas de escritura a las capas de la imagen y trabaja sobre ellas. Es importante saber también que los contianers pueden hablar entre si igual que los diferentes procesos de un sistema. Todas las imágenes tienen un hash que es como el resumen de la imagen.
+
+
+Cada vez que ejecuto el commando `docker run` creo un nuevo contenedor con un nuevo ID.
+
+Con el comando `docker start` estoy levantando una imagen que hay en un contenedor ya creado.
+
+
+
+Para meternos dentro de un contenedor hay que hacer `docker run -it <nombre>`   
+
+<br>
+
+**Background Containers**
+
+Son contenedores que se ejecutan en el background para escuchar y recibir o mandar comandos a un servidor u otro tipo de aplicación
+
+
+Con la opción `docker start -i <nombre>` sirve para ver el modo interactivo del contenedor, con lo que volveríamos a entrar en la visión del modo escucha.
+
+
+Para borrar una imagen `docker rmi <nombre imagen>`.
+
+
+Para que no secuestre la terminal con el modo escucha el comando es `docker run -d <nombre>`
+
+
+Cuando yo hago docker run, yo puedo utilizar comandos que se ejecuten dentro del container. Ejemplo `docker run <image> ls -l` muestra el contenido de ficheros de Ubuntu y crea un container más. No obstante, al pasarle un comando el contenedor simplemente ejecutará eso y no me dejará meterme en el.
+
+
+Para copiar archivos a los contenedores se ejecuta el comando `docker cp <source> <target>`
+
+
+
+
+El comando para ver los recursos que está consumiendo cada contenedor ejecutamos `docker stats <id>`
+
+
+El comando para ver los procesos que hay dentro del contenedor `docker top <id>`
+
+
+
+<br>
+
+<br>
+
+**Volúmenes y puntos de montaje**
+
+Cuando un contenedor crashea o se borra, todos los datos desaparecen. Para evitar esto, Docker tiene 2 opciones:
+
+ 1. Volumenes: los gestiona docker y no el sistema operativo
+
+ 2. Bind mounts: es como crear una carpeta dentro del ordenador. Son gestionados por el sistema operativo
+
+Ambos tienen las siguientes características:
+
+ - Permiten que la información se guarde cuando se destruya el contenedor.
+
+ - Permiten compartir información con el host machine
+ - Permiten compartir información con otros contenedores
+
+
+<br>
+<br>
+
+
+
+
+**Docker Image Layers**
+
+Las imágenes docker están hechas de varias capas read-only (las capas son los dowload que aparecen cuando hago un pull de una nueva imagen). Esto hace que si entre varias imágenes se comparten capas se pueden usar entre todas.
+
+<br>
+
+**Docker File**
+
+Las Docker Files son los archivos que se utilizan para construir una imagen utilizando el comando `docker build <path>`. Un ejemplo sería:
+
+
+
+``` docker
+
+FROM ubuntu:18:04
+
+RUN apt-get update
+RUN apt-get install -y nginx
+
+
+COPY entrypoint.sh /
+COPY index.html /var/www/html/index.html
+
+EXPOSE 80
+
+
+ENTRYPOINT ["/entrypoint.sh"]
+
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
