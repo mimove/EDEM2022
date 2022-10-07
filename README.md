@@ -6,6 +6,7 @@ En el Máster de [EDEM][edem] hemos ido aprendiendo diferentes lenguajes de prog
 
 | CARPETA | CONTENIDO |
 | ------ | ------ |
+| Docker | Contiene notas de clase y ejemplos con Docker |
 | Fundamentos | Contiene notas de clase sobre fundamentos tanto del mundo de la informática como de ciencia de los datos |
 | Git | Contiene notas del funcionamiento de Git |
 | Python | Contiene tanto las notas y ejercicios realizados en las clases de Python, como archivos con código hecho en plataformas como <codewars.com> para practicar la programación con Python |
