@@ -1022,9 +1022,6 @@ print(secondSmaller([5,2,3,1,5,7,8,9,3,3,1,6,5])) """
 
 
 
-
-
-
 #-------------------------------------#
 # Reto 30
 # Investiga acerca de ast y convierte un String en una lista. Es decir, un string que representa una lista literalmente. Puedes usar este ejemplo:
