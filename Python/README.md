@@ -6,6 +6,7 @@ En esta carpeta se encuentran los ejercicios y notas tomadas en clase sobre prog
 
 | CARPETA/ARCHIVO | CONTENIDO |
 | ------ | ------ |
+| Notebooks | Notas de clase sobre notebooks, así como ejemplos utilizando Jupyter y Zeppelin |
 | Clases Python | Contiene tanto los ejercicios hechos en clase como las notas del curso en el archivo README.md
 | retos | Modulos de Python con todos los retos propuestos en clase. Se dividen en retos de nivel básico (18) y medio (30) |
 | mainRetos.py | Archivo para ejecutar los retos propuestos en el temario de Python |
