@@ -1,0 +1,14 @@
+version: '3.0'
+services:
+  srv-nginx:
+    image: nginx
+    ports:
+      - "80:80"
+      
+  # srv-python:
+  #   image:python
+
+  srv-tomcat:
+    image: tomcat
+    ports:
+      - "8080:8080"
