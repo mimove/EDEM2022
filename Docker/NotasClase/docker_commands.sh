@@ -1,4 +1,4 @@
-## EJERCICIO 1
+#!/bin/bash
 
 
 # List Docker images
@@ -18,10 +18,6 @@ docker ps
 
 
 docker ps -a
-
-
-
-## EJERCICIO 1a
 
 
 # List Docker images
@@ -50,3 +46,35 @@ docker run -d <imagen>
 
 
 docker cp <source> <target>
+
+
+
+# Build an image
+
+docker build <path of Dockerfile>
+
+
+# Build an image with a name
+
+
+docker build -t <name> <path to Dockerfile>
+
+
+
+##### DOCKER COMPOSE ####
+
+# Build a .yaml file
+
+docker compose up
+
+
+# List active compose containers (inside directory)
+
+
+docker compose ps
+
+
+# Stop containers (inside directory)
+
+
+docker compose stop 

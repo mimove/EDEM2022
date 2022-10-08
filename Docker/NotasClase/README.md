@@ -158,9 +158,9 @@ Un contenedor es un paquete estándar de software y dependencias.
 Docker es una manera de empaquetar nuestro software. Esto nos permite empaquetar nuestro desarrollo en el contenedor y utilizarlo en muchos ordenadores y siempre va a funcionar. Esto es gracias a que los container comparten la mayoría del sistema operativo. Los contenedroes solo funcionan en el sistema operativo del que forman parte, esto los hace mucho más ligeros que una máquina virtual. Esta es la mayor diferencia con una máquina virtual, ya que la máquina virtual si que tiene su propio Sistema Operativo. Con Docker Desktop, el programa nos está levantando una máquina virtual que nos permiete trabajar con un contenedor del Sistema Operativo que queramos. También es importante saber que un contenedor no es el sustituto de una máquina virtual. 
 
 <br>
-
+<p align="center">
 <img src="https://www.netapp.com/media/Screen-Shot-2018-03-20-at-9.24.09-AM_tcm19-56643.png" alt="Container vs Virtual Machine"/>
-
+</p>
 <br>
 
 <br>
@@ -264,8 +264,7 @@ Las Docker Files son los archivos que se utilizan para construir una imagen util
 
 
 
-``` docker
-
+``` dockerfile
 FROM ubuntu:18:04
 
 RUN apt-get update
@@ -279,7 +278,82 @@ EXPOSE 80
 
 
 ENTRYPOINT ["/entrypoint.sh"]
+```
 
+
+
+En un Docker File hay tres tipos de instrucciones:
+
+ - Instrucciones fundamentales. Ej: `FROM`: imagen de la que heredo. `ARG`: argumentos que paso de entrada.
+
+ - Instrucciones de configuración. Ej: `RUN`: ejecutar acciones. `ADD`: descargar archivos de una página web y descomprime zip. También copia archivos  `COPY`: copiar archivos de mi pc a la imagen `ENV`: similar a `ARG`
+ - Instrucciones de ejecución. Ej: `ENTRYPOINT`: lo que va a ejecutar el contenedor `EXPOSE`: para indicar el puerto del que tiene que escuchar.
+
+
+Tanto las instrucciones fundamentales como las de configuración se ejecutan en tiempo de construcción de la imagen Por ello, todo comando de ejecución tiene que ser pasado a la imagen posteriormente. Al hacer Docker build se ejecutan por tanto las instrucciones fundamentales y las de configuración. Al hacer Docker run se ejecutan las instrucciones de ejecución.
+
+
+<br>
+
+**CMD and ENTRYPOINT**
+
+El `CMD` y `ENTRYPOINT` es el comando que ejecuta el contenedor cuando entra. La principal diferencia es que con `CMD` puedo sobreescribir el comando que le doy de entrada cuando hago `docker run <image>`. Ejemplo: `docker run <image> ls -l` modificaría un `CMD git --version` y sería el comando que se ejecutaría al inicio.
+
+
+
+
+<br>
+
+
+**ARGUMENTS VS ENV. VARIABLES**
+
+Los argumentos son visibles cuando la images se construye. No son visibles en el contenedor. Se pueden sobreescribir en tiempo de construccion usando `--build-arg`
+
+
+Las variables de entorno son visibles durante la construcción de la imagen y también dentro de los contenedores una vez creados. Los Envs no se pueden sobreescribir en tiempo de construcción.
+
+
+
+
+<br>
+
+**VERSIONES**
+
+Las versiones _latests_ son las últimas que son estables, las versiones _alpine_ son las más optimizadas y no tienen muchas funcionalidades.
+
+
+
+<br>
+
+<br>
+
+## DOCKER COMPOSE
+
+<br>
+
+Es una herramienta para definir y ejecutar aplicaciones complejas con Docker. Con Docker copose puedes definir una aplicacion multi-contenedor con un solo archivo y luego usar solo un comando que los maneje todos. Normalmente el archvio se llama "docker-compose.yml".
+
+
+Esto facilita que en un equipo de trabajo se puede desarrollar independientemente codigo para cada aplicación (a esto se le llama monolito) sin tener que actualizar los programadores todo el codigo que haya modificado el resto del equipo (a esto se le llama monolito) y que no influya a su desarrollo. 
+
+
+
+Es posible especificarle a un archivo de Docker Compose que cantidad de recursos quiero que use cada contenedor.
+
+``` yaml
+version: '3.2'
+
+services:
+  db: 
+    image: mysql
+    deploy:
+      resources:
+        limits:
+          cpus: '0.0010'
+          memory: 50M
+        reservations:
+          cpus: '0.25'
+          memory: 20M
 ```
 
 
@@ -288,12 +362,46 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 
 
+<br>
+
+<br>
+
+## DOCKER SWARM
+
+<br>
 
 
 
+Se utiliza para levantar muchas máquinas simultáneamente. Esto ocurre porque en grandes empresas se despliegan miles de contenedores diariamente. Se encarga de manejar el cluster a través de un nodo maestro y otros nodos trabajadores. Trabaja con el concepto de servicio y tareas
+
+<br>
+
+<p align="center">
+<img src=https://docs.docker.com/engine/swarm/images/swarm-diagram.png alt="Image of Docker Swarm">
+</p>
+
+Docker compose también ayuda a hacer actualizaciones en caliente, de manera que cuando tienes que subir una versión nueva del software a producción, no tienes que parar la aplicación y volver a arrancarla, si no que puedes arrancarla con Docker Swarm y luego una vez levantada la nueva versión parar la otra.
 
 
+<br>
 
+<br>
+
+## KUBERNETES
+
+<br>
+
+Kubernetes es una container orchestration plataform de código abierto diseñada para automatizar el despliegue, escalado y mantenimiento de aplicaciones empaquetadas.
+
+<br>
+
+<p align="center">
+<img src=https://www.itdo.com/blog/content/images/2019/02/kubernetes-2.png alt="Image of Kubernetes">
+</p>
+
+<br>
+
+Kubernetes ha cogido tanta importancia en el mundo del desarrollo, que los 3 grandes Cloud providers (AWS, GCP y Azure) se han visto obligados a dar servicio a kubernetes. Esto permite hacer multi-cloud y que con kubernetes pueda desplegar containers de Docker en cada una de las nubes basandome en criterios como donde va a ser más barato. También se puede hacer hibridación, que sería utilizar tanto servicios de las clouds, como recursos locales.
 
 
 
