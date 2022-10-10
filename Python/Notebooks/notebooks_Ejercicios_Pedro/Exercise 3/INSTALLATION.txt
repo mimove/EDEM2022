@@ -31,7 +31,7 @@ https://github.com/apache/zeppelin/blob/master/docs/interpreter/python.md
 
 # ZEPPELIN 0.10.0
 
-0-Docker run -p 19999:8080 -v data:/zeppelin/data -v logs:/logs --rm --name -it zeppelin_single_10 zeppelin_10:0.10.1
+0- docker run -p 19999:8080 -v data:/zeppelin/data -v logs:/logs --rm --name -it zeppelin_single_10 zeppelin_10:0.10.1
 
 1-Instalar pyspark y spark haciendo
 
@@ -84,7 +84,7 @@ docker cp .\fifa_players.csv zeppelin_single_10:/zeppelin/data
 
 5-Hacer commit para guardar cambios en container
 
-docker commit zeppelin_10 zeppelin_10_mod   
+docker commit zeppelin_10 zeppelin_single_10   
 
 
 
