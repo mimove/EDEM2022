@@ -31,7 +31,9 @@ https://github.com/apache/zeppelin/blob/master/docs/interpreter/python.md
 
 # ZEPPELIN 0.10.0
 
-1-Instalar pyspark haciendo y spark
+0-Docker run -p 19999:8080 -v data:/zeppelin/data -v logs:/logs --rm --name -it zeppelin_single_10 zeppelin_10:0.10.1
+
+1-Instalar pyspark y spark haciendo
 
 pip3 install pyspark
 pip3 install --force-reinstall pyspark==3.1.2
@@ -44,6 +46,8 @@ docker exec --user="root" -it zeppelin_single_10 /bin/bash
 apt-get update
 apt-get upgrade
 apt-get vim
+
+
 
 3-Modificar conf/interpreters.json
 

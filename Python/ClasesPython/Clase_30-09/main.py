@@ -132,7 +132,7 @@ pokemon_txt_df = pd.read_csv('G:\Mi unidad\Personal\MASTER DATA\GitHub\EDEM2022\
 
 # Obtener nombres de columnas
 
-""" print(pokemon_csv_df.columns) """
+print(pokemon_csv_df.columns)
 
 # Obtener nombres de los pokemon
 
@@ -144,9 +144,9 @@ print(*nombres) """
 
 # Opción 1
 
-nombres_velocidades = pokemon_csv_df[['Name','Speed']] # Genera un df a partir de la lista con solo 2 columnas con 'Name' y 'Speed'
+""" nombres_velocidades = pokemon_csv_df[['Name','Speed']] # Genera un df a partir de la lista con solo 2 columnas con 'Name' y 'Speed'
 
-print(nombres_velocidades)
+print(nombres_velocidades) """
 
 
 # Opción 2 **Opción recomendada
