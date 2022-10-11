@@ -401,7 +401,7 @@ Kubernetes es una container orchestration plataform de código abierto diseñada
 
 <br>
 
-Kubernetes ha cogido tanta importancia en el mundo del desarrollo, que los 3 grandes Cloud providers (AWS, GCP y Azure) se han visto obligados a dar servicio a kubernetes. Esto permite hacer multi-cloud y que con kubernetes pueda desplegar containers de Docker en cada una de las nubes basandome en criterios como donde va a ser más barato. También se puede hacer hibridación, que sería utilizar tanto servicios de las clouds, como recursos locales.
+Kubernetes ha cogido tanta importancia en el mundo del desarrollo, que los 3 grandes Cloud providers (AWS, GCP y Azure) se han visto obligados a dar servicio a kubernetes. Esto permite hacer multi-cloud y que con kubernetes pueda desplegar containers de Docker en cada una de las nubes basandome en criterios como donde va a ser más barato. También se puede hacer hibridación, que sería utilizar tanto servicios de las clouds, como recursos locales
 
 
 
