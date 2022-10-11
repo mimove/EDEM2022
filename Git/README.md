@@ -87,5 +87,41 @@ Los siguientes comandos son los que hay que utilizar para la sincronización del
     ```
 
 
+4.  Para descartar todos los cambios en la rama:
+
+    ```bash
+    git checkout .
+    ```
 
 
+5. Para hacer stage de un archivo o carpeta:
+
+    ```bash
+    git add <file-name OR folder-name>
+    ```
+
+
+6. Para hacer commit de los archivos/directorios en stage:
+
+    ```bash
+    git commit -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
+    ```
+
+7. Hacer commit de todos los cambios:
+
+    ```bash
+    git commit -a -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
+    ```
+
+
+8. Hacer un push al repositorio:
+
+    ```bash
+    git push <remote> <name-of-branch>
+    ```
+
+    Ejemplo con mi repositorio:
+
+    ```bash
+    git push origin draft
+    ```
