@@ -130,3 +130,23 @@ Los siguientes comandos son los que hay que utilizar para la sincronización del
     ```bash
     git push origin draft
     ```
+
+
+10. Hacer un merge de la rama al main:
+
+    ```bash
+    git checkout <default-branch>
+    git merge <feature-branch>
+    git push
+    ```
+
+    Ejemplo con mi repositorio:
+
+    ```bash
+    git checkout main
+    git merge draft
+    git push
+    ```
+
+
+
