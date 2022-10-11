@@ -73,6 +73,7 @@ Los siguientes comandos son los que hay que utilizar para la sincronización del
 <br>
 
 2. Para crear una rama usar: 
+
     ```bash
     git checkout -b <name-of-branch>
     ```
@@ -80,8 +81,11 @@ Los siguientes comandos son los que hay que utilizar para la sincronización del
 <br>
 
 3. Para cambiar de rama:
+
     ```bash
     git checkout <name-of-branch>
     ```
+
+
 
 
