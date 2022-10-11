@@ -22,12 +22,14 @@ Cuando se quiera utilizar WSL con VS Code hay que seguir los siguientes pasos:
 
 4. Install python extension in VS code for WSL: Ubuntu
 
+5. Install docker extension in VS code for WSL: Ubuntu
+
 
 <br>
 
 ## Cambios en Windows PowerShell
 
-1. Instalar VIM en local: https://www.w3schools.io/editor/vim-install/
+1. Instalar VIM en local: https://www.w3schools.io/editor/vim-install/. Importante marcar opción de añadir a directorio .bat para poder usar el comando vi desde linea de comandos
 
 
 2. Quitar proteccion perfil: https://stackoverflow.com/questions/4037939/powershell-says-execution-of-scripts-is-disabled-on-this-system
