@@ -100,21 +100,26 @@ Los siguientes comandos son los que hay que utilizar para la sincronización del
     git add <file-name OR folder-name>
     ```
 
+6. Para ver cambios de archivos unstaged:
 
-6. Para hacer commit de los archivos/directorios en stage:
+    ```bash
+    git diff
+    ```
+
+7. Para hacer commit de los archivos/directorios en stage:
 
     ```bash
     git commit -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
     ```
 
-7. Hacer commit de todos los cambios:
+8. Hacer commit de todos los cambios:
 
     ```bash
     git commit -a -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
     ```
 
 
-8. Hacer un push al repositorio:
+9. Hacer un push al repositorio:
 
     ```bash
     git push <remote> <name-of-branch>
