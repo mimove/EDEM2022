@@ -20,9 +20,9 @@
 # Una vez hayas creado todas las variables, muéstralas por consola haciendo uso de la función print()
 #------------------------------------------------
 
-from retos.basico.reto1 import contact
+""" from retos.basico.reto1 import contact
  
-contact()
+contact() """
 
 #------------------------------------------------
 # Reto 2
