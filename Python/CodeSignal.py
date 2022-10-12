@@ -782,3 +782,4 @@ width = 10
 precision = 2
 
 print(solution(t, width, precision))
+
