@@ -351,6 +351,7 @@ buyMusic(shortListDiscs) """
 
 
 
+
 #------------------------------------------------
 # Reto 2
 # El programa debe preguntar el artículo y su precio y añadirlo a una variable (diccionario u objeto literal), hasta que el usuario decida terminar
