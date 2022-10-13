@@ -10,8 +10,8 @@ En esta carpeta se encuentran los ejercicios y notas tomadas en clase sobre prog
 | Notebooks | Notas de clase sobre notebooks, así como ejemplos utilizando Jupyter y Zeppelin |
 | retos | Modulos de Python con todos los retos propuestos en clase. Se dividen en retos de nivel básico (18) y medio (30) |
 | mainRetos.py | Archivo para ejecutar los retos propuestos en el temario de Python |
-| CodeSignal.py | Jupyter Notebook con ejercicios de diferente nivel realizados en la plataforma <codesignal.com>  |
-| CodeWars.py | Script con ejercicios de diferente nivel realizados en la plataforma <codewars.com>  |
+| CodeSignal.py | Python Notebook con ejercicios de diferente nivel realizados en la plataforma <codesignal.com>  |
+| CodeWars.py | Python Notebook con ejercicios de diferente nivel realizados en la plataforma <codewars.com>  |
 
 
 
