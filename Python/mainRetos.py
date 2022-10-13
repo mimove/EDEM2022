@@ -341,7 +341,7 @@ from retos.medio.reto1 import buyMusic
 from random import shuffle
 
 
-df = pd.read_csv('./medio/files_reto1/discos_short.csv')
+df = pd.read_csv('/home/ttmam/GitHub/EDEM2022/Python/retos/medio/files_reto1/discos_short.csv')
 shortListDiscs = df.to_dict('records') # En el reto11 resuelvo la creación de la lista de diccionarios de otra manera.
 
 shuffle(shortListDiscs)
