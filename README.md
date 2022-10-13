@@ -10,6 +10,7 @@ En el Máster de [EDEM][edem] hemos ido aprendiendo diferentes lenguajes de prog
 | Fundamentos | Contiene notas de clase sobre fundamentos tanto del mundo de la informática como de ciencia de los datos |
 | Git | Contiene notas del funcionamiento de Git |
 | Python | Contiene tanto las notas y ejercicios realizados en las clases de Python, como archivos con código hecho en plataformas como <codewars.com> para practicar la programación con Python |
+| TratamientoDato | Contiene notas de clase sobre tratamiento del dato |
 | Unix | Contiene notas de clase y scripts en lenguaje bash ejecutados en terminal |
 
 
