@@ -148,5 +148,12 @@ Los siguientes comandos son los que hay que utilizar para la sincronización del
     git push
     ```
 
+11. Recuperar archivo del repositorio porque las modificaciones en local no nos gusta:
+    
+
+    ```bash
+    git restore <filename>
+    ```
+
 
 
