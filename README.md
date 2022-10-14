@@ -24,10 +24,6 @@ Dentro de cada una de las carpetas la organización es la siguiente:
 
 --------------------------------------------------------------------------------
 
-
-
-<br>
-<br>
 <br>
 
 A lo largo del Máster también hemos realizado 4 data projects que tratan sobre lo siguiente:
