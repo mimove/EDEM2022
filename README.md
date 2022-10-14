@@ -1,23 +1,36 @@
 # MASTER DATA  [![N|Solid](https://edem.eu/wp-content/plugins/edem-shortcodes/public/img/logo-Edem.png)](https://edem.eu)   2022
 
-En el Máster de [EDEM][edem] hemos ido aprendiendo diferentes lenguajes de programación que se estructuran en este repositorio en las siguentes carpetas:
+En el Máster de [EDEM][edem] sobre Data Analytics, el aprendizaje se estructura en diferentes módulos, cuyo contenido en este repositorio se ha clasificado en las siguientes carpetas:
 
 <br>
 
 | CARPETA | CONTENIDO |
 | ------ | ------ |
-| Docker | Contiene notas de clase y ejemplos con Docker |
-| Fundamentos | Contiene notas de clase sobre fundamentos tanto del mundo de la informática como de ciencia de los datos |
-| Git | Contiene notas del funcionamiento de Git |
-| Python | Contiene tanto las notas y ejercicios realizados en las clases de Python, como archivos con código hecho en plataformas como <codewars.com> para practicar la programación con Python |
-| TratamientoDato | Contiene notas de clase sobre tratamiento del dato |
-| Unix | Contiene notas de clase y scripts en lenguaje bash ejecutados en terminal |
+| Modulo_0-Fundamentos | Contiene la parte introductoria del curso. En este primer módulo se aprende sobre lenguajes como Python o Unix, así como el manejo de herramientas como Docker  |
+| Modulo_1-TratamientoDato | En este módulo aprendemos los conceptos y programas empleados para el tratamiento de los datos, desde la ingestión de datos hasta su aplicación al negocio |
+
+<br>
+
+Dentro de cada una de las carpetas la organización es la siguiente:
+
+<br>
+
+| ARCHIVO/DIR | CONTENIDO |
+| ------ | ------ |
+| README.md | Explica la estructura que tiene dicho módulo y como se dividen las diferentes carpetas  |
+| NotasClase | Incluye los apuntes tomados sobre teoría general de dicho módulo |
+| <lenguaje/software> | Cada carpeta con el nombre de un lenguaje de programación o software que se utiliza durante el Máster |
+
+
+--------------------------------------------------------------------------------
+
 
 
 <br>
 <br>
+<br>
 
-A lo largo del Máster realizamos 4 data projects que tratan sobre lo siguiente:
+A lo largo del Máster también hemos realizado 4 data projects que tratan sobre lo siguiente:
 
 <br>
 
