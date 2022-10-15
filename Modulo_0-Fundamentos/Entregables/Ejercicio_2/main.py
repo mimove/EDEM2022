@@ -17,6 +17,8 @@ while True:
         
         datos = {"Personaje": datosjson[0]["character"], "Frase": datosjson[0]["quote"]}
         
+        img_personaje = datosjson[0]["image"]
+        
         print(datos)
 
 
@@ -24,7 +26,7 @@ while True:
         
         print('La frase de {} es: {}'.format(datos["Personaje"], datos["Frase"]))
 
-        with open('General/quotes_general.csv', 'a', encoding='UTF8') as f:
+        with open('/home/ttmam/GitHub/EDEM2022/Modulo_0-Fundamentos/Entregables/Ejercicio_2/quotes_general.csv', 'a', encoding='UTF8') as f:
             w = csv.DictWriter(f, datos.keys())
             
             if f.tell() == 0:
@@ -35,23 +37,28 @@ while True:
 
 
         if 'Homer' in datos["Personaje"]:
-          with open('Homer/quotes_homer.csv', 'a', encoding='UTF8') as f:
+          with open('/home/ttmam/GitHub/EDEM2022/Modulo_0-Fundamentos/Entregables/Ejercicio_2/Homer/quotes_homer.csv', 'a', encoding='UTF8') as f:
               w = csv.DictWriter(f, datos.keys())
               
               if f.tell() == 0:
-                  w.writeheader()
+                w.writeheader()
 
               # write the data
               w.writerow(datos)
+              
+              img_data = requests.get(img_personaje).content
+              with open('Homer/Homer.png', 'wb') as handler:
+                if handler.tell() == 0:
+                   handler.write(img_data)
 
         elif 'Lisa' in datos["Personaje"]:
 
-           with open('Lisa/quotes_lisa.csv', 'a', encoding='UTF8') as f:
+           with open('/home/ttmam/GitHub/EDEM2022/Modulo_0-Fundamentos/Entregables/Ejercicio_2/Lisa/quotes_lisa.csv', 'a', encoding='UTF8') as f:
 
               w = csv.DictWriter(f, datos.keys())
               
               if f.tell() == 0:  
-                  w.writeheader()
+                w.writeheader()
 
               # write the data
               w.writerow(datos)
