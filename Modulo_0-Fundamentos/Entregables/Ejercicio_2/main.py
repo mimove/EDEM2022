@@ -3,6 +3,7 @@ import csv
 import time
 import os
 import string
+import pandas as pd
 
 def word_count(str):
     # Obtained from https://www.w3resource.com/python-exercises/string/python-data-type-string-exercise-12.php
@@ -18,14 +19,18 @@ def word_count(str):
     return counts
 
 
+dictWords = dict()
 
 while True:
    
     URL = 'https://thesimpsonsquoteapi.glitch.me/quotes'
 
-
-    respuesta = requests.get(URL)
-
+    try:
+      respuesta = requests.get(URL,timeout=3)
+    except requests.exceptions.Timeout as err:
+      print(err)
+      time.sleep(1)
+      
     if respuesta.status_code >= 200 and respuesta.status_code < 300:
 
       # Extraemos los datos en formato JSON
@@ -36,7 +41,7 @@ while True:
       
       datos = {"Personaje": datosjson[0]["character"].translate(str.maketrans('', '', string.punctuation)).split(), "Frase": datosjson[0]["quote"]}
         
-      print(datos)
+      
 
       img_personaje = datosjson[0]["image"]
       
@@ -46,7 +51,15 @@ while True:
         
       print('La frase de {} es: {}'.format(" ".join(datos["Personaje"]), datos["Frase"]))
       
-      print(word_count(datos["Frase"].translate(str.maketrans('', '', string.punctuation))))
+      
+      dictWords.update(word_count(string.capwords(datos["Frase"].translate(str.maketrans('', '', '".,:!?')))))
+      
+      
+      with open('countedWords.csv', 'w') as csv_file:  
+        writer = csv.writer(csv_file)
+        for key, value in dictWords.items():
+          writer.writerow([key, value])  
+        
         
       #Check if folder of character exist, if not create it.
         
