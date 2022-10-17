@@ -1,6 +1,23 @@
 import requests
 import csv
 import time
+import os
+import string
+
+def word_count(str):
+    # Obtained from https://www.w3resource.com/python-exercises/string/python-data-type-string-exercise-12.php
+    counts = dict()
+    words = str.split()
+
+    for word in words:
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+
+    return counts
+
+
 
 while True:
    
@@ -11,57 +28,61 @@ while True:
 
     if respuesta.status_code >= 200 and respuesta.status_code < 300:
 
-        # Extraemos los datos en formato JSON
+      # Extraemos los datos en formato JSON
         
-        datosjson = respuesta.json()
+      datosjson = respuesta.json()
+      
+      # a_string.translate(str.maketrans('', '', string.punctuation)
+      
+      datos = {"Personaje": datosjson[0]["character"].translate(str.maketrans('', '', string.punctuation)).split(), "Frase": datosjson[0]["quote"]}
         
-        datos = {"Personaje": datosjson[0]["character"], "Frase": datosjson[0]["quote"]}
-        
-        img_personaje = datosjson[0]["image"]
-        
-        print(datos)
+      print(datos)
+
+      img_personaje = datosjson[0]["image"]
+      
 
 
-        # Obtenemos valor en la clave 'value' del JSON que nos interesa
+      # Obtenemos valor en la clave 'value' del JSON que nos interesa
         
-        print('La frase de {} es: {}'.format(datos["Personaje"], datos["Frase"]))
+      print('La frase de {} es: {}'.format(" ".join(datos["Personaje"]), datos["Frase"]))
+      
+      print(word_count(datos["Frase"].translate(str.maketrans('', '', string.punctuation))))
+        
+      #Check if folder of character exist, if not create it.
+        
+      if not os.path.exists("_".join(datos["Personaje"])):
+        os.makedirs("_".join(datos["Personaje"]))
+        
+        
+        with open("_".join(datos["Personaje"]) + '/' + 'quotes' + '_' + "_".join(datos["Personaje"]) + '.csv', 'a', encoding='UTF8') as f:
+          w = csv.DictWriter(f, datos.keys())
+          
+          if f.tell() == 0:
+            w.writeheader()
 
-        with open('/home/ttmam/GitHub/EDEM2022/Modulo_0-Fundamentos/Entregables/Ejercicio_2/quotes_general.csv', 'a', encoding='UTF8') as f:
-            w = csv.DictWriter(f, datos.keys())
+          # write the data
+          w.writerow({'Personaje':" ".join(datos["Personaje"]), 'Frase': datos["Frase"]})
+        
+        img_data = requests.get(img_personaje).content
+        with open("_".join(datos["Personaje"]) + '/' + "_".join(datos["Personaje"]) +'.png', 'wb') as handler:
+          if handler.tell() == 0:
+            handler.write(img_data)
+
+          
+          
+        
+
+        # with open('Palabras/quotes_general.csv', 'a', encoding='UTF8') as f:
+        #   w = csv.DictWriter(f, datos.keys())
             
-            if f.tell() == 0:
-               w.writeheader()
+        #   if f.tell() == 0:
+        #     w.writeheader()
 
-            # write the data
-            w.writerow(datos)
+        #     # write the data
+        #     w.writerow(datos)
 
 
-        if 'Homer' in datos["Personaje"]:
-          with open('/home/ttmam/GitHub/EDEM2022/Modulo_0-Fundamentos/Entregables/Ejercicio_2/Homer/quotes_homer.csv', 'a', encoding='UTF8') as f:
-              w = csv.DictWriter(f, datos.keys())
-              
-              if f.tell() == 0:
-                w.writeheader()
-
-              # write the data
-              w.writerow(datos)
-              
-              img_data = requests.get(img_personaje).content
-              with open('Homer/Homer.png', 'wb') as handler:
-                if handler.tell() == 0:
-                   handler.write(img_data)
-
-        elif 'Lisa' in datos["Personaje"]:
-
-           with open('/home/ttmam/GitHub/EDEM2022/Modulo_0-Fundamentos/Entregables/Ejercicio_2/Lisa/quotes_lisa.csv', 'a', encoding='UTF8') as f:
-
-              w = csv.DictWriter(f, datos.keys())
-              
-              if f.tell() == 0:  
-                w.writeheader()
-
-              # write the data
-              w.writerow(datos)
+       
         
         time.sleep(1)
 
