@@ -1,0 +1,10 @@
+
+services:
+
+  srv-python:
+  
+    volumes:
+
+  jupyter:
+
+    volumes:
