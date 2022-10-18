@@ -6,7 +6,7 @@ import string
 
 def word_count(str,dictCount):
   
-    # Modified from from https://www.w3resource.com/python-exercises/string/python-data-type-string-exercise-12.php
+    # Obtained from https://www.w3resource.com/python-exercises/string/python-data-type-string-exercise-12.php
     
     counts = dictCount
     words = str.split()
@@ -54,13 +54,15 @@ while True:
       
       # Actualizamos la lista de palabras con la cuenta de cada una
       
-      dictWords.update(word_count(string.capwords(datos["Frase"].translate(str.maketrans('', '', '".,:!?'))),dictWords))
+      dictWords.update(word_count(string.capwords(datos["Frase"].translate(str.maketrans('', '', '".,:!?'))), dictWords))
       
       
       # Escribimos la lista de palabras como clave, valor en cada fila de un csv
       
       with open('countedWords.csv', 'w') as csv_file:  
         writer = csv.writer(csv_file)
+        if csv_file.tell() == 0:
+            writer.writerow(["Palabra", "Cuenta"])
         for key, value in dictWords.items():
           writer.writerow([key, value])  
         
