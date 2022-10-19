@@ -16,8 +16,6 @@ while True:
         datosjson = respuesta.json()
         
         datos = {"Personaje": datosjson[0]["character"], "Frase": datosjson[0]["quote"]}
-        
-        print(datos)
 
 
         # Obtenemos valor en la clave 'value' del JSON que nos interesa
@@ -57,6 +55,3 @@ while True:
               w.writerow(datos)
         
         time.sleep(1)
-
-
-
