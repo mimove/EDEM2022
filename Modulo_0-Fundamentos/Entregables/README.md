@@ -153,15 +153,18 @@ tail -f countedWords.csv
 
 <br>
 
-<div style="clear: both;">
-  <div>
+<div>
+  <div style="float: left; margin-left 3em">
 
 ## **Bart Level (Ejercicio_3 en mi repositorio)**
   </div>
   <div style="float: right; margin-right 7em;">
-    <img src="https://cdn.glitch.me/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FBartSimpson.png" alt="" width=150>
+    <img src="https://cdn.glitch.me/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FBartSimpson.png" alt="" width=130>
   </div>
 </div>
+
+<br>
+<br>
 
 En este ejercicio se piden realizar las siguientes tareas:
 
@@ -174,6 +177,7 @@ palabras más habituales en las quotes
 
 4. Docker-compose debe ser capaz de hacer build del contenedor original
 
+<br>
 
 Dentro de mi repositorio este directorio se organiza de la siguiente manera:
 
