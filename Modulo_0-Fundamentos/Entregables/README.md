@@ -14,24 +14,8 @@ Para completar este caso debemos crear un código python que consuma datos de un
 <br>
 
 
-
-
-
-
-
-
-
-
-
-<div style="clear: both;">
-  <div>
-
 ## **Maggie Level (Ejercicio_1 en mi repositorio)**
-  </div>
-  <div style="float: right; margin-right 1em;">
-    <img src="https://upload.wikimedia.org/wikipedia/en/9/9d/Maggie_Simpson.png" alt="" width=100>
-  </div>
-</div>
+
 
 
 En este ejercicio se piden realizar las siguientes tareas:
@@ -90,15 +74,10 @@ tail -f quotes_general.csv
 
 <br>
 
-<div style="clear: both;">
-  <div>
+
 
 ## **Lisa Level (Ejercicio_2 en mi repositorio)**
-  </div>
-  <div style="float: right; margin-right 1em;">
-    <img src="https://cdn.glitch.me/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FLisaSimpson.png" alt="" width=120>
-  </div>
-</div>
+
 
 En este ejercicio se piden realizar las siguientes tareas:
 
@@ -153,18 +132,10 @@ tail -f countedWords.csv
 
 <br>
 
-<div>
-  <div style="float: left; margin-left 3em">
+
 
 ## **Bart Level (Ejercicio_3 en mi repositorio)**
-  </div>
-  <div style="float: right; margin-right 7em;">
-    <img src="https://cdn.glitch.me/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FBartSimpson.png" alt="" width=130>
-  </div>
-</div>
 
-<br>
-<br>
 
 En este ejercicio se piden realizar las siguientes tareas:
 
