@@ -59,7 +59,7 @@ while True:
       
       # Escribimos la lista de palabras como clave, valor en cada fila de un csv
       
-      with open('countedWords.csv', 'w') as csv_file:  
+      with open('results/countedWords.csv', 'w') as csv_file:  
         writer = csv.writer(csv_file)
         if csv_file.tell() == 0:
             writer.writerow(["Palabra", "Cuenta"])
@@ -69,13 +69,13 @@ while True:
         
       # Para el directorio de cada personaje, primero comprobamos si existe.
         
-      if not os.path.exists("_".join(datos["Personaje"])):
-        os.makedirs("_".join(datos["Personaje"]))
+      if not os.path.exists("results/"+"_".join(datos["Personaje"])):
+        os.makedirs("results/"+"_".join(datos["Personaje"]))
         
         
         # Almacenamos la frase del personaje en un csv
         
-        with open("_".join(datos["Personaje"]) + '/' + 'quotes' + '_' + "_".join(datos["Personaje"]) + '.csv', 'a', encoding='UTF8') as f:
+        with open("results/"+"_".join(datos["Personaje"]) + '/' + 'quotes' + '_' + "_".join(datos["Personaje"]) + '.csv', 'a', encoding='UTF8') as f:
           w = csv.DictWriter(f, datos.keys())
           
           if f.tell() == 0:
@@ -86,7 +86,7 @@ while True:
         
         # Descargamos la imagen del personaje.
         
-        with open("_".join(datos["Personaje"]) + '/' + "_".join(datos["Personaje"]) +'.png', 'wb') as handler:
+        with open("results/"+"_".join(datos["Personaje"]) + '/' + "_".join(datos["Personaje"]) +'.png', 'wb') as handler:
           if handler.tell() == 0:
             img_data = requests.get(img_personaje).content
             handler.write(img_data)

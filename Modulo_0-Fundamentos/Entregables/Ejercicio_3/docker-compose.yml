@@ -1,10 +1,19 @@
-
 services:
 
   srv-python:
+    build: ./python
   
     volumes:
+       - db_simpsons:/app/results/
 
   jupyter:
+    build: ./jupyter
+
+    ports:
+      - 10000:8888
 
     volumes:
+      - db_simpsons:/home/jovyan/work/results/
+
+volumes:
+  db_simpsons:
