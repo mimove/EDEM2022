@@ -4,8 +4,6 @@
 <img src="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2Fsimpsons.PNG?1497481539770" width="250">
 </p>
 
-<br>
-
 # Explicación del Caso
 
 Para completar este caso debemos crear un código python que consuma datos de una api sobre los simpsons y guarde la información en ficheros csv y carpetas. 
