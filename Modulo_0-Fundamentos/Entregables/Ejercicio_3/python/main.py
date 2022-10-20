@@ -22,6 +22,7 @@ def word_count(str,dictCount):
 
 dictWords = dict()
 
+
 while True:
    
     URL = 'https://thesimpsonsquoteapi.glitch.me/quotes'
