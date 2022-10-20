@@ -172,18 +172,7 @@ docker compose up
 Para ejecutar el Notebook contenido en el contenedor Jupyter, se tiene que acceder a la siguiente dirección:
 
  
-
-
-
-[http://localhost:10000/notebooks/simpsons_notebook.ipynb](http://localhost:10000/notebooks/simpsons_notebook.ipynb){:target="_blank" rel="noopener"}
-
-
-
-
-
-
-
-
+<http://localhost:10000/notebooks/simpsons_notebook.ipynb>
 
 
 
