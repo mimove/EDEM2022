@@ -147,3 +147,47 @@ Para almacenar los datos tengo varias soluciones:
 
 Si no se cumplen las condiciones para que el problema que tenemos que resolver sea de Big Data, es mucho más conveniente utilizar un Data Warehouse que un Data Lake. Dicho de otra manera, a no ser que haya un problema que lo justifique, siempre usaremos Data Warehouse. 
 
+
+<br>
+
+## _Clase 21/10/2022_
+
+En lenguaje cotidiando, un Data Lake sería necesario cuando queramos almacenar tanto audio, como video, fotos, json, etc. Sería como una carpeta de Windows. Mientras que un Data Warehouse sería necesario solo si tenemos un tipo de datos como por ejemplo archivos csv. En este caso un Data Warehouse sería similar a Excel.
+
+En cualquier momento se puede pasar de un tipo de infraestructura a otra. Lo normal, es empezar teniendo un Data Warehouse y, con el tiempo y el incremento de volumen de datos, pasarnos a un Data Lake. Si se toma esa decisión, se dejaría el DW para la visión analítica de un Data Analyst y el DL para el análisis de un Data Scientist.
+
+
+<br>
+
+### **Escalado**
+
+Un DW tiene un escalado vertical, eso quiere decir que para mejorarlo tengo que mejorar la capacidad de programación, RAM y almacenamiento.
+
+Un DL tiene escalado horizontal, lo que quiere decir es que tienes más recursos informáticos en paralelo, pero de menores prestaciones. Spark es el framework que nos permite trabajar en paralelo en el mundo del data. 
+
+
+<br>
+
+
+## Definición del Dato
+
+Un dato es una medición objetiva. Cuando hablamos de datos estamos hablando de hechos. Por otro lado, la información es lo que nosotros generamos de manea subjetiva a partir de unos datos. Cuando cogemos una base de datos lo que queremos es construir información a partir de esos datos. La información tiene un problema, y es que al ser subjetiva no es intercambiable, ya que cada persona puede generar una información distinta a partir de los mismos datos. De este modo, los sistemas utilizan datos, y las personas información. Por ello, si no conseguimos transformar los datos en información no somos capaces de transmitir valor a las personas. 
+
+El conocimiento se cataloga de la siguiente forma de la parte más baja a la parte más alta:
+
+ 1. Datos: Tomar las decisiones a este nivel significa mucho riesgo
+
+ 2. Información
+
+ 3. Conocimiento
+
+ 4. Sabiduría: Las decisiones a este nivel suponen el menor riesgo para la empresa, pero no siempre va a ser posible estar en este nivel.
+
+
+ 
+
+
+
+Las empresas toman las decisiones a diferentes niveles, y nosotros tenemos que ayudarlas a tomar decisiones cuanto más arriba del nivel de conocimiento posible. 
+
+
