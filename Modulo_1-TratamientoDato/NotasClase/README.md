@@ -97,9 +97,7 @@ Las 5 V's del Big Data:
 <br>
 
 <p align="center">
-
 <img src=https://www.edureka.co/blog/wp-content/uploads/2018/06/Five-Vs-of-Big-Data-What-is-Big-Data-Edureka.png width=800px>
-
 </p>
 
 <br>
@@ -137,9 +135,7 @@ Para almacenar los datos tengo varias soluciones:
 
 
 <p align="center">
-
 <img src=https://www.qubole.com/wp-content/uploads/2020/12/Dl-vs-DW-infograph-1000x563.png width=800px>
-
 </p>
 
 <br>
@@ -184,10 +180,52 @@ El conocimiento se cataloga de la siguiente forma de la parte más baja a la par
  4. Sabiduría: Las decisiones a este nivel suponen el menor riesgo para la empresa, pero no siempre va a ser posible estar en este nivel.
 
 
- 
-
 
 
 Las empresas toman las decisiones a diferentes niveles, y nosotros tenemos que ayudarlas a tomar decisiones cuanto más arriba del nivel de conocimiento posible. 
 
 
+<br>
+<br>
+
+## Ciclo de vida de los datos
+
+El ciclo de vida de los datos se divide en:
+
+1. Crear. En este primer paso los datos (estructurados o no estrucutrados) se crean
+
+2. Guardados. Una vez que son creados se guardan en algún sitio. Hay que asegurar la protección de los mismos.
+
+3. Uso. En este paso., los datos son visualizados, procesados, modificados y guardados. Se aplican controles de seguridad.
+
+4. Compratidos. Los datos se mueven en diferentes localizaciones publicas o privadas y son usados por diferentes data owners desde diferentes dispositivos y plataformas.
+
+5. Archivados. En algun momento los datos dejan de ser usados y se archivan.
+
+6. Destruidos. Cuando el volumen de datos archivados alcanza cierto nivel, los datos tienen que ser destruidos para evitar el exceso de acumulación.
+
+<br>
+
+<p align="center">
+<img src="https://www.clicdata.com/wp-content/uploads/2022/06/data-lifecycle-management-process.jpg" width=300>
+</p>
+
+
+<br>
+<br>
+
+## Arquitectura orientada a datos
+
+Uno de los problemas que se suelen tener en el mundo de los datos es como diseñamos nuestra arquitectura. Para construir estas arquitecturas se suele utilizar [UML][uml].
+
+
+
+
+
+
+
+
+
+
+
+[uml]:<http://www.uml.org/>
