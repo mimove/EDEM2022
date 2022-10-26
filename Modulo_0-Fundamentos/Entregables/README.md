@@ -11,9 +11,7 @@ Para completar este caso debemos crear un código python que consuma datos de un
 
 <br>
 
-<style>
-.noborder {border:none!important;}
-</style>
+
 
 <table class="noborder">
 
@@ -48,7 +46,9 @@ citas de ellos dos.
 
 </table>
 
-
+<style>
+.noborder {border:none!important;}
+</style>
 
 
 <br>
