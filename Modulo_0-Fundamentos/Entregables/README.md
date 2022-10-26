@@ -48,7 +48,9 @@ citas de ellos dos.
 
 
 <style>
-    .noborder {border: none!important}
+    .noborder{ 
+        td, th {border:none!important}
+         }
 </style>
 
 
