@@ -13,12 +13,12 @@ Para completar este caso debemos crear un código python que consuma datos de un
 
 
 
-<table style="border: 0px solid transparent">
+<table>
 
 ## **Maggie Level (Ejercicio_1 en mi repositorio)**
 
-<tr style="border: 0px solid transparent">
-<td style="border: 0px solid transparent">
+<tr>
+<td>
 
 En este ejercicio se piden realizar las siguientes tareas:
 
@@ -32,7 +32,7 @@ En este ejercicio se piden realizar las siguientes tareas:
 citas de ellos dos.
   
 </td>
-<td style="border: 0px solid transparent">
+<td>
 
 
 
