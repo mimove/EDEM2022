@@ -11,10 +11,12 @@ Para completar este caso debemos crear un código python que consuma datos de un
 
 <br>
 
+<table>
 
 ## **Maggie Level (Ejercicio_1 en mi repositorio)**
 
-
+<tr>
+<td>
 
 En este ejercicio se piden realizar las siguientes tareas:
 
@@ -26,6 +28,22 @@ En este ejercicio se piden realizar las siguientes tareas:
 
 4. El fichero docker debe crear al menos las carpetas Lisa y Homer e inicialmente solo coger
 citas de ellos dos.
+  
+</td>
+<td>
+
+
+<p align="center">
+<img width= 300px src=https://upload.wikimedia.org/wikipedia/en/9/9d/Maggie_Simpson.png>
+</p>
+
+  
+</td>
+</tr>
+
+</table>
+
+
 
 <br>
 
@@ -72,10 +90,17 @@ tail -f quotes_general.csv
 
 <br>
 
+<br>
 
+
+
+
+<table>
 
 ## **Lisa Level (Ejercicio_2 en mi repositorio)**
 
+<tr>
+<td>
 
 En este ejercicio se piden realizar las siguientes tareas:
 
@@ -89,6 +114,21 @@ En este ejercicio se piden realizar las siguientes tareas:
 
 
 3. El código debe crear de manera dinámica las carpetas con nuevos personajes
+  
+</td>
+<td>
+
+
+<p align="center">
+<img width= 200px src=https://cdn.glitch.me/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FLisaSimpson.png>
+</p>
+
+  
+</td>
+</tr>
+
+</table>
+
 
 <br>
 
@@ -129,11 +169,16 @@ tail -f countedWords.csv
 ```
 
 <br>
+<br>
 
 
+
+<table>
 
 ## **Bart Level (Ejercicio_3 en mi repositorio)**
 
+<tr>
+<td>
 
 En este ejercicio se piden realizar las siguientes tareas:
 
@@ -145,6 +190,34 @@ palabras más habituales en las quotes
 3. Mostrar un listado de las carpetas y las fotos de los personajes en el jupyter
 
 4. Docker-compose debe ser capaz de hacer build del contenedor original
+  
+</td>
+<td>
+
+
+<p align="center">
+<img width= 250px src=https://cdn.glitch.me/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FBartSimpson.png>
+</p>
+
+  
+</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br>
 
@@ -156,7 +229,9 @@ Dentro de mi repositorio este directorio se organiza de la siguiente manera:
 | jupyter | Carpeta que contiene los archivos para contruir el contenedor Jupyter |
 | docker-compose.yml | Código de docker-compose para levantar ambos contenedores |
 
-Dentro de las carpetas "python" y "jupyter" los archivos se organizan de forma similar a como en los 2 anteriores niveles. La diferencia, es que existe una carpeta adicional llamada results, que es donde se monta el volumen para compartir datos entre los 2 contenedores.
+Dentro de las carpetas "python" y "jupyter" los archivos se organizan de forma similar a como en los 2 anteriores niveles. La diferencia, es que existe una carpeta adicional llamada results, que es donde se monta el volumen para compartir datos entre los 2 contenedores. El código python está hecho para que los plots se generen 'on-the-fly' de manera que se pueda tanto borrar carpetas con imagenes de personajes, como resetear el servidor python sin que el Jupyter Notebook de un error. 
+
+He hecho un intento de ejecutar en paralelo cada una de las celdas en un procesador distinto del ordenador para poder visualizar los 2 gráficos simultáneamente, pero no lo he terminado de conseguir.
 
 
 <br>

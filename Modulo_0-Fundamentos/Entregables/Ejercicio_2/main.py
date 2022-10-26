@@ -31,8 +31,7 @@ def word_count(str,dictCount):
     return counts
 
 
-dictWords = dict()
-
+dictPalabras = dict() # Initializing dict for counting words
 while True:
    
     URL = 'https://thesimpsonsquoteapi.glitch.me/quotes'
@@ -47,53 +46,46 @@ while True:
     if respuesta.status_code >= 200 and respuesta.status_code < 300:
 
       # Extract data in json format
-        
       datosjson = respuesta.json()
       
       
       # Store data in a dict, but name of character as a list of words for using them later in dynamic directory creation
-      
       datos = {"Personaje": datosjson[0]["character"].translate(str.maketrans('', '', string.punctuation)).split(), "Frase": datosjson[0]["quote"]}
         
       
       # URL of image of the character
-      
       img_personaje = datosjson[0]["image"]
       
       
       # Printing values in dict as a checking step
-        
       print('La frase de {} es: {}'.format(' '.join(datos["Personaje"]), datos["Frase"]))
       
       
       # Updating dictionary with the word count. Removing punctuation characters except single quotation marks (') to avoid mixing words like we're with were.
+      # Also capitalizing each word to count as the same words like Hi or hi.
       
-      dictWords.update(word_count(string.capwords(datos["Frase"].translate(str.maketrans('', '', '".,:!?'))),dictWords))
+      dictPalabras = word_count(string.capwords(datos["Frase"].translate(str.maketrans('', '', '".,:!?'))),dictPalabras)
       
       
       # Writing words as a list of key, value in a csv file in every row
-      
-      with open('results/countedWords.csv', 'w') as csv_file:  
+      with open('countedWords.csv', 'w') as csv_file:  
         writer = csv.writer(csv_file)
         if csv_file.tell() == 0:
             writer.writerow(["Palabra", "Cuenta"])
-        for key, value in dictWords.items():
+        for key, value in dictPalabras.items():
           writer.writerow([key, value])  
         
         
       # To create a directory for every character, we need to first check if it already exists. If it doesn't, the directory is created
-      
       if not os.path.exists('_'.join(datos["Personaje"])):
         os.makedirs('_'.join(datos["Personaje"]))
         
         
         # Storing the word of the character in a csv file with its name
-        
         writeData('_'.join(datos["Personaje"]) + '/' + 'quotes' + '_' + '_'.join(datos["Personaje"]) + '.csv', 'a', {'Personaje':' '.join(datos["Personaje"]), 'Frase': datos["Frase"]})
         
         
         # Download the image of the character in its folder
-        
         with open('_'.join(datos["Personaje"]) + '/' + '_'.join(datos["Personaje"]) +'.png', 'wb') as handler:
           if handler.tell() == 0:
             img_data = requests.get(img_personaje).content
@@ -101,7 +93,6 @@ while True:
 
        
         # I choose 1 second so that the verification steps are much faster
-        
         time.sleep(1)
 
 

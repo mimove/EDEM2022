@@ -32,21 +32,17 @@ while True:
     if respuesta.status_code >= 200 and respuesta.status_code < 300:
 
         # Extract data in json format
-        
         datosjson = respuesta.json()
         
         # Store data in a dict with the name of the character and the quote
-        
         datos = {"Personaje": datosjson[0]["character"], "Frase": datosjson[0]["quote"]}
 
 
         # Printing values in dict as a checking step
-        
         print('La frase de {} es: {}'.format(datos["Personaje"], datos["Frase"]))
 
 
         # Use of writeData function to write quotes in a csv file
-        
         writeData('General/quotes_general.csv', 'a', datos)
 
 
@@ -57,6 +53,5 @@ while True:
             writeData('Lisa/quotes_lisa.csv', 'a', datos)
 
 
-        # I choose 1 second so that the verification steps are much faster
-        
+        # I choose 1 second so that the verification steps are much faster 
         time.sleep(1)
