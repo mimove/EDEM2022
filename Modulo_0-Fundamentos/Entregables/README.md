@@ -11,6 +11,8 @@ Para completar este caso debemos crear un código python que consuma datos de un
 
 <br>
 
+
+
 <table>
 
 ## **Maggie Level (Ejercicio_1 en mi repositorio)**
@@ -95,7 +97,10 @@ tail -f quotes_general.csv
 
 
 
+
 <table>
+
+
 
 ## **Lisa Level (Ejercicio_2 en mi repositorio)**
 
@@ -133,6 +138,9 @@ En este ejercicio se piden realizar las siguientes tareas:
 <br>
 
 Dentro de mi repositorio este directorio se organiza de la siguiente manera:
+
+
+
 
 | Carpeta/Archivo | Contenido |
 |---------------|---------------|
@@ -179,7 +187,6 @@ tail -f countedWords.csv
 
 <tr>
 <td>
-
 En este ejercicio se piden realizar las siguientes tareas:
 
 1. Construid un Docker-compose con una imagen de un contenedor de Jupyter
@@ -190,13 +197,12 @@ palabras más habituales en las quotes
 3. Mostrar un listado de las carpetas y las fotos de los personajes en el jupyter
 
 4. Docker-compose debe ser capaz de hacer build del contenedor original
-  
 </td>
 <td>
 
 
 <p align="center">
-<img width= 250px src=https://cdn.glitch.me/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FBartSimpson.png>
+<img width= 200px src=https://cdn.glitch.me/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FBartSimpson.png>
 </p>
 
   
