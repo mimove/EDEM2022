@@ -17,8 +17,8 @@ Para completar este caso debemos crear un código python que consuma datos de un
 
 ## **Maggie Level (Ejercicio_1 en mi repositorio)**
 
-<tr style="border:0px">
-<td style="border:0px">
+<tr style="border:none!important">
+<td style="border:none!important">
 
 En este ejercicio se piden realizar las siguientes tareas:
 
@@ -32,7 +32,7 @@ En este ejercicio se piden realizar las siguientes tareas:
 citas de ellos dos.
   
 </td>
-<td style="border:0px">
+<td style="border:none!important">
 
 
 
