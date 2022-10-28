@@ -18,3 +18,4 @@ La estructura de este segundo módulo en el repositorio es la siguiente:
 | CARPETA | CONTENIDO |
 | ------ | ------ |
 | NotasClase | Contiene las notas tomadas en clase sobre los conceptos necesarios para el tratamiento de los datos |
+| SQL | Contiene tanto las notas de clase como los ejercicios hechos en el lenguaje SQL |
