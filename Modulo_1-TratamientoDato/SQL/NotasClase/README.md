@@ -9,7 +9,7 @@ SQL (Structured Query Language) es un lenguaje de dominio para manipular, selecc
 <br>
 
 MASTERS     
-| ID Master | Nombre | Coste |
+| ID | Nombre | Coste |
 | ------ | ------------ | -------- |
 | DTA  | DATA | 10000 |
 | MKT | MARKETING | 8000 |
@@ -19,7 +19,7 @@ MASTERS
 <br>
 
 ALUMNOS                              
-| ID Alumno | Nombre | Edad | País | Ciudad |                    
+| ID | Nombre | Edad | País | Ciudad |                    
 | ------ | ---- | ------ | ------ |  ------ |         
 | 1 | Miguel | 31 | USA | Nueva York |           
 | 2 | Julio | 29 | UK |   Southampton |                     
@@ -31,7 +31,7 @@ ALUMNOS
 <br>
 
 ALU_MASTER                              
-| ID | ID ALUMNO | ID MASTER |                      
+| ID | ID_ALUMNO | ID_MASTER |                      
 | ------ | ---- | ------ |              
 | 1 | 1 | MKT |              
 | 2 | 2 | DTA |                         
@@ -294,9 +294,88 @@ En una tabla, el valor NULL es no conocido o información perdida. El valor NULL
 El valor NULL es muy especial. Por ejemplo, NULL no es igual a nada ni siquiera a NULL. Para comprobar si un valor es NULL o no, se utiliza el operador booleano IS NULL o IS NOT NULL. La expresión NULL = NULL devuelve NULL.
 
 
+<br>
+<br>
+
+## _Clase 28/10/2022_
 
 
 
+### **SQL JOINS**
+
+<br>
+
+<p align="center">
+<img src="https://ingenieriadesoftware.es/wp-content/uploads/2018/07/sqljoin.jpeg" width=500px>
+</p>
+
+<br>
+
+
+Los SQL JOINS se utilizan para cruzar diferentes tablas y conseguir valores que cumplan alguna de las condiciones booleanas de la tabla de arriba. 
+
+
+
+
+Ejemplo SQL de INNER JOIN con tablas del inicio: Conseguir el alumno que estudia máster de MKT
+
+- Usando ```WHERE```
+
+```sql
+SELECT A.Nombre M.Nombre FROM ALUMNOS A, ALU_MASTER AM, MASTER M
+WHERE A.ID = AM.ID_ALUMNO
+AND AM.ID_MASTER = M.ID
+AND M.Nombre = 'MKT'
+```
+
+
+- Usando ```JOIN```
+
+```sql
+SELECT A.Nombre M.Nombre 
+FROM ALUMNOS A
+JOIN ALU_MASTER AL 
+ON A.ID = AM.ID_ALUMNO
+JOIN MASTERS M
+ON AM.ID_MASTER = M.ID
+WHERE M.Nombre = 'MKT'
+```
+
+
+
+Páginas web para recordar los diferentes tipos de joins:
+
+<https://joins.spathon.com/> 
+
+<https://sql-joins.leopard.in.ua/> Mejor esta
+
+
+<br>
+
+### **FUNCIONES ESPECIALES SQL**
+
+
+```sql
+COUNT(*) --Cuenta filas
+
+SUM(<column>) -- Suma la columna
+
+AVG(<column>) -- Media de la columna
+
+MIN(<column>) -- Mínimo de la columna
+
+MAX(<column>) -- Máximo de la columna
+
+LIMIT <num> -- Devuelve <num> filas
+```
+
+
+
+
+
+** Web con servidor SQL **
+
+<http://35.198.74.120:9999/browser>
 
 
 

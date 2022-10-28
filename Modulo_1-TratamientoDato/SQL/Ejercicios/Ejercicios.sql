@@ -142,3 +142,44 @@ SET EMAIL = 'null'
 WHERE ID IN 
 (SELECT ALU_ID FROM `sesion_sql.ALU_MASTER` WHERE MAS_ID IN 
 (SELECT ID FROM `sesion_sql.MASTERS` WHERE NOM = 'Skiba')) */
+
+
+
+-- Crea la siguiente tabla en tu schema:
+-- ID: Clave primaria único
+-- Mes: No nulo
+-- Cantidad: No nulo
+--Descripcion:  250 caracteres
+
+
+
+/* CREATE TABLE `sesion_sql.GASTOS` (
+  gastos_id int64,
+  fecha STRING,
+  cantidad float64,
+  descripcion STRING
+);
+ */
+
+/* INSERT INTO `sesion_sql.GASTOS`
+VALUES(1, '2022/01/01', 100.4, 'Cuota Mensual'); */
+
+
+
+-- Borrar Tabla
+
+/* DROP TABLE `sesion_sql.GASTOS` */
+
+
+
+
+-- Query que haga Join y muestre cada alumno el master que tiene asociado
+
+/* SELECT A.Nom, M.Nom FROM `sesion_sql.ALUMNOS` A
+LEFT JOIN `sesion_sql.ALU_MASTER` AL
+ON A.ID = AL.ALU_ID
+LEFT JOIN `sesion_sql.MASTERS` M
+ON AL.MAS_ID = M.id; */
+
+
+
