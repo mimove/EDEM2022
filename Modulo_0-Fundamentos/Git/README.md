@@ -155,5 +155,9 @@ Los siguientes comandos son los que hay que utilizar para la sincronización del
     git restore <filename>
     ```
 
+12. Recuperar todos los cambios desde el repositorio:
 
+    ```bash
+    git restore .
+    ```
 
