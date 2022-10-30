@@ -4,6 +4,9 @@
 
 <img width="100" src="https://www.postgresql.org//media/img/about/press/elephant.png">
 
+
+*(Following steps of [YouTube video](<https://www.youtube.com/watch?v=ZUORufqaN9M&list=LL&index=3&t=10s>) by Pedro Nieto )
+
 In these section we will setup **[PostgreSQL](https://www.postgresql.org/)** and load a database [dvdrental](<https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/>) for learning SQL
 
 ## Initial Setup
