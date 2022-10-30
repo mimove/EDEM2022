@@ -6,6 +6,7 @@ En este módulo se definen diferentes ideas y estrategias de como aplicar los da
 <br>
 La estructura de este segundo módulo en el repositorio es la siguiente:
 
+
 <br>
 
 | CARPETA | CONTENIDO |
