@@ -18,7 +18,14 @@ on a.actor_id = fa.actor_id
 join film f
 on fa.film_id = f.film_id;
 
-
+/*
+select count(*) from (
+select a.first_name,  a.last_name, f.title from actor a
+join film_actor fa
+on a.actor_id = fa.actor_id
+join film f
+on fa.film_id = f.film_id ) as count2;
+*/
 
 
 -- Proporciona una SQL que muestre los siguientes datos:
