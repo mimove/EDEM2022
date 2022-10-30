@@ -15,7 +15,7 @@ Para completar este caso debemos crear un código python que consuma datos de un
 
 <table>
 
-## **Maggie Level (Ejercicio_1 en mi repositorio)**
+## **Maggie Level ([Ejercicio_1](Ejercicio_1/) en mi repositorio)**
 
 <tr>
 <td>
@@ -104,7 +104,7 @@ tail -f quotes_general.csv
 
 
 
-## **Lisa Level (Ejercicio_2 en mi repositorio)**
+## **Lisa Level ([Ejercicio_2](Ejercicio_2/) en mi repositorio)**
 
 <tr>
 <td>
@@ -185,7 +185,7 @@ tail -f countedWords.csv
 
 <table>
 
-## **Bart Level (Ejercicio_3 en mi repositorio)**
+## **Bart Level ([Ejercicio_3](Ejercicio_3/) en mi repositorio)**
 
 <tr>
 <td>
