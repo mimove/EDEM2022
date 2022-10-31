@@ -1,86 +1,100 @@
-# EDEM - Master on Data Analytics - SQL
+# Entregable SQL
 
-## Introduction
+## Descripción del caso
 
+En este entregable tenemos que realizar una serie de consultas sobre una base de datos que obtenemos de la web de [este enlace](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/). 
+
+El Entity-Relationship model de esta base de datos es el de la siguiente imagen:
+
+<p align="center">
+<img src="https://www.postgresqltutorial.com/wp-content/uploads/2018/03/dvd-rental-sample-database-diagram.png" width=400px>
+
+
+<br>
+<br>
+
+## Uso de PostgreSQL con Docker y Visual Studio Code para hacer consultas  a la base de datos
+
+<br>
+
+<p align="center">
+<table>
+<tr>
+<td align="center" colspan="3">
 <img width="100" src="https://www.postgresql.org//media/img/about/press/elephant.png">
+</td>
+<td align="center" colspan="3">
+<font size="+25"> + </font>
+</td>
+<td align="center">
+<img width="100" src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png">
+</td>
+<td align="center" colspan="3">
+<font size="+25"> + </font>
+</td>
+<td align="center">
+<img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png">
+</td>
+</tr>
+</table>
+</p>
+
+<br>
+
+Para hacer las consultas a esta base de datos, lo que se ha hecho es utilizar una imagen de postreSQL dentro de un contenedor Docker que, una vez levantada, se puede conectar a Visual Studio Code a través de la extensión desarrollada por **Matheus Teixeria** que se puede descargar en [este enlace](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg). Los pasos a seguir son:
 
 
-*(Following steps of [YouTube video](<https://www.youtube.com/watch?v=ZUORufqaN9M&list=LL&index=3&t=10s>) by Pedro Nieto )
+1. Entrar en el directorio [docker_PostreSQL](docker_PostgreSQL/) y seguir los pasos escritos en el README.md para levantar el servidor PostreSQL dentro del contenedor y cargar la base de datos **dvdrental** en el servidor.
 
-In these section we will setup **[PostgreSQL](https://www.postgresql.org/)** and load a database [dvdrental](<https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/>) for learning SQL
+2. Abrimos Visual Studio Code y hacemos click en el icono de la izquierda que dice SQLTools. 
 
-## Initial Setup
+3. Nos conectamos a la base de datos introduciendo los siguientes campos:
 
-We will be using the Docker Compose in this root folder, so start the Docker Compose components:
-
-```shell
-docker compose up -d
-```
-
-```shell
-# List the running services
-docker ps
-
-# Stop a specific service
-docker compose stop <SERVICE>
-```
+    | Campo | Texto a completar |
+    |----------|---------|
+    | <b>Connection name*</b> | \<nombre que queramos>  |
+    | <b>Server Address*</b> | localhost  |
+    | <b>Port*</b> | 5432  |
+    | <b>Database*</b> | dvdrental  |
+    | <b>Username*</b> | postgres  |
+    | <b>Password</b> | Welcome01  |
 
 
-## Services
+4. Una vez conectados, se abre automáticamente un archivo con el nombre \<nombre que queramos>.session.sql donde podemos hacer consultas SQL. 
 
-You will find the access to the pgAdmin in the following URL:
+<br>
 
-* [pgAdmin](http://localhost:5050/)
-  * **Username**: pgadmin4@pgadmin.org
-  * **Password**: admin
+## Queries a completar
 
+Las consultas SQL de las que hay que proporcionar una respuesta son las siguientes:
 
-## Steps inside pgAdmin to create a server and load the Data Base of dvdrental
+1. Proporciona una SQL que muestre los siguientes datos:
+   - Nombre Actor
+   - Apellido Actor
 
-1. Right click on Servers->Create->Sever
-    
-    1.1 In tab General introduce name server1
+2. Proporciona una SQL que muestre los siguientes datos:
+   - Nombre y apellido Actor,
+   - Titulo de la Película
 
-    1.2  In tab Connection introduce Host name: postgres, Username: postgres and password: Welcome01. Click on Save Password 
+3. Proporciona una SQL que muestre los siguientes datos:
+   - Nombre y apellido Actor
+   - Número de películas 
 
-    1.3 Click on Save
-
-2. Click on the down arrow of server1 and right click on Databases(1)->Create->Database
-
-    2.1 In tab General, write the name of the Database as dvdrental
-
-    2.2 Click on Save
-
-3. Right click on dvdrental->Restore
-
-    3.1 Drag and drop the dvdrental.tar file that is inside dvdrental.zip
-
-    3.2 Click on Show hidden files and folders?
-
-    3.3 Select the Format as All Files
-
-    3.4 Click on the x at the top right corner
-
-    3.5 Click on dvdrental.tar
-
-    3.6 Click on Select
-
-    3.7 Select Role Name as postgres
-
-    3.8 Click on Restore
+4. Ordenar de mayor a menor
+   - Proporciona una SQL que muestre los siguientes datos:
+   - Película
+   - Numero de veces alquilada(orden de mayor a menor)
 
 
-4. Right click on dvdrental->Query tool
+5. Proporciona una SQL que muestre los siguientes datos:
+   - Película
+   - Dinero recaudado por película(ordenado)
+
+6. Proporciona una SQL que muestre los siguientes datos:
+   - Nombre y apellido del mejor cliente (mayor gasto)
+
+7. Proporciona una SQL que muestre los siguientes datos:
+   - Nombre y apellido del mejor cliente (mayor num alquileres)
 
 
-
-
-
-
-
-## Shut down and destroy
-
-```shell
-# Shut down the cluster
-docker compose down
-```
+Las respuestas se encuentran en el directorio [Ejercicios](Ejercicios/). El README.md contiene las consultas y parte del resultado, mientras que el archivo Postgres.session.sql contiene las consultas en formato .sql.
