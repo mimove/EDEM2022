@@ -199,12 +199,12 @@ print(namesClass()) """
 #------------------------------------------------
 
 
-""" from retos.basico.reto13 import areacirc, areatri
+""" from retos.basico.reto13 import areaCirc, areaTri
 
 b: float = 5.2
 h: float = 4.0
 
-print('El área del de base {}cm y altura {}cm es {}cm cuadrados'.format(b, h, areaTri(b,h)))
+print('El área del triángulo de base {}cm y altura {}cm es {}cm cuadrados'.format(b, h, round(areaTri(b,h),2)))
 
 r: float = 5.2
 print(f'El área de un círculo de radio {r}cm es aproximada a 2 decimales {round(areaCirc(r),2)}cm cuadrados')  """
@@ -337,16 +337,27 @@ print(eliminate('Madrid', 5)) #Madri  """
 #------------------------------------------------
 
 """ import pandas as pd
+import os
 from retos.medio.reto1 import buyMusic
 from random import shuffle
 
 
-df = pd.read_csv('/home/ttmam/GitHub/EDEM2022/Python/retos/medio/files_reto1/discos_short.csv')
-shortListDiscs = df.to_dict('records') # En el reto11 resuelvo la creación de la lista de diccionarios de otra manera.
+# Ensuring that we're running from the directory of main.py to correctly load the csv files
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 
-shuffle(shortListDiscs)
+#Load list of disks from a csv into a dataframe
+discList = 'short' # Choose between 'short' or 'long'
 
-buyMusic(shortListDiscs) """
+df = pd.read_csv('discos_' + discList + '.csv') # Choose between discos_short.csv or discos_long.csv
+
+#Creating a dictionary from the Data Frame
+listDiscs = df.to_dict('records') 
+
+shuffle(listDiscs)
+
+buyMusic(listDiscs, discList) """
 
 
 
@@ -637,18 +648,19 @@ from retos.medio.models.Clients import Clients
 
 
 
+# Ensuring that we're running from the directory of main.py to correctly load the csv files
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+
+
 #Creating list of customers to test the program from an existing csv file
 
-listCustomers_df = pd.read_csv('./medio/files_reto11/customers.csv')
-
-customers=list()
-
-keys = list(listCustomers_df.columns) #List with the names of the keys for the dictionary.
+df = pd.read_csv('customers.csv')
 
 
-for i in range(len(listCustomers_df)):
-    
-    customers.append(vars(Clients(listCustomers_df[keys[0]][i], listCustomers_df[keys[1]][i], listCustomers_df[keys[2]][i], listCustomers_df[keys[3]][i], listCustomers_df[keys[4]][i] , listCustomers_df[keys[5]][i])))
+#Creating a list of dictionaries from the Data Frame
+customers = df.to_dict('records') 
 
 
 
@@ -684,12 +696,12 @@ while True:
         elif option == 1:
             Clients.addCustomer(customers) 
             newList = pd.json_normalize(customers)
-            newList.to_csv('./medio/files_reto11/customers_modified.csv',index=False)   
+            newList.to_csv('customers_modified.csv',index=False)   
             sleep(1)
         elif option == 2:
             Clients.removeCustomer(customers)
             newList = pd.json_normalize(customers)
-            newList.to_csv('./medio/files_reto11/customers_modified.csv',index=False)
+            newList.to_csv('customers_modified.csv',index=False)
             sleep(1)
         elif option == 3:
             Clients.showCustomerNIF(customers)
@@ -704,7 +716,7 @@ while True:
 
     except ValueError:
         print('Lo siento, no ha introducido un número')
-        continue  """
+        continue """
 
 
 

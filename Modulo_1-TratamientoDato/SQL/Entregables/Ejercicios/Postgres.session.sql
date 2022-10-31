@@ -67,3 +67,5 @@ join payment p
 on r.rental_id = p.rental_id
 group by f.title
 order by 2 desc */
+
+

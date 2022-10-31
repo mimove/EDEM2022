@@ -21,8 +21,22 @@
 #-------------------------------------#
 
 
-def buyMusic(discs: list):
+# Defining colors for print function 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+
+def buyMusic(discs: list, listType: str):
     
+    import pandas as pd
     from datetime import datetime
     
     orderDiscs: list = list()
@@ -67,25 +81,25 @@ def buyMusic(discs: list):
         
         
         if discNum >= len(discs) or discNum < 0:
-            print('\nNumero introducido erróneo\n')
+            print(bcolors.FAIL+'\nNumero introducido erróneo\n'+bcolors.ENDC)
             continue
         
-        elif discs[discNum] in orderDiscs:
-            print('\n**Disco ya añadido al carrito, por favor selecciona otro disco**\n')
+        elif discs[discNum]['stock'] == 0:
+            print('\n**Disco '+bcolors.FAIL+'OUT OF STOCK' + bcolors.ENDC+', por favor selecciona otro disco**\n')
             continue
         
         
         # Disc added to the cart
         orderDiscs.append(discs[discNum]) 
-        print('\nDisco añadido correctamente\n')
-    
+        print(bcolors.OKGREEN + '\nDisco añadido correctamente\n' + bcolors.ENDC)
+        discs[discNum]['stock'] -= 1
     
     
     
     if orderDiscs == []:
-        print('###############################################')
+        print(bcolors.WARNING + '###############################################')
         print('##  Carrito vacío. Vuelva a iniciar compra   ##')
-        print('###############################################')
+        print('###############################################' + bcolors.ENDC)
         quit()
     
     # Print the list of disc in the shopping cart
@@ -111,26 +125,32 @@ def buyMusic(discs: list):
             if confirmed == 0:
                 break
             elif confirmed > len(orderDiscs) or confirmed < 0:
-                print('\nLo siento, el número seleccionado no está en la lista\n')
+                print(bcolors.FAIL + '\nLo siento, el número seleccionado no está en la lista\n' + bcolors.ENDC)
                 continue
                 
             elif confirmed-1 in listRemove:
-                print('\n**Disco ya eliminado**\n')
+                print(bcolors.WARNING + '\n**Disco ya eliminado**\n' + bcolors.ENDC)
                 continue
             
             else:
                 listRemove.append(confirmed-1)
                 if len(listRemove) == len(orderDiscs):
-                    print('###############################################')
+                    print(bcolors.WARNING + '###############################################')
                     print('##  Carrito vacío. Vuelva a iniciar compra   ##')
-                    print('###############################################')
+                    print('###############################################' + bcolors.ENDC)
                     quit()
                 print('\nDisco eliminado correctamente\n')
-            
+                
+                # Next two lines return the stock of the disc remove to +1
+                index = next((i for i, item in enumerate(discs) if item["album"] == orderDiscs[listRemove[-1]]["album"]), None)
+                discs[index]['stock'] += 1
+
+                        
         except ValueError:
-            print('Lo siento, no has introducido un número')
+            print(bcolors.FAIL + 'Lo siento, no has introducido un número' + bcolors.ENDC)
             continue
     
+                
     
     deleteMultipleElements(orderDiscs, listRemove)
     
@@ -166,6 +186,9 @@ def buyMusic(discs: list):
     print('######      GRACIAS POR SU COMPRA      ########')    
     print('###############################################')
 
+    # Updating csv file with new stock of discs.
+    updateStock = pd.json_normalize(discs)
+    updateStock.to_csv('discos_' + listType + '.csv',index=False)  
 
 # Function to cross original price when a disc has a discount (obtained from Stack Overflow)
 def strike(text):
