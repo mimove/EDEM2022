@@ -7,7 +7,7 @@ En este entregable tenemos que realizar una serie de consultas sobre una base de
 El Entity-Relationship model de esta base de datos es el de la siguiente imagen:
 
 <p align="center">
-<img src="https://www.postgresqltutorial.com/wp-content/uploads/2018/03/dvd-rental-sample-database-diagram.png" width=400px>
+<img src="https://www.postgresqltutorial.com/wp-content/uploads/2018/03/dvd-rental-sample-database-diagram.png" width=500px>
 
 
 <br>
