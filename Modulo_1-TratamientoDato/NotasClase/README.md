@@ -326,8 +326,7 @@ Estrategia gobierno del dato
 **11 pilares de gobierno del dato**
 
 <p align="center">
-<img src="https://datos.gob.es/sites/default/files/u322/gobierno_del_dato.jpg
-" width=400px>
+<img src="https://datos.gob.es/sites/default/files/u322/gobierno_del_dato.jpg" width=400px>
 </p>
 
 
