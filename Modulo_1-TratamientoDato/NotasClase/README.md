@@ -361,8 +361,7 @@ Definición
 Ejemplo metadato:
 
 <p align="center">
-<img src="https://media-exp1.licdn.com/dms/image/C4D22AQGtjgZqq0qLlA/feedshare-shrink_2048_1536/0/1654617734356?e=2147483647&v=beta&t=RAj0L-4YCc-xEm0pVhfSD9yRSudHfqsa6ZUlvd7oQDM
-" width=400px>
+<img src="https://media-exp1.licdn.com/dms/image/C4D22AQGtjgZqq0qLlA/feedshare-shrink_2048_1536/0/1654617734356?e=2147483647&v=beta&t=RAj0L-4YCc-xEm0pVhfSD9yRSudHfqsa6ZUlvd7oQDM" width=400px>
 </p>
 
 
@@ -398,8 +397,7 @@ Beneficios:
 
 
 <p align="center">
-<img src="https://bigdatamagazine.es/wp-content/uploads/2022/07/Infografia-1-1024x683.png
-" width=500px style="background-color:white;">
+<img src="https://bigdatamagazine.es/wp-content/uploads/2022/07/Infografia-1-1024x683.png" width=500px style="background-color:white;">
 </p>
 
 
