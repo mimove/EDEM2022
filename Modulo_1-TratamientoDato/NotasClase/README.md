@@ -219,11 +219,188 @@ El ciclo de vida de los datos se divide en:
 Uno de los problemas que se suelen tener en el mundo de los datos es como diseñamos nuestra arquitectura. Para construir estas arquitecturas se suele utilizar [UML][uml].
 
 
+<br>
+<br>
+
+
+## _Clase 05/11/2022_
+
+## Gobierno del Dato
+
+
+Estamos en la 4ª revolución industrial. La principal diferencia es que no hay una nueva tecnlogía, simpoelmente la revolución está basada en los datos y su análisis. Se espera que el PIB mundial se multiplique x4. Los 3 líders mundiales están basados en el dato (Amazon, Apple y Google). 
+
+
+<p align="center">
+<img src="https://cdn.statcdn.com/Infographic/images/teaser/17539.jpeg" width=400px>
+</p>
 
 
 
+Los datos son la materia prima que genera petróleo. Sin capacidad para darles sentido, no valen nada. 
 
 
+### **Ciclo de vida del dato**
+
+1.  Captura
+
+2. Almacenamiento
+
+3. Uso
+
+4. Gestión
+
+5. Protección 
+
+6. Borrado
+
+
+<p align="center">
+<img src="https://www.juanbarrios.com/wp-content/uploads/2020/04/FasesCicloVidaDato-scaled.jpg" width=500px>
+</p>
+
+
+Definición gobierno dato:
+
+>Es la coordinación formal de personas, procesos y tecnología que permite a una organización utilizar los datos como un activo al que sacarle valor.
+
+Gobierno del dato facilita que todos los departamentos de las empresas tengan acceso fácil y rápido a los datos. Tipos de modelos:
+
+
+- Descentralizado
+
+- Federal descentralizado
+
+- Federal centralizado
+
+- Centralizado
+
+No existe un modelo ideal, ni que sirva para todas las empresas. El modelo epnderá de la madurez de la organización, las capacidades, la cultura, las iniciativas y el proceso de toma de decisiones. Si tenemos un empresa muy poco madura, utilizamos un modelo centralizado, cuya despentaja principal es que da poco lugar a la creatividad.
+
+
+Objetivos gobierno de dato:
+
+
+- Reducir riestos y costes
+
+- General la suficiente calidad en los datos
+
+- Cumplir con las regulaciones y apoyar en la seguridad
+
+- Habilitar un lenguaje común en la organización
+
+- Democratizar el dato
+
+- Cimentar la capacidad analítica
+
+
+El 91% de las empresas invierten en Big Data e IA, pero solo el 31% consigue una solución válida. ¿Por qué pasa esto?
+
+1. La iniciativa es liderada por IT con un punto de vista sólo técnico
+
+2. El Gobierno del Dato es entendido como un proyecto, en lugar de una iniciativa estratégica continua a largo plazo
+
+3. La estrategia de datos y el gobieno no están alineados con la estrategia corporativa de la organización.
+
+4. No se tiene conocimiento previo del panorama de datos dentro de la Organización
+
+5. Se trata de aobrdar todo a la vez, en vez de hacerlo de manera incremental
+
+6. No involucrar a todos los stakeholders, desde los usuario de negocio hasta los técnicos
+
+
+Para evitar esto, hay que realizar estrategias de Analítica sin tener definida e implantada una estrategia de gobierno del dato es como fabricar un submarino descapotable. 
+
+Estrategia gobierno del dato
+
+**Paso 1.** Endender la situación
+
+**Paso 2.** Marcar unos objetivos
+
+**Paso 3.** Definir un camino
+
+**Paso 4.** Involucra a las personas y gestiona el cambio
+
+<br>
+
+**11 pilares de gobierno del dato**
+
+<p align="center">
+<img src="https://datos.gob.es/sites/default/files/u322/gobierno_del_dato.jpg
+" width=400px>
+</p>
+
+
+Pilar Estructura de gobierno: se define la estrategia de datos a seguir en la compaía, el tipo de gobierno que quermos tener, las políticas a cumplir, creamos las métricas a utilizar y definios los roles y responsabilidades. 
+
+
+Los 3 principales roles de gestión de datos son:
+
+- Data Owner: persona responsablde del dato dentro de su dominio
+
+- Data Steward: quien se encarga de la parte más técnica y negocio
+
+- Data Custodian: la parte IT que solventa los problemas
+
+
+Pilar arquitectura del dato: los objetivos principales son traducir las necesidades de negocio en tecnlogia, ver como va a evolucionar a futuro y definir los modelos que se van a utilizar
+
+
+
+Los **datos maestros** son el conjunto de identificadores que proporcionan contexto sobre los datos comerciales, como la ubicación, el cliente, el producto, el activo, etc. Son los datos centrales que son absolutamente esenciales para ejecutar operaciones dentro de una empresa o unidad comercial.
+
+
+
+## Metadatos
+
+Definición
+
+>Son datos que describen otros datos. Literalmenet significa "más alla de los datos". Son altamente estrucutrados y describen características como el contenido, información, calidad y seguridad. 
+
+
+Ejemplo metadato:
+
+<p align="center">
+<img src="https://media-exp1.licdn.com/dms/image/C4D22AQGtjgZqq0qLlA/feedshare-shrink_2048_1536/0/1654617734356?e=2147483647&v=beta&t=RAj0L-4YCc-xEm0pVhfSD9yRSudHfqsa6ZUlvd7oQDM
+" width=400px>
+</p>
+
+
+
+<br>
+
+<br>
+
+
+
+## Calidad del dato
+
+La calidad del dato es un activo y siempre hay que producirla. Es también un pilar fundamental del gobierno del dato.
+
+
+Objetivo de la calidad del dato
+
+>Es garantizar el nivel válido de aeptaciónsegún unas dimensiones, requerido para cada dato, en funcion de su uso.
+
+
+Beneficios:
+
+- Seguridad
+
+- Confianza
+
+- Ahorro
+
+- Valor
+
+
+**Dimensiones de la calidad del dato**
+
+
+<p align="center">
+<img src="https://bigdatamagazine.es/wp-content/uploads/2022/07/Infografia-1-1024x683.png
+" width=500px style="background-color:white;">
+</p>
 
 
 
