@@ -401,6 +401,38 @@ Beneficios:
 </p>
 
 
+Principales errores de calidad:
 
+- Las manualidades: introducir datos manualmente cause muchos errores
+
+- Adquisición e integración de datos externos que ya estaban mal
+
+- Procesos ETL (Extract Transform Load)
+
+- Migraciones de Datos
+
+- Fusiones de BBDD
+
+- Falta de gobernanza en los sistemas
+
+
+
+Principales procesos de Calidad del dato
+
+- Perfilado del dato
+
+- Limpieza del dato
+
+- Validación del dato
+
+- Homogeneización
+
+- Enriquecimiento
+
+
+
+**Herramienta para trabajar calidad del dato**
+
+<https://www.trifacta.com/start-wrangling>
 
 [uml]:<http://www.uml.org/>
