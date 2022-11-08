@@ -161,3 +161,15 @@ Los siguientes comandos son los que hay que utilizar para la sincronización del
     git restore .
     ```
 
+13. Eliminar una rama en el repositorio local:
+
+    ```bash
+    git branch -d <branch> .
+    ```
+
+
+14. Eliminar una rama en el repositorio remoto de GitHub:
+
+    ```bash
+    git push orign --delete <branch> .
+    ```
