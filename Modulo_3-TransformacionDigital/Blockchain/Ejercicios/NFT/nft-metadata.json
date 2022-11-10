@@ -1,0 +1,13 @@
+{
+    "attributes" : [ {
+      "trait_type" : "Author",
+      "value" : "<author name>"
+    }, {
+      "trait_type" : "Resolution",
+      "value" : "<img resolution>"
+    } ],
+    "description" : "<text with description>",
+    "image" : "https://gateway.pinata.cloud/ipfs/<img hash>",
+    "external_url": "<url of original file>",
+    "name" : "<name of NFT>"
+}

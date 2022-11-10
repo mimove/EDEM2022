@@ -1,4 +1,4 @@
-# MODULO 3: Transformación Digital  
+# MODULO 3: BLOCKCHAIN  
 
 
 En este módulo se definen diferentes ideas de proyectos de transformación digital que son importantes a día de hoy
@@ -12,5 +12,4 @@ La estructura de este tercer módulo en el repositorio es la siguiente:
 
 | CARPETA | CONTENIDO |
 | ------ | ------ |
-| [NotasClase](NotasClase/) | Contiene las notas tomadas en clase sobre los conceptos de proyectos de transformación digital |
-| [Ejercicios](Ejercicios/) | Contiene los ejercicios realizados en cada una de las clases |
+| [Blockchain](Blockchain/) | Contiene las notas y ejercicios hechos en clase sobre Blochchain, criptos y NFTs |
