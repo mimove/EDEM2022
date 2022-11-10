@@ -81,9 +81,9 @@ Tutorial followed: <https://ethereum.org/en/developers/tutorials/how-to-write-an
     
     9.1 Install the ```dotenv``` package
 
-        ```sh
-        npm install dotenv --save
-        ```
+    ```sh
+    npm install dotenv --save
+    ```
     
     9.2 Copy the .env file from this repository into your folder
 
