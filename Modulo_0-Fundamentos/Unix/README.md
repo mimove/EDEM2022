@@ -63,3 +63,10 @@ Cuando se quiera utilizar WSL con VS Code hay que seguir los siguientes pasos:
     Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
     Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
     ```
+
+
+    ## Actualizar VS Code si da problemas
+
+    Seguir los pasos del siguiente enlace:
+
+    <https://stackoverflow.com/questions/64743231/vs-code-failed-to-install-visual-studio-code-update>
