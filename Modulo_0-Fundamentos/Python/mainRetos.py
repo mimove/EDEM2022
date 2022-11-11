@@ -274,9 +274,9 @@ print('La diferencia entre {} y {} es de {} días'.format(d2, d1, diffDates(d2,d
 #------------------------------------------------
 
 
-""" from retos.basico.reto17 import operTuple
+from retos.basico.reto17 import operTuple
 
-operTuple() """
+operTuple()
 
 
 #------------------------------------------------

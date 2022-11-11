@@ -20,7 +20,7 @@ def operTuple():
 
     # Encontrar los elementos de 3 a 5
 
-    print(tupla[3:6])
+    print(tupla[2:5])
 
     # Encontrar los 6 primeros elementos
 

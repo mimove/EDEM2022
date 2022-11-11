@@ -41,7 +41,7 @@ join film_actor fa
 on f.film_id = fa.film_id
 join actor a
 on fa.actor_id = a.actor_id
-group by a.first_name, a.last_name
+group by a.actor_id
 order by 3 desc; 
 
 
@@ -52,7 +52,7 @@ join film_actor fa
 on f.film_id = fa.film_id
 join actor a
 on fa.actor_id = a.actor_id
-group by a.first_name, a.last_name
+group by a.actor_id
 order by 3 desc) as count3; 
  
 
@@ -66,7 +66,7 @@ join inventory i
 on r.inventory_id = i.inventory_id
 join film f 
 on i.film_id = f.film_id
-group by f.title
+group by f.film_id
 order by 2 desc; 
 
 
@@ -77,7 +77,7 @@ join inventory i
 on r.inventory_id = i.inventory_id
 join film f 
 on i.film_id = f.film_id
-group by f.title
+group by f.film_id
 order by 2 desc) as count4;
 
 
@@ -87,14 +87,14 @@ order by 2 desc) as count4;
 -- Dinero recaudado por película(ordenado)
 
 
-select f.title, sum(p.amount) from payment p 
-join rental r
+select f.title, coalesce(sum(p.amount),0) from payment p 
+right join rental r
 on p.rental_id = r.rental_id
-join inventory i
+right join inventory i
 on r.inventory_id = i.inventory_id 
-join film f 
+right join film f 
 on i.film_id = f.film_id
-group by f.title
+group by f.film_id
 order by 2 desc;
 
 
@@ -106,7 +106,7 @@ join inventory i
 on r.inventory_id = i.inventory_id 
 join film f 
 on i.film_id = f.film_id
-group by f.title
+group by f.film_id
 order by 2 desc) as count5;
 
 
