@@ -108,7 +108,7 @@ join film_actor fa
 on f.film_id = fa.film_id
 join actor a
 on fa.actor_id = a.actor_id
-group by a.first_name, a.last_name
+group by a.actor_id
 order by 3 desc; 
 ```
 
@@ -116,7 +116,6 @@ order by 3 desc;
 
 |first_name|last_name  |count|
 |----------|-----------|-----|
-|Susan     |Davis      |54   |
 |Gina      |Degeneres  |42   |
 |Walter    |Torn       |41   |
 |Mary      |Keitel     |40   |
@@ -124,14 +123,15 @@ order by 3 desc;
 |Sandra    |Kilmer     |37   |
 |Scarlett  |Damon      |36   |
 |Vivien    |Basinger   |35   |
-|Groucho   |Dunst      |35   |
-|Val       |Bolger     |35   |
 |Henry     |Berry      |35   |
 |Angela    |Witherspoon|35   |
+|Val       |Bolger     |35   |
+|Groucho   |Dunst      |35   |
 |Uma       |Wood       |35   |
+|Jayne     |Nolte      |34   |
 
 
-**Número de registros: 199**
+**Número de registros: 200**
 
 
 <br>
@@ -158,7 +158,7 @@ join inventory i
 on r.inventory_id = i.inventory_id
 join film f 
 on i.film_id = f.film_id
-group by f.title
+group by f.film_id
 order by 2 desc; 
 ```
 
@@ -205,7 +205,7 @@ join inventory i
 on r.inventory_id = i.inventory_id 
 join film f 
 on i.film_id = f.film_id
-group by f.title
+group by f.film_id
 order by 2 desc;
 ```
 
@@ -244,7 +244,7 @@ Proporciona una SQL que muestre los siguientes datos:
 select c.first_name, c.last_name, sum(p.amount) from payment p
 join customer c
 on p.customer_id = c.customer_id
-group by c.first_name, c.last_name
+group by c.customer_id
 order by 3 desc
 limit 1;
 ```
@@ -272,7 +272,7 @@ Proporciona una SQL que muestre los siguientes datos:
 select c.first_name, c.last_name, count(*) from rental r 
 join customer c
 on r.customer_id = c.customer_id
-group by c.first_name, c.last_name
+group by c.customer_id
 order by 3 desc
 limit 1;
 ```

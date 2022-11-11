@@ -66,7 +66,7 @@ join inventory i
 on r.inventory_id = i.inventory_id
 join film f 
 on i.film_id = f.film_id
-group by f.film_id
+group by +
 order by 2 desc; 
 
 
@@ -86,7 +86,7 @@ order by 2 desc) as count4;
 -- Película
 -- Dinero recaudado por película(ordenado)
 
-
+/*
 select f.title, coalesce(sum(p.amount),0) from payment p 
 right join rental r
 on p.rental_id = r.rental_id
@@ -96,7 +96,17 @@ right join film f
 on i.film_id = f.film_id
 group by f.film_id
 order by 2 desc;
+*/
 
+select f.title, sum(p.amount) from payment p 
+join rental r
+on p.rental_id = r.rental_id
+join inventory i
+on r.inventory_id = i.inventory_id 
+join film f 
+on i.film_id = f.film_id
+group by f.film_id
+order by 2 desc;
 
 select count(*) from (
 select f.title, sum(p.amount) from payment p 
@@ -117,7 +127,7 @@ order by 2 desc) as count5;
 select c.first_name, c.last_name, sum(p.amount) from payment p
 join customer c
 on p.customer_id = c.customer_id
-group by c.first_name, c.last_name
+group by c.customer_id
 order by 3 desc
 limit 1;
 
@@ -130,6 +140,6 @@ limit 1;
 select c.first_name, c.last_name, count(*) from rental r 
 join customer c
 on r.customer_id = c.customer_id
-group by c.first_name, c.last_name
+group by c.customer_id
 order by 3 desc
 limit 1;
