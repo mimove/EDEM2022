@@ -434,4 +434,73 @@ Principales procesos de Calidad del dato
 
 <https://www.trifacta.com/start-wrangling>
 
+
+
+<br>
+<br>
+
+## _Clase 12/11/2022_
+
+
+## Visualización de datos
+
+>"Si no sabes cómo hacer la pregunta correcta, no descubrirás nada" (Edward Deming)
+
+
+
+### **Tableau**
+
+Definión:
+
+>Herramienta que te permite crear flujos de extracción, transformación y carga de tus datos.
+
+
+Tableau prep es una herramienta ETL de Tableau. Fue diseñada por la compañía para ayudar a los data analyst a hacer operaciones ETL y no usar solo Tableau para visualizar datos. No obstante, en grandes compañias no se usa puesto que no es la más potente para operaciones ETL. En grandes empresas se suele utilizar Tunnel y Integration services (Microsoft).
+
+ 
+
+
+Para trabajar en equipo, primero se desarrolla en Tableau Desktop y después se publica en Tableau Online o Server para que todo el mundo pueda utilizar el Dashboard. 
+
+
+Resumen:
+
+1. Preparar el dato --> Tableau Prep
+
+
+2. Desarrollar dashboard --> Tableau Dekstop
+
+3. Publicar y visualizar datos --> Tableau Online o Server
+
+
+
+
+
+Recursos Online para Tableau:
+
+- [Tableau Help](https://www.tableau.com/support/help): página de artículos técnicos y prácticos sobre como desarrollar en Tableau 
+
+
+- [Tableau Commnunity](https://community.tableau.com/s/): Sito oficial de Tableau donde la comunidad responde preguntas
+
+
+- [Tableau Public](https://public.tableau.com/app/discover): tiene las mismas características que Tableau desktop, excepto que te puedes conectar a otro tipo de bases de datos, y que se guardan datos en un servidor público
+
+
+- [Knowledge Base](https://www.tableau.com/support/knowledgebase): similar a Tableau help pero con más info y con cursos para aprender Tableau
+
+
+
+
+En Tableau se trabaja por hojas para montar los gráficos, luego se juntas las hojas en un Dashboard, y por último hay un apartado de historias donde puedes combinar varias hojas y/o varios Dashboard.
+
+
+Una vez que abrimos una hoja, las variables se dividen automáticamente en aquellas con las que puedo hacer una operación aritmética (precio, descuento, cantidad, etc), y entidades en las que no puedo hacer estas operaciones.
+
+
+Por defecto, la conexión con nuestros datos es en tiempo real y, conforme se vayan actualizando, se actualizarán en Tableau.
+
+
+En los campos calculados, es muy importante conocer las funciones de agregación, para por ejemplo conseguir que el % de beneficio de cada producto aparezca correctamente.
+
 [uml]:<http://www.uml.org/>
