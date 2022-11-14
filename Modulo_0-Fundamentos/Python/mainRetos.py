@@ -274,10 +274,10 @@ print('La diferencia entre {} y {} es de {} días'.format(d2, d1, diffDates(d2,d
 #------------------------------------------------
 
 
-from retos.basico.reto17 import operTuple
+""" from retos.basico.reto17 import operTuple
 
 operTuple()
-
+ """
 
 #------------------------------------------------
 # Reto 18
@@ -350,7 +350,7 @@ os.chdir(dname)
 #Load list of disks from a csv into a dataframe
 discList = 'short' # Choose between 'short' or 'long'
 
-df = pd.read_csv('discos_' + discList + '.csv') # Choose between discos_short.csv or discos_long.csv
+df = pd.read_csv('./retos/medio/files_reto1/'+'discos_' + discList + '.csv') # Choose between discos_short.csv or discos_long.csv
 
 #Creating a dictionary from the Data Frame
 listDiscs = df.to_dict('records') 
@@ -642,7 +642,8 @@ while True:
 #################   WITH A CLASS  ########################
 ##########################################################
 
-""" import pandas as pd
+import os
+import pandas as pd
 from time import sleep # Using of sleep to give some time to the user for reading the data
 from retos.medio.models.Clients import Clients
 
@@ -656,7 +657,7 @@ os.chdir(dname)
 
 #Creating list of customers to test the program from an existing csv file
 
-df = pd.read_csv('customers.csv')
+df = pd.read_csv('./retos/medio/files_reto11/'+'customers.csv')
 
 
 #Creating a list of dictionaries from the Data Frame
@@ -696,12 +697,12 @@ while True:
         elif option == 1:
             Clients.addCustomer(customers) 
             newList = pd.json_normalize(customers)
-            newList.to_csv('customers_modified.csv',index=False)   
+            newList.to_csv('./retos/medio/files_reto11/'+'customers_modified.csv',index=False)   
             sleep(1)
         elif option == 2:
             Clients.removeCustomer(customers)
             newList = pd.json_normalize(customers)
-            newList.to_csv('customers_modified.csv',index=False)
+            newList.to_csv('./retos/medio/files_reto11/'+'customers_modified.csv',index=False)
             sleep(1)
         elif option == 3:
             Clients.showCustomerNIF(customers)
@@ -716,7 +717,7 @@ while True:
 
     except ValueError:
         print('Lo siento, no ha introducido un número')
-        continue """
+        continue
 
 
 

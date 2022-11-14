@@ -188,7 +188,7 @@ def buyMusic(discs: list, listType: str):
 
     # Updating csv file with new stock of discs.
     updateStock = pd.json_normalize(discs)
-    updateStock.to_csv('discos_' + listType + '.csv',index=False)  
+    updateStock.to_csv('./retos/medio/files_reto1/'+'discos_' + listType + '.csv',index=False)  
 
 # Function to cross original price when a disc has a discount (obtained from Stack Overflow)
 def strike(text):

@@ -166,3 +166,97 @@ class Clients:
                     return listCustomers.pop(i)
                 
             print(bcolors.FAIL + '(#2) NIF no encontrado, vuelva a intentarlo' + bcolors.ENDC)
+    
+    
+    def showCustomerNIF(listCustomers: list):
+    
+        from re import search
+        
+        # The logic behind this function is similar to that of removeCustomer()
+        
+        if listCustomers == []:
+            return print('(#3) Lista de clientes vacía') 
+            
+        
+        NIF: str = list(listCustomers[0].keys())[0] #Get the string value of the NIF from the list of Customers
+            
+        print(f'\n(#3) Los NIF de los clientes en la base de datos son:\n')
+        
+        for i in range(len(listCustomers)):
+            print('Cliente {} -> NIF: {}\n'.format(i+1,listCustomers[i][NIF]))       
+        
+    
+    
+        while True:
+            
+            nifShow: str = input('(#3) Introduzca el NIF del cliente del que desea ver todos sus datos (6 volver al menú): ')
+            if nifShow == '6': return
+            
+            while bool(search(r'^[0-9]{8}[A-Z]{1}',nifShow)) == False:
+
+                print(bcolors.FAIL + '(#3) NIF introducido incorrecto' + bcolors.ENDC)            
+                nifShow: str = input('(#3) Introduzca el NIF del cliente del que desea ver todos sus datos (6 volver al menú): ')
+                if nifShow == '6': return
+            
+            for i in range(len(listCustomers)):
+                if nifShow == listCustomers[i][NIF]:
+                    
+                    return print('''(#3) El cliente con NIF {} tiene los siguientes datos:\n
+        Nombre: {}
+        Apellidos: {}
+        Teléfono: {}
+        Email: {}
+        ¿Es preferente?: {}'''.format(listCustomers[i][NIF], listCustomers[i]['name'], listCustomers[i]['surname'], listCustomers[i]['phone'], listCustomers[i]['email'], listCustomers[i]['vip']))
+                    
+                
+            print(bcolors.FAIL + '(#3) NIF no encontrado, vuelva a intentarlo' + bcolors.ENDC)
+            
+            
+            
+    def showAll(listCustomers: list):
+        from time import sleep
+        if listCustomers == []:
+            return print('(#4) Lista de clientes vacía') 
+        
+        # A for loop to print the data of all the customers with a pause of 2 seconds between each customer that allows the user some time to read the data.
+        
+        for i in range(len(listCustomers)):
+            if i == 0:
+                print(f'Hay un total de {len(listCustomers)} clientes. Imprimiendo datos a continuación...\n')
+                sleep(1)
+            print('''(#4) Cliente {}, con NIF {} tiene los siguientes datos:\n
+            Nombre: {}
+            Apellidos: {}
+            Teléfono: {}
+            Email: {}
+            ¿Es preferente?: {}\n'''.format(i+1,listCustomers[i]['nif'], listCustomers[i]['name'], listCustomers[i]['surname'], listCustomers[i]['phone'], listCustomers[i]['email'], listCustomers[i]['vip']))
+            print('***********************\n')
+            sleep(2)
+    
+    def preferCustomer(listCustomers: list):
+        from time import sleep
+
+        if listCustomers == []:
+            return print('(#5) Lista de clientes vacía') 
+            
+            
+        chk = False #chk variable is necessary to print header text only the first iteration.
+        
+        # for loop to search all the customers with preferecne.
+        
+        for i in range(len(listCustomers)):
+            if listCustomers[i]['vip'] == True:
+                if chk == False:
+                    print('***********************************')
+                    print('(#5) Los clientes preferentes son: ')
+                    print('***********************************')
+                    sleep(1)
+                    chk = True
+                print('''(#5) Cliente {}, con NIF {} tiene los siguientes datos:\n
+        Nombre: {}
+        Apellidos: {}
+        Teléfono: {}
+        Email: {}
+        ¿Es preferente?: {}\n'''.format(i+1,listCustomers[i]['nif'], listCustomers[i]['name'], listCustomers[i]['surname'], listCustomers[i]['phone'], listCustomers[i]['email'], listCustomers[i]['vip']))
+                print('***********************\n')
+                sleep(2)
