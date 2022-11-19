@@ -84,7 +84,7 @@ values ('sport advance', 'Gasolina 8C V', 90000, 3.2, 2);
 
 create table extra (
     id serial,
-    name varchar(50) not null,
+    name varchar(50) not null
     description varchar(300),
     constraint pk_extra primary key (id)
 );
