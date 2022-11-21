@@ -4,11 +4,11 @@
             "previewLimit": 50,
             "server": "localhost",
             "port": 5432,
-            "askForPassword": true,
             "driver": "PostgreSQL",
             "name": "postgres",
-            "database": "dvdrental",
-            "username": "postgres"
+            "database": "idealista",
+            "username": "postgres",
+            "password": "Welcome01"
         }
     ]
 }
