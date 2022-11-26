@@ -24,4 +24,69 @@ Los registros publicados se retienen durante un periodo que configuramos. Los re
 
 - Tiempo
 
-- 
+- Compactación
+
+<br>
+
+## Productores
+
+Un productor de Kafka es una aplicación que puede actuar como fuente de datos en un clúster de Kafka.
+
+Un productor puede publicar mensajes en uno o más temas de Kafka 
+
+Métodos de envío existentes:
+
+- Fire-and-forget: No esperar al ACK - rendimiento muy alto - acks=0
+
+- Asíncrono: Esperar el ACK del Líder - acks=1
+
+- Sincrónico: Esperar al ACK del Líder + Réplicas - Seguro - acks=todos
+
+Los productores de Kafka intentan reunir los mensajes enviados en lotes para mejorar el rendimiento.
+
+Asignación de particiones
+
+- Round-robin
+
+- Función de partición basada en la clave
+
+
+<br>
+
+## Consumidores
+
+Las particiones se asignan a los consumidores dentro del grupo de consumidores
+Los consumidores recuerdan las particiones donde se - se comprometen con Kafka.
+Mover la propiedad de la partición de un consumidor a otro se llama rebalanceo. Ventana corta de indisponibilidad de todo el grupo de consumidores.
+
+<br>
+<br>
+
+## _Clase 26/11/2022_
+
+## Kafka Streams
+
+Definicion:
+
+>Un flujo es la abstracción más importante proporcionada por Kafka Streams: representa un conjunto de datos ilimitado y en continua actualización.
+Una partición de flujo es una secuencia ordenada, reproducible y tolerante a fallos de registros de datos inmutables, donde un registro de datos se define como un par clave-valor.
+
+
+Una partición de flujo es una secuencia ordenada, reproducible y tolerante a fallos de registros de datos inmutables, donde un registro de datos se define como un par clave-valor.
+
+- Procesamiento en tiempo de eventos con ventanas, uniones, agregaciones,... 
+
+- Admite la semántica de procesamiento "exactamente una vez".
+
+- Procesamiento con y sin estado
+
+
+**DSL de Kafka Streams**
+
+Una API de alto nivel que proporciona las operaciones de transformación de datos más comunes, como map, filter, join y aggregations, de forma inmediata
+
+<br>
+
+**API de procesadores**
+
+Una API de bajo nivel que permite añadir y conectar procesadores, así como interactuar directamente con los almacenes de estado
