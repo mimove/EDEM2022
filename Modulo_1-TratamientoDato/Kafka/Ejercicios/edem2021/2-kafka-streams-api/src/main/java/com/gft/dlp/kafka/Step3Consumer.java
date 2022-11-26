@@ -30,8 +30,10 @@ public class Step3Consumer {
             while (true){
                 ConsumerRecords<String, String> records = kafkaConsumer.poll(Duration.ofMillis(100));
                 for (ConsumerRecord<String, String> record: records){
-                    System.out.println("Read and print each message from the Kafka topic " + OUTPUT_TOPIC +
-                            " | " + record.key() + " | " +  String.valueOf(record.value()));
+                    if (record.key().length() > 3 && Integer.parseInt(String.valueOf(record.value())) > 300)  {
+                        System.out.println("Read and print each message from the Kafka topic " + OUTPUT_TOPIC +
+                                " | " + record.key() + " | " + String.valueOf(record.value()));
+                    }
                 }
             }
         }catch (Exception e){

@@ -68,10 +68,12 @@ public class Step2WordCountProcessor {
         final Pattern pattern = Pattern.compile("\\W+", Pattern.UNICODE_CHARACTER_CLASS);
         final KTable<String, Long> wordCounts = textLines
                 .map(((key, value) -> {
-                        System.out.println ("Read in near-real time each message/Shakespeare quote " +
-                                "from Kafka topic "+ Step1Producer.INPUT_TOPIC +
-                                "\n. Count how many times a word appears in this quote: [" + value + "] \n," +
-                                "and send the result (counter, word) to the Kafka topic Step3Consumer.OUTPUT_TOPIC\n");
+                        if (value.split("\\s+").length > 3) {
+                            System.out.println("Read in near-real time each message/Shakespeare quote " +
+                                    "from Kafka topic " + Step1Producer.INPUT_TOPIC +
+                                    "\n. Count how many times a word appears in this quote: [" + value + value.split("\\s+").length +"] \n," +
+                                    "and send the result (counter, word) to the Kafka topic Step3Consumer.OUTPUT_TOPIC\n");
+                        }
                         return KeyValue.pair(key, value);
                 }))
                 .flatMapValues(value -> Arrays.asList(pattern.split(value.toLowerCase())))
@@ -79,7 +81,8 @@ public class Step2WordCountProcessor {
                 .count();
 
         wordCounts.toStream().to(Step3Consumer.OUTPUT_TOPIC, Produced.with(Serdes.String(), Serdes.Long()));
-
+        // ttmam
+        //wordCounts.filter((s, aLong) -> aLong > 6 && s.startsWith("a")).toStream().to(Step3Consumer.OUTPUT_TOPIC, Produced.with(Serdes.String(), Serdes.Long()));
     }
 
 }
