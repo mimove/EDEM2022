@@ -90,3 +90,31 @@ Una API de alto nivel que proporciona las operaciones de transformación de dato
 **API de procesadores**
 
 Una API de bajo nivel que permite añadir y conectar procesadores, así como interactuar directamente con los almacenes de estado
+
+<br>
+
+## _Clase 01/12/2022_
+
+## Schema Registry
+
+Sirve para poder guardar los contratos AVRO de forma centralizada en un servidor Linux para que puedan ser utilizados por los diferentes departamentos de una empresa. Sus principales beneficios son:
+
+- Los flujos de trabajos son resistentes.
+
+- Es coste efectivo.
+
+- Tenemos una evolución del schema segura.
+
+- Las data pipelines son resilientes.
+
+- Data discovery para que los departamentos puedan descubrir los datos que tenemos.
+
+- Se obliga a tener una política de datos en la empresa.
+
+
+
+## Kafka Connect
+
+Es un framework para integrar fácilmente Kafka con otros sistemas.
+
+
