@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7d8e930a-c05f-47e6-ad4f-6332a943c0af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../1-kakfa-producer-consumer-api/1-kakfa-producer-consumer-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-kafka-streams-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1-kakfa-producer-consumer-api/target/classes/com/gft/dlp/kafka/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../1-kakfa-producer-consumer-api/target/classes/com/gft/dlp/kafka/Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1-kakfa-producer-consumer-api/target/classes/com/gft/dlp/kafka/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../1-kakfa-producer-consumer-api/target/classes/com/gft/dlp/kafka/Producer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gft/dlp/kafka/Step3Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gft/dlp/kafka/Step3Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gft/dlp/kafka/Step1Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gft/dlp/kafka/Step1Producer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gft/dlp/kafka/Step2WordCountProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gft/dlp/kafka/Step2WordCountProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gft/dlp/kafka/Step3Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gft/dlp/kafka/Step3Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2Ifre006pM3r56EYuZCNpqEvbYA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="2-kafka-streams-api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="2-kafka-streams-api" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d8e930a-c05f-47e6-ad4f-6332a943c0af" name="Changes" comment="" />
+      <created>1670583571530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670583571530</updated>
+    </task>
+    <servers />
+  </component>
+</project>
