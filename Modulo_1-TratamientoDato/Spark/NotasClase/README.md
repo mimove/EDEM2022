@@ -86,3 +86,35 @@ Este tipo de estructura es algo compleja de utilizar, y por eso se utilizan Data
 
 
 
+<br>
+<br>
+
+## _Clase 10/12/2012_
+
+<br>
+
+### **Joins**
+
+Es una de las operaciones principales de SQL que se utiliza para juntar horizontalmente 2 tablas. Existen muchos tipos de joins: outter, inner, left-join, right-join, etc. 
+
+<p align="center">
+<img src="https://dataschool.com/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png" width=500px>
+</p>
+
+
+Los joins en Spark los hace de la siguientes 3 maneras:
+
+- Broadcast: si tabla B < A se hace broadcast de B a las particiones donde está A y se hace el join en las particiones.
+
+- Shuffled Hash: se juntan las tablas en todas las particiones y se hacen los joins en cada partición.
+
+- Sort merge: en tablas grandes se ordena por key antes de meter las tablas en las particiones y luego se hace el join en cada partición.
+
+
+
+<br>
+
+### **Windows Partitioning**
+
+Se utiliza para coger una tabla y dividirla en varias tablas que se llaman frames. La división la realiza en función a un parametro o condición que le digamos nosotros. Por ejemplo, podría sacar los 3 valores top de una lista (ej: precio de móviles top 3).
+
