@@ -1,0 +1,100 @@
+---
+swagger: "2.0"
+info:
+  description: "This is a sample server Petstore server.  You can find out more about\
+    \     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net,\
+    \ #swagger](http://swagger.io/irc/).      For this sample, you can use the api\
+    \ key `special-key` to test the authorization     filters."
+  version: "1.0.0"
+  title: "Robot API"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost"
+basePath: "/v2"
+tags:
+- name: "sensor"
+  description: "Everything about your Pets"
+  externalDocs:
+    description: "Find out more"
+    url: "http://swagger.io"
+schemes:
+- "https"
+- "http"
+paths:
+  /getLastMeassureBySensor/{sensorId}:
+    get:
+      tags:
+      - "sensor"
+      summary: "Finds Sensor by status"
+      description: "Multiple status values can be provided with comma separated strings"
+      operationId: "get_last_meassure_by_sensor"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "sensorId"
+        in: "path"
+        description: "ID of sensor to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Measure"
+        default:
+          description: "invalid order"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Message"
+      x-swagger-router-controller: "swagger_server.controllers.sensor_controller"
+definitions:
+  Measure:
+    type: "object"
+    required:
+    - "code"
+    - "fechaMuestreo"
+    - "medicion"
+    - "tipo"
+    - "unidad"
+    properties:
+      code:
+        type: "string"
+      fechaMuestreo:
+        type: "string"
+      unidad:
+        type: "string"
+      tipo:
+        type: "string"
+      medicion:
+        type: "string"
+    example:
+      unidad: "unidad"
+      tipo: "tipo"
+      medicion: "medicion"
+      code: "code"
+      fechaMuestreo: "fechaMuestreo"
+  Message:
+    type: "object"
+    required:
+    - "code"
+    - "description"
+    properties:
+      code:
+        type: "string"
+      description:
+        type: "string"
+    xml:
+      name: "Sensor"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
