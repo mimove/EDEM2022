@@ -2,11 +2,11 @@ from confluent_kafka import Consumer
 
 c = Consumer({
     'bootstrap.servers': 'localhost:9092',
-    'group.id': 'group1',
+    'group.id': 'group5',
     'auto.offset.reset': 'earliest'
 })
 
-c.subscribe(['myTopicTest'])
+c.subscribe(['TestPython2'])
 
 while True:
     msg = c.poll(1.0)

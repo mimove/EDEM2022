@@ -118,3 +118,8 @@ Los joins en Spark los hace de la siguientes 3 maneras:
 
 Se utiliza para coger una tabla y dividirla en varias tablas que se llaman frames. La división la realiza en función a un parametro o condición que le digamos nosotros. Por ejemplo, podría sacar los 3 valores top de una lista (ej: precio de móviles top 3).
 
+<br>
+<br>
+
+## _Clase 15/12/2022_
+

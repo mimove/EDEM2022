@@ -1,0 +1,4 @@
+bash /spark/bin/spark-submit --master spark://spark-master:7077 /opt/spark-apps/app.py
+
+# If we want to set log level to warn we can either chang the /spark/conf/log4j2.properties.template or run this command
+docker cp env/log4j2.properties <master_container_ID>:/spark/conf/log4j2.properties

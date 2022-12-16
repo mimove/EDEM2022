@@ -8,7 +8,7 @@ producer.poll(0)
 for i in range(6):
     msg = f" python {i}"
     # producer.produce('myTopic', value=msg.encode('utf-8'), key=f'{i}:'.encode('utf-8'))
-    producer.produce('myTopicTest', value=msg, key=f'{i}:')
+    producer.produce('TestPython2', value=msg, key=f'{i%2}:')
     producer.flush()
 
 
