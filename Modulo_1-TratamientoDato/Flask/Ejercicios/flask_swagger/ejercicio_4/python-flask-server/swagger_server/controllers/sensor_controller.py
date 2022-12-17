@@ -16,4 +16,5 @@ def get_last_meassure_by_sensor(sensorId):  # noqa: E501
 
     :rtype: List[Measure]
     """
-    return 'do some magic!'
+    res = Measure(sensorId,'16-12-2022','grados centígrados','temperatura','23.2')
+    return res

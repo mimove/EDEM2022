@@ -6,10 +6,10 @@ app = Flask(__name__,template_folder='templates')
 app.debug = True
 
 
-@app.route('/getLastSensorMeasurement/<sensor>')
-def success(sensor):
+@app.route('/getLastSensorMeasurement/<sensorId>')
+def success(sensorId):
         try:
-            ret=requests.get("http://localhost:8080/v2/getLastMeassureBySensor/"+sensor)
+            ret=requests.get("http://localhost:8080/v2/getLastMeasureBySensor/"+sensorId)
             if ret.status_code != 200:
                 return response(400,f"Host not available please check ip and port localhost:8080")
         except Exception as e:
@@ -29,4 +29,4 @@ def response(code,message):
 
 
  
-app.run(host='localhost', port=99)
+app.run(host='localhost', port=5000)
