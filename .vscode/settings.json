@@ -9,6 +9,16 @@
             "database": "idealista",
             "username": "postgres",
             "password": "Welcome01"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Ejerc3",
+            "database": "postgres",
+            "username": "postgres",
+            "password": "postgresadmin"
         }
     ]
 }
