@@ -1,5 +1,7 @@
 # Spark Cluster with Docker & docker-compose step-by-step
 
+## _Modified with Miguel's notes_
+
 A simple spark standalone cluster for your testing environment purposses.
 
 We will create the following containers:
@@ -44,6 +46,8 @@ docker cp apps spark-master:/opt/spark-apps
 docker cp data spark-master:/opt/spark-data
 ```
 
+
+
 ### Start spark-master
 
 Now we will start the master. So, in the previous console, **inside the container** we will run:
@@ -51,6 +55,15 @@ Now we will start the master. So, in the previous console, **inside the containe
 ```sh
 bash /spark/sbin/start-master.sh -h 0.0.0.0
 ```
+
+*Miguel's Note: If it doesn't work due to a permission denied issue, you have to run inside the container:*
+
+```sh
+chmod -R 755 /spark/
+```
+
+
+
 
 If your console has colsed somehow, you can open a new one by running in your machine:
 
@@ -94,6 +107,12 @@ Then we can start the worker. Run this command on the workers shell.
 bash /spark/sbin/start-worker.sh -c 2 -m 4g spark://<IP_MASTER_NODE>:7077
 ```
 
+*Miguel's Note: If it doesn't work due to a permission denied issue, you have to run inside the container:*
+
+```sh
+chmod -R 755 /spark/
+```
+
 To get the master IP Adress run docker inspect spark-master (or <master_container_id>) in your machine.
 
 ```sh
@@ -126,6 +145,13 @@ In a new shell on your machine:
 docker run -it --name spark-worker2 adoptopenjdk/openjdk8
 ```
 
+*Miguel's note: Wrong command, you need to specify at least the network so it can connect to the Master and other Worker containers, also the port has to be different than 8081*
+
+```sh
+docker run -it --name spark-worker1 -p 8082:8082 --network cluster adoptopenjdk/openjdk8
+```
+
+
 In the previous shell:
 
 ```sh
@@ -147,7 +173,12 @@ And finally in the worker shell:
 bash /spark/sbin/start-worker.sh -c 2 -m 4g spark://<IP_MASTER_NODE>:7077
 ```
 
+*Miguel's Note: If it doesn't work due to a permission denied issue, you have to run inside the container:*
+
+```sh
+chmod -R 755 /spark/
+```
 
 ## Validate your cluster
 
-Go to localhost:9090 to see the Spark Master UI.
+Go to localhost:8080 to see the Spark Master UI.
