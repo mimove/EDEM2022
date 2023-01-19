@@ -1,4 +1,4 @@
-# This is a simple script to remove duplicates from csv files and transform the data obtained from https://www.mockaroo.com/
+#  This is a simple script to remove duplicates from csv files and transform the data obtained from https://www.mockaroo.com/
 
 import os
 import pandas as pd
