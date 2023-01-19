@@ -1,0 +1,71 @@
+version: '3'
+ 
+services:
+  db:
+    image: mysql:latest
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: my_secret_password
+      MYSQL_DATABASE: app_db
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: user_password
+    ports:
+      - "3305:3305"
+    volumes:
+      # copy the csv files to fill tables to the secure dir in the mysql container
+      - dbdata:/var/lib/mysql-files/
+      # copy the .sql files to run into the mysql container
+      - ./sql:/docker-entrypoint-initdb.d
+    
+    networks:
+      - mysql
+
+    env_file:
+      - .env
+      
+  python:
+    container_name: python_main
+    build: ./python
+
+    volumes:
+      - dbdata:/datos/
+    
+    restart: 'no'
+
+    depends_on:
+      - db
+    
+    networks:
+      - mysql
+
+    links:
+      - db
+      
+    env_file:
+      - .env
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - db
+    environment:
+      PMA_HOST: mysql_host
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
+    networks:
+      - mysql
+
+volumes:
+  dbdata:
+
+networks:
+  mysql:
+    external: false
+    name: mysql
+    driver: bridge
+
+

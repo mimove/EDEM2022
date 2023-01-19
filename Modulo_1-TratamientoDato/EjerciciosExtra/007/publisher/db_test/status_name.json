@@ -1,0 +1,5 @@
+[{"status_name_id":1,"status_name":"Paid"},
+{"status_name_id":2,"status_name":"Refunded"},
+{"status_name_id":3,"status_name":"Unpaid"},
+{"status_name_id":4,"status_name":"Shipped"},
+{"status_name_id":5,"status_name":"Delivered"}]

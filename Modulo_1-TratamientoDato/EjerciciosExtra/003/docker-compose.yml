@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:10.5
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgresadmin
+    volumes:
+      # copy the sql script to create and fill tables
+      - ./sql:/docker-entrypoint-initdb.d
+      # copy the csv files to fill tables
+      - ./db:/data/
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@edem.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    volumes:
+      - ./config/servers.json:/pgadmin4/servers.json
+
+
