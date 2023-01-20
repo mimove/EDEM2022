@@ -11,3 +11,7 @@ La segunda parte del reto, es conseguir crear un contenedor que sea consumidor y
 Para este ejercicio se ha creado un productor que consume datos de la API de Mockaroo, en la cuál se han generado una serie de esquemas para generar datos aleatorios que sirvan para rellenar las tablas product, users, status_names, city, country y store_id. Una vez el productor consume los datos de la API, la info es enviada en mensajes con formato json a cada tópico en Kafka. También se ha creado un consumidor, que se subscribe a todos los tópicos creados por el productor, y ejecuta sentencias SQL para cargar los datos en la base de datos mySQL. Por último, a través de Grafana se pueden visualizar las ventas en tiempo real, como se muestra en el video que hay en la carpeta [video](./video/)
 
 
+
+
+https://user-images.githubusercontent.com/41382474/213677923-d8750b78-8481-4bdf-9eed-9daa8c428690.mov
+
