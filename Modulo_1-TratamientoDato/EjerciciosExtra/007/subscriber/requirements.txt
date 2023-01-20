@@ -1,0 +1,5 @@
+Faker==16.0.0
+kafka-python
+mysql-connector-python
+pandas==1.5.0
+requests

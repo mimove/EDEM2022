@@ -1,0 +1,14 @@
+{
+    "Servers": {
+      "1": {
+        "Name": "SampleServer",
+        "Port": 5432,
+        "Username": "postgres",
+        "Group": "DEMO",
+        "Host": "db",
+        "SSLMode": "prefer",
+        "MaintenanceDB": "postgres",
+        "Comment": "This server was configured using a JSON. See <https://www.pgadmin.org/docs/pgadmin4/3.6/export_import_servers.html?highlight=servers%20json>"
+      }
+    }
+  }
