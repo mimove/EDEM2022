@@ -12,14 +12,14 @@ gcloud dataflow flex-template build "gs://edem-serverless-bucket/dataflowtemplat
 
 
 
-gcloud dataflow flex-template run "edem-dataflow-job" \
+gcloud dataflow flex-template run "edem-dataflow-job2" \
     --template-file-gcs-location "gs://edem-serverless-bucket/dataflowtemplate.json" \
     --region "europe-west4"
 
 
 python edemDeviceData.py \
     --algorithm RS256 \
-    --cloud_region europe-west4 \
+    --cloud_region europe-west1 \
     --device_id edemDevice \
     --private_key_file rsa_private.pem \
     --project_id deft-epigram-375817 \

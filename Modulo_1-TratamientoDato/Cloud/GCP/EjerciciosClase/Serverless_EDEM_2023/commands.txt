@@ -1,0 +1,15 @@
+python edem_dataflow_streaming.py \
+    --project_id deft-epigram-375817 \
+    --hostname  \
+    --input_subscription <INPUT_PUBSUB_SUBSCRIPTION> \
+    --output_topic <OUTPUT_PUBSUB_TOPIC> \
+    --output_bigquery <DATASET>.<TABLE> \
+    --runner DataflowRunner \
+    --job_name test_dataflow_job \
+    --region <GCP_REGION> \
+    --temp_location gs://deft-epigram-375817/tmp \
+    --staging_location gs://deft-epigram-375817/stg
+
+
+
+    edem-serverless-bucket

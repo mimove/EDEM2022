@@ -1,0 +1,54 @@
+{
+    "fields": [
+    {
+      "mode": "NULLABLE",
+      "name": "Name",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Transaction_Id",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Transaction_Amount",
+      "type": "NUMERIC"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Credit_Card_Number",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Transacion_Timestamp",
+      "type": "TIMESTAMP"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Is_Registered",
+      "type": "BOOLEAN"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Email",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Transaction_Status",
+      "type": "STRING"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Processing_Time",
+      "type": "TIMESTAMP"
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Product_Id",
+      "type": "STRING"
+    }
+    ]
+}
