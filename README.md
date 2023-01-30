@@ -34,6 +34,7 @@ A lo largo del Máster también hemos realizado 4 data projects (cada uno en un 
 
 ## [DATA PROJECT 1](https://github.com/mimove/DATAPROJECT1)
 
+<br>
 
 <p align="center">
 <img src=".images/idealista.jpg" width=250px>
