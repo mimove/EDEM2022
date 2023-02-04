@@ -17,7 +17,7 @@ gcloud dataflow flex-template run "edem-dataflow-job2" \
     --region "europe-west4"
 
 
-python edemDeviceData.py \
+python3 edemDeviceData.py \
     --algorithm RS256 \
     --cloud_region europe-west1 \
     --device_id edemDevice \

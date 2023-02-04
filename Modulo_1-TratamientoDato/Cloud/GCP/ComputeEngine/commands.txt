@@ -1,0 +1,34 @@
+
+
+
+# Copying file from local machine to VM
+gcloud compute scp --project="deft-epigram-375817" --zone="us-central1-c" --recurse ~/GitHub/EDEM2022/Modulo_1-TratamientoDato/EjerciciosExtra/007/ instance-2:~/
+
+# Logging via ssh into VM
+gcloud compute ssh --zone "us-central1-a" "instance-3" --project "deft-epigram-375817"
+
+
+
+
+## CONFIGURATION OF DOCKER AND DOCKER COMPOSE
+
+
+sudo -s
+
+## Docker
+apt update && apt install --yes apt-transport-https ca-certificates curl gnupg2 software-properties-common && curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" && apt update && apt install --yes docker-ce && curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose
+
+
+# Test
+docker
+docker info
+
+
+## Docker compose
+
+curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+chmod +x /usr/local/bin/docker-compose
+
+
+docker-compose --version
