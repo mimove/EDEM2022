@@ -237,4 +237,161 @@ Propiedades de Pearson:
 
 
 
+<br>
+
+<br>
+
+
+## _Clase 25-02-2023_
+
+<br>
+
+### Función de probabilidad
+
+La función de probabilidad es una función que nos permite calcular la probabilidad de que ocurra un evento y verifica que:
+
+1. La probabilidad de que ocurra un evento es un número entre 0 y 1. 
+   $$0 <= P(A) <= 1$$
+
+2. Para cualquier evento, la probabilidad de que ocurra es 1.
+   
+   $$P(\Omega) = 1$$
+
+3. Si dos eventos son mutuamente excluyentes, la probabilidad de que ocurra uno de ellos es la suma de las probabilidades de que ocurran ambos.
+
+
+### Función de distribución
+
+La función de distribución es una función que nos permite calcular la probabilidad de que ocurra un evento y verifica que:
+
+$$F(x) = P(X \leq x)$$
+
+Si $X$ es una variable aleatoria continua, entonces la función de distribución es la integral acumulada de la función de densidad de probabilidad.
+
+$$F(x) = \int_{-\infty}^x f(x) dx$$
+
+La función de densidad describe la probabilidad de que la variable aleatoria tome un valor en un intervalo dado.
+
+$$f(x) = \frac{dF(x)}{dx}$$
+
+<br>
+
+### Distribuciones discretas
+
+Las distribuciones discretas son aquellas en las que la variable aleatoria puede tomar un número finito o infinito de valores.
+
+**Tipos de distribuciones discretas**
+
+- Distribución de Bernoulli: Es la distribución de probabilidad de una variable aleatoria binaria.
+
+$$P(X = x) = p^x(1-p)^{1-x}$$
+
+La esperanza matemática de una variable aleatoria binaria es: $E(X) = p$
+
+La varianza de una variable aleatoria binaria es: $Var(X) = p(1-p)$
+
+<br>
+
+- Distribución binomial: Es la distribución de probabilidad de la suma de n variables aleatorias binarias.
+
+$$P(X = x) = \binom{n}{x}p^x(1-p)^{n-x}$$
+
+Esperanza: $E(X) = np$
+
+Varianza: $Var(X) = np(1-p)$
+
+<br>
+
+- Distribución de Poisson: Es la distribución de probabilidad de la ocurrencia de un evento en un intervalo de tiempo o espacio.
+
+$$P(X = x) = \frac{\lambda^x e^{-\lambda}}{x!}$$
+
+$$\lambda = \frac{\mu \sigma^2}{\mu^2}$$
+
+Esperanza: $E(X) = \lambda$
+
+Variación: $Var(X) = \lambda$
+
+<br>
+
+- Distribución Geométrica: Es la distribución de probabilidad de la ocurrencia del primer éxito en una secuencia de ensayos independientes.
+  
+- Distribución Uniforme: Es la distribución de probabilidad de una variable aleatoria discreta que toma valores en un intervalo cerrado.
+
+$$P(X = x) = \frac{1}{b-a+1}$$
+
+Esperanza: $E(X) = \frac{a+b}{2}$
+
+Varianza: $Var(X) = \frac{(b-a+1)^2-1}{12}$
+
+<br>
+
+
+
+
+**Tiops de distribuciones continuas**
+
+- Distribución normal: Es la distribución de probabilidad de una variable aleatoria continua que sigue una distribución normal.
+
+$$f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
+
+Esperanza: $E(X) = \mu$
+
+Varianza: $Var(X) = \sigma^2$
+
+
+**Teorema central del límite**
+
+Si $X_1, X_2, ..., X_n$ son variables aleatorias independientes e idénticamente distribuidas, entonces la variable aleatoria:
+
+$$\bar{X} = \frac{X_1 + X_2 + ... + X_n}{n}$$
+$$\sqrt{n}(\bar{X} - \mu) \xrightarrow[n \rightarrow \infty]{} N(0, \sigma^2)$$
+
+Si $X$ no es normal, pero $n$ es suficientemente grande, entonces $\bar{X}$ es normal.
+
+
+<br>
+
+- Distribución chi-cuadrado: Es la distribución de probabilidad de la suma de cuadrados de n variables aleatorias normales.
+
+$$f(x) = \frac{1}{2^{\nu/2}\Gamma(\nu/2)} x^{\nu/2-1} e^{-x/2}$$
+
+Esperanza: $E(X) = \nu$
+
+Varianza: $Var(X) = 2\nu$
+
+Grados de libertad: $\nu = n-1$. 
+
+<br>
+
+- Distribución t de Student: Es la distribución de probabilidad de la media de n variables aleatorias normales.
+
+$$f(x) = \frac{\Gamma((\nu+1)/2)}{\sqrt{\nu\pi}\Gamma(\nu/2)} \left(1+\frac{x^2}{\nu}\right)^{-(\nu+1)/2}$$
+
+Esperanza: $E(X) = 0$
+
+Varianza: $Var(X) = \frac{\nu}{\nu-2}$. Para $\nu > 2$.
+
+<br>
+
+- Distribución F de Fisher: Es la distribución de probabilidad de la razón de dos variables aleatorias chi-cuadrado.
+
+$$f(x) = \frac{\Gamma(\frac{\nu_1+\nu_2}{2})}{\Gamma(\frac{\nu_1}{2})\Gamma(\frac{\nu_2}{2})} \left(\frac{\nu_1}{\nu_2}\right)^{\frac{\nu_1}{2}} x^{\frac{\nu_1}{2}-1} \left(1+\frac{\nu_1}{\nu_2}x\right)^{-\frac{\nu_1+\nu_2}{2}}$$
+
+Esperanza: $E(X) = \frac{\nu_2}{\nu_2-2}$. Para $\nu_2 > 2$.
+
+Varianza: $Var(X) = \frac{2\nu_2^2(\nu_1+\nu_2-2)}{\nu_1(\nu_2-2)^2(\nu_2-4)}$. Para $\nu_2 > 4$.
+
+<br>
+
+**Relación entre distribuciones**
+
+<p align="center">
+<img src=".images/rel_dist.png" width = 400px>
+</p>
+
+
+
+
+
 
