@@ -316,7 +316,9 @@ En la parte de visualización, se ha creado un dashboard que se muestra en la si
 
 
 <br>
+
 [^1]: El proyecto también se ha desarrollado en Cloud y se puede ver en el siguiente [link](https://github.com/mimove/DATAPROJECT2)
+
 [^2]: Logo y nombre creados con la inteligencia artificial [Dall·E 2](https://openai.com/dall-e-2/) y ChatGPT respectivamente.
 
 
