@@ -392,6 +392,83 @@ Varianza: $Var(X) = \frac{2\nu_2^2(\nu_1+\nu_2-2)}{\nu_1(\nu_2-2)^2(\nu_2-4)}$. 
 
 
 
+<br>
+
+<br>
+
+<br>
+
+## _Clase 3-03-2023_
 
 
+## Inferencia estadística
+
+Es el proceso de tomar conclusiones sobre una población a partir de una muestra. 
+
+Distintas formas de hacer inferencia: estimación, prueba de hipótesis, intervalos de confianza. Contraste de hipótesis. Tipos:
+
+- Test de normalidad: Prueba de hipótesis para determinar si una muestra proviene de una población normal.
+
+- T-test con una muestra: Prueba de hipótesis para comparar la media de una población con una muestra.
+
+- T-test con dos muestras.
+
+- Test de igualdad de varianzas: Prueba de hipótesis para comparar la varianza de dos poblaciones.
+
+- Prueba de chi-cuadrado: Prueba de hipótesis para comparar la proporción de dos poblaciones.
+
+- ANOVA (Análisis de varianza): Prueba de hipótesis para comparar la media de tres o más poblaciones.
+
+
+
+<br>
+
+<br>
+
+## Contraste de hipótesis
+
+Se denomina hipótesis nula a la hipótesis que se quiere contrastar. Se denota por $H_0$. Esta será la hipótesis que se rechaza o no se rechaza. 
+
+A partir de una muestra del estudio obtenemos una estadística de prueba. Esta estadística de prueba se compara con una estadística crítica. Si la estadística de prueba es mayor que la estadística crítica, se rechaza la hipótesis nula. Si la estadística de prueba es menor que la estadística crítica, no se rechaza la hipótesis nula.
+
+### Errores de Tipo I y Tipo II
+
+- Error de tipo I: Es el error de rechazar la hipótesis nula cuando esta es verdadera. Se denota por $\alpha$.
+  
+- Error de tipo II: Es el error de no rechazar la hipótesis nula cuando esta es falsa. Se denota por $\beta$.
+
+Le llamamos potencia del test a $1-\beta$.
+
+
+Dependiendo del tipo de contraste que queramos hacer, se utilizará una estadística de prueba u otra.
+
+
+
+**Contraste Bilateral**
+
+$$H_0: \mu = \mu_0$$
+$$H_1: \mu \neq \mu_0$$
+
+<p align="center">
+<img src="https://formacion.intef.es/pluginfile.php/246706/mod_resource/content/1/curva_normal_contraste_bilateral.jpg" width=400px>
+</p>
+
+
+**Contraste Unilateral**
+
+$$H_0: \mu = \mu_0$$
+$$H_1: \mu > \mu_0$$
+
+
+<p align="center">
+<img src="https://images.genial.ly/5be5d74cf4ab074fa2969131/3c79c67b-7637-4a76-a0ec-81b7f15dc794.jpeg" width=400px>
+</p>
+
+
+
+
+
+
+
+<br>
 
