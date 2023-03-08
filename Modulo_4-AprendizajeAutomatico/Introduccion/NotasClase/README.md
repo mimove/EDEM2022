@@ -472,3 +472,103 @@ $$H_1: \mu > \mu_0$$
 
 <br>
 
+<br>
+
+<br>
+
+
+## _Clase 04-03-2023_
+
+<br>
+
+## Comparación de múltiples medias
+
+### Condiciones de aplicabilidad
+
+No podremos realizar estos análisis siempre que queramos, habrá unas condiciones de aplicabilidad:
+
+- Poblaciones normalmente distribuidas en cada grupo
+
+- Homecedasticidad de varianzas entre grupos (igualdad de varianzas entre grupos)
+
+- Muestra aleatoria e independiente
+
+Nos podremos ayudar de las técnicas vistas anteriormente para comprobar las condiciones de aplicabilidad.
+
+
+<br>
+
+<br>
+
+## Test ANOVA
+
+**Hipótesis nula**
+
+Todas las medias son iguales 
+
+$$H_0: \mu_1 = \mu_2 = ... = \mu_k$$
+
+Al menos una media es diferente del resto
+
+$$H_1: \mu_i \neq \mu_j$$
+
+
+Ejemplo:
+
+<p align="center">
+<img src=".images/multiple.png" width=400px>
+</p>
+
+
+
+### Variabilidad de los datos
+
+La variablidad es un factor clae para comprobar la igualdad de medias.
+
+En cada caso, las medias parecen diferentes, pero una gran variabilidad entre el grupo A y el grupo B hace que no sea tan significativa esta diferencia.
+
+
+
+**Enfoque**
+
+Estudiar variabilidad de los datos para realizar el test.
+
+- Variabilidad SSW: 
+
+- Variabilidad SSB
+
+- Variabilidad SST
+
+$$SST = SSW + SSB$$
+
+
+<p align="center">
+<img src="https://cdn1.byjus.com/wp-content/uploads/2020/09/one-way-ANOVA-formulas.png" width=500px>
+</p>
+
+
+**Estadístico del test**
+
+$$F = \frac{MSG}{MS}$$
+
+$$MSG=\frac{SSB}{k-1}$$
+
+$$MSW=\frac{SSW}{n-k}$$
+
+Donde $n$ es el número total de muestras de todos los grupos la $k$ el número de grupos que hay.
+
+La regla de decisión es que rechazamos $H_0$ si $F > F_{critical}$.
+
+
+Se puede utilizar ANOVA para representar el contraste de hipótesis de una manera gráfica.
+
+
+
+
+
+
+
+
+
+
+
