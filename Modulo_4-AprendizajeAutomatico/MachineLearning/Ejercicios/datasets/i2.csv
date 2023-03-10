@@ -1,0 +1,1001 @@
+user;booking_date;origin_airport;price;sales channel;ant;airline
+user5;01/11/2018;MAD;NA;online;NA;i2
+user7;01/11/2018;DUB;147.5;online;38;i2
+user4;02/11/2018;TFS;24.04999924;online;19;i2
+user8;29/10/2018;MAD;59.70999908;online;8;i2
+user7;01/11/2018;NA;37.29999924;call center;4;i2
+user1;01/11/2018;AMS;149.7400055;travel agency;63;i2
+user1;01/11/2018;MAD;19.95000076;online;22;i2
+user6;30/10/2018;MAD;26.13999939;online;21;i2
+user3;01/11/2018;LPA;22.52000046;online;33;i2
+user9;01/11/2018;MAD;28.55999947;online;NA;i2
+user4;01/11/2018;PMI;31.51000023;online;44;i2
+user10;01/11/2018;NA;81.05000305;online;19;i2
+user5;31/10/2018;STR;49.36999893;online;38;i2
+user3;01/11/2018;GRU;18.97999954;travel agency;2;i2
+user3;31/10/2018;AMS;50.31000137;online;52;i2
+user3;01/11/2018;PMI;41.45000076;online;8;i2
+user9;01/11/2018;FUE;128.2400055;travel agency;48;i2
+user3;29/10/2018;MAD;31.97999954;online;9;i2
+user3;01/11/2018;DUB;83.15000153;online;NA;i2
+user9;01/11/2018;PMI;81.5922617;online;4;i2
+user1;31/10/2018;NA;60.47999954;online;16;i2
+user3;01/11/2018;ALC;140.0299988;travel agency;4;i2
+user3;01/11/2018;VGO;54.84000015;online;29;i2
+user9;01/11/2018;MAD;35.06999969;online;9;i2
+user10;29/10/2018;TFN;49.72000122;call center;3;i2
+user2;01/11/2018;MAD;12.44999981;online;27;i2
+user4;01/11/2018;LYS;60.90000153;online;1;i2
+user6;29/10/2018;MAD;48.93999863;online;4;i2
+user7;01/11/2018;MAD;39.33000183;online;10;i2
+user6;30/10/2018;MAD;20.88999939;travel agency;43;i2
+user10;01/11/2018;MAD;310.6199951;online;5;i2
+user4;01/11/2018;NAP;131.1600037;online;45;i2
+user8;29/10/2018;MAD;86.66000366;travel agency;6;i2
+user1;01/11/2018;VGO;109.0100021;online;73;i2
+user7;01/11/2018;MAD;46.99000168;online;4;i2
+user5;02/11/2018;MAD;41.54000092;online;13;i2
+user7;29/10/2018;MAD;53.77000046;travel agency;20;i2
+user1;01/11/2018;SCQ;60.84999847;travel agency;51;i2
+user10;01/11/2018;MAD;73.5;travel agency;3;i2
+user8;01/11/2018;MAD;109.7099991;online;3;i2
+user7;01/11/2018;NTE;155.2400055;call center;45;i2
+user3;31/10/2018;MAD;78.51000214;travel agency;15;i2
+user1;01/11/2018;MAD;211.2299957;travel agency;1;i2
+user1;01/11/2018;MAD;60;travel agency;7;i2
+user6;01/11/2018;MAD;46.09999847;online;22;i2
+user7;29/10/2018;NA;20.70000076;online;61;i2
+user1;01/11/2018;MAD;29.61000061;travel agency;62;i2
+user2;01/11/2018;MAD;73.5;call center;61;i2
+user10;01/11/2018;MAD;98.81999969;online;65;i2
+user3;02/11/2018;TFN;251.1999969;travel agency;50;i2
+user5;01/11/2018;SCQ;127.9599991;online;89;i2
+user8;01/11/2018;MAD;104.4199982;online;6;i2
+user6;01/11/2018;MAD;60.15000153;online;73;i2
+user5;31/10/2018;MAD;39.38000107;travel agency;78;i2
+user5;01/11/2018;ALC;25.69000053;travel agency;84;i2
+user10;02/11/2018;MAD;15.60000038;online;53;i2
+user3;01/11/2018;MAD;76.76999664;online;4;i2
+user5;01/11/2018;DUB;63.65000153;online;21;i2
+user9;01/11/2018;FUE;59.41999817;call center;4;i2
+user8;01/11/2018;MAH;NA;online;38;i2
+user5;01/11/2018;MAD;NA;travel agency;1;i2
+user1;02/11/2018;LYS;NA;online;43;i2
+user6;01/11/2018;TFN;NA;online;6;i2
+user9;01/11/2018;MAD;NA;online;NA;i2
+user10;01/11/2018;MAD;NA;online;29;i2
+user4;01/11/2018;MAD;NA;online;28;i2
+user9;31/10/2018;TFN;NA;online;9;i2
+user4;01/11/2018;TFN;NA;online;3;i2
+user7;01/11/2018;MAD;NA;travel agency;32;i2
+user3;01/11/2018;MAD;NA;online;5;i2
+user7;01/11/2018;AGP;NA;travel agency;11;i2
+user4;01/11/2018;DUB;168.4299927;online;4;i2
+user2;01/11/2018;AGP;34.43999863;travel agency;6;i2
+user4;29/10/2018;MAD;14.67000008;travel agency;30;i2
+user5;01/11/2018;OVD;72.51000214;online;NA;i2
+user9;01/11/2018;MAD;79.38999939;travel agency;71;i2
+user10;01/11/2018;IBZ;46.02999878;online;92;i2
+user3;01/11/2018;MAD;45.59000015;travel agency;1;i2
+user3;01/11/2018;MAD;159.8699951;online;7;i2
+user10;30/10/2018;TXL;29.03000069;online;0;i2
+user4;01/11/2018;TFN;118.7200012;online;15;i2
+user4;01/11/2018;MAD;211.2299957;online;3;i2
+user2;01/11/2018;VGO;13.60999966;online;14;i2
+user4;01/11/2018;DUB;60;travel agency;30;i2
+user6;03/11/2018;MAD;49.40999985;online;14;i2
+user3;01/11/2018;AGP;11.89000034;online;2;i2
+user2;01/11/2018;LPA;81.5922617;online;38;i2
+user5;01/11/2018;MAD;93.68000031;online;76;i2
+user6;01/11/2018;PMI;194.5899963;online;2;i2
+user2;01/11/2018;PMI;14.85999966;online;22;i2
+user8;01/11/2018;LGW;42.70000076;online;2;i2
+user8;31/10/2018;MAD;86.06999969;online;3;i2
+user1;01/11/2018;STR;71.56999969;online;24;i2
+user8;01/11/2018;PMI;50.31999969;online;1;i2
+user2;01/11/2018;MAD;24.80999947;online;19;i2
+user3;01/11/2018;MAD;83.02999878;online;52;i2
+user9;03/11/2018;FUE;39.90000153;online;26;i2
+user8;01/11/2018;MAD;134.1900024;travel agency;9;i2
+user2;01/11/2018;MAD;34.38999939;online;16;i2
+user9;29/10/2018;MAD;144.4400024;travel agency;43;i2
+user2;02/11/2018;LPA;73.84999847;online;1;i2
+user4;01/11/2018;MAD;37.58000183;online;31;i2
+user5;01/11/2018;MAD;26.05999947;online;54;i2
+user7;01/11/2018;MAD;24.36000061;online;4;i2
+user3;01/11/2018;SVQ;14.17000008;online;7;i2
+user5;01/11/2018;MAD;72.69999695;online;44;i2
+user9;01/11/2018;MAD;81.5922617;online;26;i2
+user7;02/11/2018;MAD;115.4700012;travel agency;30;i2
+user6;01/11/2018;TXL;56.83000183;online;3;i2
+user8;01/11/2018;SCQ;76.30000305;travel agency;36;i2
+user2;31/10/2018;TFS;89.09999847;travel agency;81;i2
+user6;01/11/2018;SVQ;23.79000092;online;9;i2
+user4;01/11/2018;TXL;NA;online;2;i2
+user5;01/11/2018;MAD;NA;online;80;i2
+user10;31/10/2018;MAD;NA;online;49;i2
+user9;01/11/2018;MAD;NA;online;39;i2
+user9;01/11/2018;ACE;NA;online;88;i2
+user4;01/11/2018;MAD;NA;online;19;i2
+user1;29/10/2018;MAD;NA;online;66;i2
+user7;31/10/2018;LGW;NA;online;12;i2
+user1;01/11/2018;MAD;36.84999847;online;60;i2
+user4;01/11/2018;MAD;62.04999924;online;19;i2
+user6;02/11/2018;MAD;69.44000244;online;2;i2
+user1;01/11/2018;PMI;46.61000061;travel agency;1;i2
+user3;30/10/2018;TFS;42.08000183;travel agency;46;i2
+user3;01/11/2018;MAD;58.06999969;online;46;i2
+user8;29/10/2018;TFN;22.69000053;online;5;i2
+user8;01/11/2018;SVQ;17.37999916;travel agency;22;i2
+user7;01/11/2018;FUE;128.1900024;online;52;i2
+user2;01/11/2018;MAD;166.3399963;travel agency;21;i2
+user1;01/11/2018;PMI;70.83000183;online;0;i2
+user3;01/11/2018;MAD;78.55999756;online;73;i2
+user5;01/11/2018;PMI;21.70000076;online;78;i2
+user6;03/11/2018;NTE;42.79999924;online;15;i2
+user1;29/10/2018;MAD;30.60000038;online;76;i2
+user10;01/11/2018;MAD;248.9700012;online;2;i2
+user10;01/11/2018;MAD;130.4600067;travel agency;11;i2
+user5;02/11/2018;AMS;81.38999939;travel agency;5;i2
+user6;01/11/2018;MAD;223.2200012;travel agency;38;i2
+user1;31/10/2018;LPA;197.1600037;online;47;i2
+user3;01/11/2018;LPA;35.95000076;online;15;i2
+user1;03/11/2018;MAD;51.61999893;call center;4;i2
+user3;29/10/2018;MAD;NA;online;1;i2
+user3;01/11/2018;ALC;NA;online;17;i2
+user1;01/11/2018;TXL;NA;travel agency;3;i2
+user8;01/11/2018;XRY;NA;travel agency;2;i2
+user2;31/10/2018;TFN;NA;travel agency;3;i2
+user1;31/10/2018;MAD;NA;online;2;i2
+user10;01/11/2018;MAD;NA;travel agency;53;i2
+user5;01/11/2018;MAD;NA;call center;26;i2
+user10;01/11/2018;MAD;NA;online;1;i2
+user4;29/10/2018;MAD;NA;online;34;i2
+user3;30/10/2018;MAD;NA;travel agency;69;i2
+user6;01/11/2018;TFN;NA;travel agency;37;i2
+user8;03/11/2018;LGW;NA;online;7;i2
+user6;02/11/2018;MAD;81.5922617;travel agency;50;i2
+user3;01/11/2018;MAD;70.05000305;online;2;i2
+user4;01/11/2018;PMI;121.0199966;online;34;i2
+user9;29/10/2018;MAD;78.56999969;online;70;i2
+user6;01/11/2018;TFN;81.80999756;travel agency;74;i2
+user5;01/11/2018;MAD;22.56999969;online;20;i2
+user10;01/11/2018;MAD;NA;online;39;i2
+user10;01/11/2018;MAN;NA;travel agency;46;i2
+user10;01/11/2018;DUS;NA;travel agency;16;i2
+user1;01/11/2018;SCQ;NA;online;21;i2
+user6;02/11/2018;MAD;NA;travel agency;5;i2
+user9;01/11/2018;ACE;NA;online;60;i2
+user1;01/11/2018;MAD;NA;online;30;i2
+user9;01/11/2018;MAD;NA;online;25;i2
+user5;01/11/2018;VGO;NA;online;23;i2
+user2;01/11/2018;MAD;NA;online;11;i2
+user10;01/11/2018;MAD;NA;online;5;i2
+user9;01/11/2018;MAD;NA;online;49;i2
+user9;01/11/2018;AMS;NA;travel agency;5;i2
+user3;30/10/2018;MAD;NA;travel agency;14;i2
+user9;01/11/2018;CGR;280.519989;travel agency;42;i2
+user6;01/11/2018;NCE;50.38000107;online;12;i2
+user10;29/10/2018;TFN;52.74000168;online;2;i2
+user7;02/11/2018;MAD;274.5599976;online;39;i2
+user3;01/11/2018;MAD;46.09999847;online;52;i2
+user9;01/11/2018;MAD;115.2300034;travel agency;47;i2
+user9;01/11/2018;MAD;40.27999878;travel agency;54;i2
+user7;29/10/2018;FUE;29.26000023;travel agency;31;i2
+user1;31/10/2018;SCQ;37.86000061;call center;3;i2
+user1;02/11/2018;MAD;150;travel agency;73;i2
+user10;01/11/2018;MAD;29.11000061;online;2;i2
+user7;02/11/2018;LPA;29.31999969;online;20;i2
+user3;29/10/2018;CPH;52.79999924;online;42;i2
+user3;01/11/2018;MAD;40.29999924;online;18;i2
+user3;01/11/2018;MAD;104.3199997;online;45;i2
+user6;31/10/2018;MAD;53.36000061;online;12;i2
+user7;01/11/2018;MAD;264.6199951;travel agency;19;i2
+user7;01/11/2018;MAD;NA;travel agency;34;i2
+user7;01/11/2018;TFN;NA;call center;3;i2
+user7;01/11/2018;MAN;NA;online;29;i2
+user5;01/11/2018;MAD;NA;travel agency;1;i2
+user1;01/11/2018;MAD;NA;travel agency;5;i2
+user8;01/11/2018;ACE;NA;online;1;i2
+user8;01/11/2018;SPC;NA;travel agency;1;i2
+user8;01/11/2018;PHL;NA;online;5;i2
+user5;01/11/2018;MAD;NA;travel agency;32;i2
+user4;29/10/2018;TFN;NA;online;23;i2
+user5;29/10/2018;MAD;NA;online;0;i2
+user7;01/11/2018;LPA;152.8300018;travel agency;74;i2
+user10;01/11/2018;MAD;0;call center;10;i2
+user3;01/11/2018;PMI;34;online;66;i2
+user10;30/10/2018;MAD;174.8800049;travel agency;59;i2
+user4;02/11/2018;MAD;332.4400024;online;1;i2
+user4;02/11/2018;MAD;94.91000366;travel agency;33;i2
+user9;03/11/2018;MAD;23.64999962;online;20;i2
+user2;31/10/2018;MAD;41.11999893;travel agency;42;i2
+user9;01/11/2018;MAD;27.07999992;online;3;i2
+user6;01/11/2018;MAD;1.5;online;7;i2
+user4;01/11/2018;SVQ;20.68000031;travel agency;16;i2
+user8;01/11/2018;IBZ;20.80999947;travel agency;39;i2
+user1;02/11/2018;MAD;97.98000336;online;15;i2
+user9;01/11/2018;PMI;38.97000122;online;27;i2
+user1;01/11/2018;LPA;NA;online;46;i2
+user3;01/11/2018;LGW;NA;online;33;i2
+user6;31/10/2018;MAD;NA;online;33;i2
+user1;01/11/2018;SPC;NA;online;32;i2
+user1;01/11/2018;SPC;NA;call center;1;i2
+user10;01/11/2018;MAD;NA;online;31;i2
+user10;01/11/2018;LPA;NA;travel agency;6;i2
+user7;01/11/2018;PMI;NA;online;7;i2
+user7;02/11/2018;TXL;NA;travel agency;0;i2
+user3;29/10/2018;TFS;NA;travel agency;82;i2
+user4;01/11/2018;MAD;62.43000031;online;68;i2
+user3;01/11/2018;SCQ;38.77999878;travel agency;39;i2
+user4;01/11/2018;IBZ;60.72999954;online;38;i2
+user9;01/11/2018;MAD;26;travel agency;1;i2
+user6;01/11/2018;PMI;51.81999969;online;5;i2
+user9;01/11/2018;SVQ;162.0399933;travel agency;42;i2
+user6;01/11/2018;DUS;211.2299957;online;6;i2
+user9;01/11/2018;MAD;NA;online;67;i2
+user9;01/11/2018;MAD;NA;online;54;i2
+user9;01/11/2018;MAD;NA;online;25;i2
+user4;01/11/2018;MAD;NA;online;21;i2
+user1;01/11/2018;MAD;NA;online;69;i2
+user9;29/10/2018;MAD;NA;travel agency;29;i2
+user8;29/10/2018;MAD;NA;travel agency;6;i2
+user5;01/11/2018;MAD;NA;travel agency;6;i2
+user3;01/11/2018;MAD;NA;call center;4;i2
+user7;01/11/2018;MAD;NA;online;0;i2
+user8;01/11/2018;NAP;NA;online;15;i2
+user1;01/11/2018;MAD;57.59999847;online;70;i2
+user5;01/11/2018;MAD;223.9700012;online;91;i2
+user4;01/11/2018;AGP;51.49000168;travel agency;18;i2
+user4;29/10/2018;MAD;76.66999817;online;26;i2
+user4;01/11/2018;CLT;53.59999847;travel agency;2;i2
+user2;01/11/2018;LPA;92.33000183;online;0;i2
+user7;01/11/2018;MAD;97.5;online;37;i2
+user3;01/11/2018;MAD;72.31999969;travel agency;66;i2
+user8;01/11/2018;VGO;NA;online;4;i2
+user7;01/11/2018;ALC;NA;travel agency;65;i2
+user3;01/11/2018;AGP;NA;online;12;i2
+user2;01/11/2018;SVQ;NA;online;43;i2
+user3;01/11/2018;SVQ;NA;travel agency;25;i2
+user1;01/11/2018;PMI;NA;online;12;i2
+user3;01/11/2018;AGP;NA;online;33;i2
+user1;01/11/2018;AGP;NA;online;25;i2
+user8;01/11/2018;MAH;NA;online;32;i2
+user6;01/11/2018;MAD;NA;online;15;i2
+user7;01/11/2018;MAD;NA;online;11;i2
+user7;02/11/2018;MAD;NA;travel agency;22;i2
+user7;01/11/2018;DUB;NA;online;16;i2
+user6;01/11/2018;MAD;NA;online;0;i2
+user2;01/11/2018;MAD;NA;travel agency;2;i2
+user1;01/11/2018;MAD;NA;online;5;i2
+user9;01/11/2018;MAD;NA;online;39;i2
+user7;01/11/2018;BHX;NA;call center;3;i2
+user3;01/11/2018;MAD;NA;online;37;i2
+user1;01/11/2018;SVQ;NA;travel agency;64;i2
+user7;31/10/2018;MAD;NA;online;28;i2
+user9;01/11/2018;LPA;NA;online;21;i2
+user6;01/11/2018;LPA;NA;online;58;i2
+user8;01/11/2018;LPA;NA;online;60;i2
+user10;01/11/2018;MAD;NA;travel agency;4;i2
+user6;01/11/2018;MIA;NA;travel agency;29;i2
+user2;01/11/2018;ACE;NA;online;3;i2
+user4;01/11/2018;MAD;NA;travel agency;55;i2
+user8;29/10/2018;ACE;NA;online;24;i2
+user2;01/11/2018;TXL;NA;online;14;i2
+user5;01/11/2018;IBZ;NA;online;79;i2
+user6;01/11/2018;MAD;NA;online;2;i2
+user8;01/11/2018;CDG;NA;travel agency;72;i2
+user9;01/11/2018;PMI;NA;travel agency;1;i2
+user7;01/11/2018;AGP;NA;online;93;i2
+user2;01/11/2018;AMS;NA;travel agency;1;i2
+user2;29/10/2018;PMI;NA;online;19;i2
+user4;01/11/2018;MAD;NA;online;35;i2
+user10;29/10/2018;MAD;NA;online;3;i2
+user3;01/11/2018;LPA;NA;online;17;i2
+user8;01/11/2018;MAD;NA;travel agency;14;i2
+user8;02/11/2018;MAD;NA;call center;7;i2
+user8;01/11/2018;MAD;NA;online;32;i2
+user9;01/11/2018;MAD;NA;online;28;i2
+user1;01/11/2018;VGO;NA;online;23;i2
+user10;01/11/2018;LGW;NA;online;16;i2
+user7;01/11/2018;MAD;NA;online;4;i2
+user2;01/11/2018;MAD;NA;travel agency;35;i2
+user2;01/11/2018;MAD;NA;online;44;i2
+user3;01/11/2018;AMS;NA;travel agency;87;i2
+user10;01/11/2018;MAD;NA;online;21;i2
+user4;01/11/2018;NAP;NA;online;58;i2
+user7;01/11/2018;MAD;NA;travel agency;6;i2
+user7;01/11/2018;MAD;NA;online;25;i2
+user5;01/11/2018;MAD;NA;online;2;i2
+user9;01/11/2018;MAD;NA;online;22;i2
+user2;01/11/2018;MAD;NA;online;37;i2
+user4;02/11/2018;TXL;NA;online;13;i2
+user9;01/11/2018;MAD;NA;call center;1;i2
+user5;31/10/2018;AMS;NA;travel agency;60;i2
+user8;01/11/2018;AGP;NA;online;4;i2
+user3;30/10/2018;CAG;NA;travel agency;38;i2
+user3;01/11/2018;IBZ;NA;online;5;i2
+user9;01/11/2018;SVQ;NA;online;24;i2
+user5;01/11/2018;MAD;NA;online;8;i2
+user4;01/11/2018;MAD;NA;travel agency;52;i2
+user4;01/11/2018;SCQ;NA;online;2;i2
+user6;01/11/2018;MAD;NA;online;23;i2
+user3;29/10/2018;MAD;NA;online;11;i2
+user3;01/11/2018;ALC;NA;travel agency;60;i2
+user8;29/10/2018;TFN;NA;online;3;i2
+user7;31/10/2018;MAD;NA;online;6;i2
+user4;29/10/2018;TXL;NA;online;41;i2
+user8;29/10/2018;MAD;NA;online;23;i2
+user1;31/10/2018;MAD;NA;online;0;i2
+user1;01/11/2018;MAD;NA;online;1;i2
+user10;03/11/2018;MAD;NA;online;30;i2
+user5;01/11/2018;MAD;NA;call center;6;i2
+user7;01/11/2018;MAD;NA;online;44;i2
+user8;01/11/2018;MAD;NA;online;13;i2
+user6;30/10/2018;TXL;NA;online;2;i2
+user3;01/11/2018;MAD;NA;travel agency;37;i2
+user4;01/11/2018;SCQ;NA;online;57;i2
+user8;01/11/2018;MAD;NA;travel agency;4;i2
+user7;01/11/2018;AGP;NA;travel agency;35;i2
+user5;29/10/2018;MAD;NA;travel agency;55;i2
+user6;01/11/2018;XRY;NA;online;14;i2
+user8;01/11/2018;LGW;NA;call center;0;i2
+user5;01/11/2018;XRY;NA;travel agency;21;i2
+user2;30/10/2018;MAD;NA;travel agency;7;i2
+user7;01/11/2018;MAD;NA;travel agency;35;i2
+user5;03/11/2018;MAD;NA;travel agency;16;i2
+user1;03/11/2018;MAD;NA;online;3;i2
+user3;29/10/2018;MAD;NA;travel agency;1;i2
+user9;01/11/2018;MAD;NA;travel agency;6;i2
+user10;02/11/2018;TXL;NA;online;7;i2
+user4;01/11/2018;LPA;NA;travel agency;19;i2
+user3;01/11/2018;AGP;NA;online;50;i2
+user9;31/10/2018;SCQ;NA;travel agency;5;i2
+user9;01/11/2018;TFS;NA;travel agency;54;i2
+user5;01/11/2018;DUS;NA;online;62;i2
+user2;01/11/2018;DUB;NA;online;15;i2
+user5;29/10/2018;TFN;NA;online;36;i2
+user3;31/10/2018;MAD;NA;travel agency;28;i2
+user6;01/11/2018;RIX;NA;online;9;i2
+user9;01/11/2018;MAD;NA;travel agency;86;i2
+user1;01/11/2018;LPA;NA;online;2;i2
+user8;01/11/2018;LPA;NA;travel agency;20;i2
+user4;01/11/2018;MAD;NA;online;50;i2
+user7;30/10/2018;CDG;NA;online;7;i2
+user7;01/11/2018;MAD;NA;online;33;i2
+user1;01/11/2018;MAD;NA;call center;42;i2
+user8;01/11/2018;MAD;NA;online;31;i2
+user6;01/11/2018;TFS;NA;online;6;i2
+user4;02/11/2018;TFS;NA;online;3;i2
+user10;01/11/2018;MAD;NA;online;29;i2
+user2;01/11/2018;SVQ;NA;online;53;i2
+user6;01/11/2018;NCE;NA;online;2;i2
+user8;02/11/2018;MAD;NA;travel agency;4;i2
+user6;01/11/2018;MAH;NA;online;56;i2
+user3;02/11/2018;NAP;NA;travel agency;67;i2
+user10;01/11/2018;RNS;NA;call center;5;i2
+user10;01/11/2018;MAD;NA;online;3;i2
+user7;01/11/2018;MAD;NA;online;4;i2
+user2;01/11/2018;MAD;NA;online;4;i2
+user6;01/11/2018;MAD;NA;call center;6;i2
+user3;30/10/2018;ACE;NA;online;62;i2
+user1;01/11/2018;MAD;NA;online;16;i2
+user6;30/10/2018;MAD;NA;travel agency;31;i2
+user8;01/11/2018;MAD;NA;online;3;i2
+user5;01/11/2018;IBZ;NA;online;1;i2
+user3;29/10/2018;MAD;NA;travel agency;1;i2
+user3;29/10/2018;LPA;NA;travel agency;15;i2
+user4;01/11/2018;PMI;NA;online;59;i2
+user1;01/11/2018;MAD;NA;travel agency;6;i2
+user4;01/11/2018;MAD;NA;travel agency;74;i2
+user10;01/11/2018;GRX;NA;online;31;i2
+user6;03/11/2018;NTE;NA;online;14;i2
+user7;01/11/2018;MAD;NA;online;18;i2
+user1;01/11/2018;ALC;NA;online;56;i2
+user7;01/11/2018;MAD;NA;online;30;i2
+user10;01/11/2018;MAD;NA;online;10;i2
+user6;01/11/2018;MAD;NA;travel agency;2;i2
+user7;01/11/2018;MAD;NA;travel agency;13;i2
+user9;01/11/2018;TFN;NA;online;36;i2
+user10;01/11/2018;MAD;NA;online;6;i2
+user7;31/10/2018;CPH;NA;online;4;i2
+user5;01/11/2018;MAD;NA;online;38;i2
+user2;30/10/2018;LGW;NA;online;66;i2
+user5;01/11/2018;IBZ;NA;online;32;i2
+user9;01/11/2018;ALC;NA;online;28;i2
+user9;01/11/2018;MAD;NA;travel agency;1;i2
+user6;29/10/2018;MAD;NA;online;3;i2
+user9;01/11/2018;AMS;NA;travel agency;28;i2
+user4;01/11/2018;SCQ;NA;travel agency;29;i2
+user2;01/11/2018;JMK;NA;online;1;i2
+user5;31/10/2018;TLS;NA;travel agency;52;i2
+user3;01/11/2018;MAD;NA;call center;42;i2
+user9;02/11/2018;TFS;NA;travel agency;38;i2
+user8;01/11/2018;SVQ;NA;online;51;i2
+user7;01/11/2018;LPA;NA;online;51;i2
+user8;01/11/2018;MAD;NA;online;45;i2
+user8;01/11/2018;MAD;NA;travel agency;22;i2
+user5;02/11/2018;PMI;NA;online;5;i2
+user7;01/11/2018;IBZ;NA;online;4;i2
+user1;01/11/2018;ALC;NA;online;17;i2
+user9;03/11/2018;MAD;NA;travel agency;27;i2
+user1;01/11/2018;MAD;NA;online;31;i2
+user2;01/11/2018;MAD;NA;travel agency;9;i2
+user8;01/11/2018;MAD;NA;travel agency;4;i2
+user9;29/10/2018;SPC;NA;online;27;i2
+user8;01/11/2018;MAD;NA;online;4;i2
+user7;30/10/2018;MAD;NA;online;28;i2
+user3;01/11/2018;MAD;NA;travel agency;15;i2
+user7;01/11/2018;FUE;NA;online;27;i2
+user10;01/11/2018;MAD;NA;online;29;i2
+user2;01/11/2018;MAD;NA;online;22;i2
+user2;01/11/2018;PMI;NA;online;4;i2
+user9;01/11/2018;LPA;NA;travel agency;10;i2
+user9;31/10/2018;MAD;NA;online;16;i2
+user1;01/11/2018;LGW;NA;online;35;i2
+user9;01/11/2018;MAD;NA;travel agency;23;i2
+user9;01/11/2018;MAD;NA;online;1;i2
+user7;01/11/2018;MAD;NA;online;5;i2
+user4;29/10/2018;MAD;NA;travel agency;45;i2
+user2;29/10/2018;MAD;NA;travel agency;38;i2
+user5;01/11/2018;SPC;NA;travel agency;23;i2
+user7;29/10/2018;ACE;NA;online;12;i2
+user3;01/11/2018;TLS;NA;online;1;i2
+user8;29/10/2018;MAD;NA;online;26;i2
+user5;01/11/2018;MAD;NA;online;3;i2
+user2;01/11/2018;TLS;NA;online;58;i2
+user9;01/11/2018;MAD;NA;travel agency;4;i2
+user8;01/11/2018;FUE;NA;call center;28;i2
+user6;29/10/2018;SVQ;NA;travel agency;29;i2
+user10;01/11/2018;TFN;NA;online;64;i2
+user2;02/11/2018;TLS;NA;online;9;i2
+user10;01/11/2018;SVQ;NA;online;4;i2
+user5;01/11/2018;SVQ;NA;online;7;i2
+user7;01/11/2018;MAD;NA;travel agency;2;i2
+user8;01/11/2018;MAD;NA;online;44;i2
+user7;31/10/2018;MAD;NA;travel agency;4;i2
+user1;01/11/2018;MAD;NA;travel agency;9;i2
+user6;01/11/2018;TFN;NA;online;70;i2
+user9;29/10/2018;LYS;NA;online;14;i2
+user9;29/10/2018;LPA;NA;online;1;i2
+user6;01/11/2018;FRA;NA;travel agency;4;i2
+user8;01/11/2018;MAD;NA;travel agency;5;i2
+user2;01/11/2018;MAD;NA;travel agency;25;i2
+user2;01/11/2018;MAD;NA;online;14;i2
+user6;01/11/2018;PMI;NA;online;5;i2
+user2;01/11/2018;MAD;NA;travel agency;7;i2
+user2;01/11/2018;VGO;NA;travel agency;5;i2
+user2;01/11/2018;VGO;NA;online;39;i2
+user4;31/10/2018;LPA;NA;online;8;i2
+user9;01/11/2018;LGW;NA;online;40;i2
+user1;01/11/2018;CMH;NA;online;88;i2
+user2;01/11/2018;CDG;NA;online;65;i2
+user10;31/10/2018;MAD;NA;travel agency;4;i2
+user9;31/10/2018;MAD;NA;travel agency;2;i2
+user7;01/11/2018;MAD;NA;call center;52;i2
+user8;01/11/2018;IBZ;NA;online;74;i2
+user2;01/11/2018;SCQ;NA;online;4;i2
+user5;01/11/2018;MAD;NA;online;36;i2
+user1;29/10/2018;TXL;NA;online;5;i2
+user5;02/11/2018;TFS;NA;online;13;i2
+user8;01/11/2018;MAD;NA;online;6;i2
+user7;29/10/2018;TFN;NA;online;7;i2
+user5;01/11/2018;BRU;NA;travel agency;57;i2
+user4;01/11/2018;MAD;NA;online;30;i2
+user9;31/10/2018;PMI;NA;online;23;i2
+user8;01/11/2018;SCQ;NA;online;57;i2
+user5;01/11/2018;SVQ;NA;online;44;i2
+user7;01/11/2018;MAD;NA;online;3;i2
+user5;01/11/2018;SPC;NA;online;4;i2
+user2;29/10/2018;TXL;NA;online;27;i2
+user5;01/11/2018;MAD;NA;travel agency;46;i2
+user3;02/11/2018;NTE;NA;online;54;i2
+user10;01/11/2018;LPA;NA;call center;4;i2
+user3;01/11/2018;MAD;NA;travel agency;24;i2
+user9;01/11/2018;MAD;NA;online;28;i2
+user10;03/11/2018;MAD;NA;travel agency;6;i2
+user3;01/11/2018;DUB;NA;online;48;i2
+user1;01/11/2018;SVQ;NA;online;1;i2
+user7;01/11/2018;SPC;NA;online;23;i2
+user3;01/11/2018;SCQ;NA;travel agency;17;i2
+user7;01/11/2018;BRU;NA;travel agency;2;i2
+user9;29/10/2018;TFN;NA;online;74;i2
+user8;29/10/2018;TFN;NA;online;48;i2
+user6;01/11/2018;TFN;NA;online;68;i2
+user10;03/11/2018;MAD;NA;online;5;i2
+user4;01/11/2018;MAD;NA;online;84;i2
+user7;01/11/2018;TFS;NA;online;41;i2
+user4;01/11/2018;TFN;NA;online;2;i2
+user1;01/11/2018;MAD;NA;online;96;i2
+user3;02/11/2018;AMS;NA;online;1;i2
+user1;01/11/2018;STR;NA;online;42;i2
+user5;01/11/2018;MAD;NA;online;4;i2
+user4;01/11/2018;PMI;NA;call center;21;i2
+user10;30/10/2018;PMI;NA;travel agency;40;i2
+user9;29/10/2018;MAD;NA;online;19;i2
+user9;02/11/2018;FUE;NA;travel agency;1;i2
+user2;29/10/2018;SCQ;NA;travel agency;1;i2
+user4;01/11/2018;SVQ;NA;online;43;i2
+user2;01/11/2018;MAD;NA;online;12;i2
+user9;30/10/2018;NTE;NA;call center;5;i2
+user3;01/11/2018;AGP;NA;travel agency;30;i2
+user7;01/11/2018;MAD;NA;travel agency;1;i2
+user2;01/11/2018;MAD;NA;online;45;i2
+user6;02/11/2018;TFN;NA;travel agency;3;i2
+user3;31/10/2018;LPA;NA;travel agency;21;i2
+user9;01/11/2018;MAD;NA;online;65;i2
+user7;01/11/2018;LGA;NA;travel agency;17;i2
+user6;01/11/2018;MAD;NA;online;0;i2
+user7;01/11/2018;TFN;NA;online;33;i2
+user2;01/11/2018;MAD;NA;online;2;i2
+user2;01/11/2018;VGO;NA;online;2;i2
+user4;01/11/2018;XRY;NA;travel agency;2;i2
+user3;31/10/2018;MAD;NA;travel agency;43;i2
+user10;29/10/2018;MAD;NA;travel agency;3;i2
+user6;01/11/2018;MAD;NA;online;74;i2
+user5;01/11/2018;XRY;NA;travel agency;31;i2
+user8;01/11/2018;MAD;NA;online;15;i2
+user7;01/11/2018;SVQ;NA;online;6;i2
+user4;01/11/2018;PMI;NA;travel agency;4;i2
+user6;31/10/2018;AGP;NA;online;60;i2
+user2;01/11/2018;TXL;NA;travel agency;0;i2
+user2;01/11/2018;MAD;NA;travel agency;22;i2
+user10;01/11/2018;MAD;NA;call center;10;i2
+user1;29/10/2018;TXL;NA;online;65;i2
+user3;01/11/2018;MAD;NA;online;64;i2
+user10;01/11/2018;VGO;NA;travel agency;43;i2
+user6;01/11/2018;MAD;NA;travel agency;44;i2
+user8;29/10/2018;LPA;NA;travel agency;15;i2
+user3;01/11/2018;FRA;NA;travel agency;10;i2
+user1;01/11/2018;SCQ;NA;online;5;i2
+user6;01/11/2018;MAD;NA;online;19;i2
+user3;01/11/2018;CDG;NA;online;42;i2
+user10;01/11/2018;MAD;NA;travel agency;20;i2
+user2;01/11/2018;MAH;NA;online;63;i2
+user3;01/11/2018;MAD;NA;online;47;i2
+user9;01/11/2018;SVQ;NA;travel agency;64;i2
+user10;01/11/2018;MAD;NA;online;20;i2
+user9;29/10/2018;MAD;NA;online;10;i2
+user4;01/11/2018;MAH;NA;online;35;i2
+user10;02/11/2018;CPH;NA;online;23;i2
+user9;01/11/2018;MAD;NA;online;63;i2
+user8;01/11/2018;MAD;NA;travel agency;75;i2
+user5;01/11/2018;MAD;NA;travel agency;19;i2
+user9;01/11/2018;MAD;NA;online;64;i2
+user9;02/11/2018;TFN;NA;travel agency;21;i2
+user2;01/11/2018;AMS;NA;travel agency;14;i2
+user6;03/11/2018;MAD;NA;online;28;i2
+user2;01/11/2018;SPC;NA;travel agency;32;i2
+user2;01/11/2018;MAD;NA;online;5;i2
+user10;01/11/2018;MAD;NA;online;29;i2
+user8;01/11/2018;MAD;NA;online;6;i2
+user9;01/11/2018;PMI;NA;call center;3;i2
+user2;01/11/2018;BPS;NA;online;0;i2
+user7;31/10/2018;PMI;NA;online;2;i2
+user3;30/10/2018;MAD;NA;travel agency;46;i2
+user2;01/11/2018;AMS;NA;online;49;i2
+user5;01/11/2018;TFN;NA;travel agency;38;i2
+user2;01/11/2018;MAD;NA;travel agency;78;i2
+user3;01/11/2018;LPA;NA;online;52;i2
+user1;01/11/2018;TFN;NA;online;19;i2
+user6;01/11/2018;TXL;NA;online;31;i2
+user4;01/11/2018;SCQ;NA;travel agency;6;i2
+user4;29/10/2018;MAD;NA;online;36;i2
+user2;31/10/2018;MAD;NA;online;33;i2
+user5;02/11/2018;MAD;NA;call center;37;i2
+user3;02/11/2018;SVQ;NA;online;18;i2
+user6;01/11/2018;MAD;NA;online;18;i2
+user5;01/11/2018;MAD;NA;online;47;i2
+user1;01/11/2018;MAD;NA;call center;24;i2
+user4;30/10/2018;MAD;NA;travel agency;74;i2
+user5;02/11/2018;SCQ;NA;travel agency;63;i2
+user10;01/11/2018;VGO;NA;online;8;i2
+user7;01/11/2018;STR;NA;online;76;i2
+user4;01/11/2018;PMI;NA;online;1;i2
+user7;02/11/2018;SVQ;NA;online;66;i2
+user9;02/11/2018;MAD;NA;online;3;i2
+user4;01/11/2018;MAD;NA;online;5;i2
+user10;01/11/2018;MAD;NA;travel agency;49;i2
+user2;02/11/2018;PMI;NA;travel agency;0;i2
+user3;01/11/2018;TFS;NA;online;5;i2
+user5;01/11/2018;MAD;NA;online;22;i2
+user10;01/11/2018;MAD;NA;online;71;i2
+user4;01/11/2018;CWB;NA;call center;33;i2
+user9;01/11/2018;MAD;NA;travel agency;4;i2
+user2;01/11/2018;MAD;NA;travel agency;4;i2
+user4;01/11/2018;GIG;NA;travel agency;4;i2
+user9;01/11/2018;MAD;NA;online;11;i2
+user4;01/11/2018;SVQ;NA;online;5;i2
+user2;02/11/2018;MAD;NA;travel agency;39;i2
+user5;01/11/2018;MAD;NA;online;27;i2
+user5;01/11/2018;MAD;NA;online;2;i2
+user7;02/11/2018;PMI;NA;online;4;i2
+user6;01/11/2018;PMI;NA;online;12;i2
+user6;01/11/2018;MAD;NA;online;46;i2
+user4;01/11/2018;MAD;NA;online;2;i2
+user9;30/10/2018;MAD;NA;online;20;i2
+user9;31/10/2018;CAG;NA;online;4;i2
+user10;30/10/2018;NAP;NA;online;40;i2
+user10;01/11/2018;TFN;NA;online;98;i2
+user10;02/11/2018;MAD;NA;travel agency;51;i2
+user3;01/11/2018;MAD;NA;online;33;i2
+user8;01/11/2018;SCQ;NA;online;7;i2
+user1;01/11/2018;MAD;NA;online;1;i2
+user10;01/11/2018;AGP;NA;online;51;i2
+user3;29/10/2018;AMS;NA;online;34;i2
+user4;01/11/2018;LPA;NA;online;4;i2
+user7;02/11/2018;MAD;NA;online;2;i2
+user2;01/11/2018;SVQ;NA;online;22;i2
+user9;29/10/2018;MAD;NA;online;15;i2
+user5;01/11/2018;MAD;NA;online;38;i2
+user3;02/11/2018;MAD;NA;online;6;i2
+user5;01/11/2018;TFS;NA;travel agency;13;i2
+user1;01/11/2018;MAD;NA;online;6;i2
+user4;01/11/2018;MAD;NA;online;26;i2
+user1;01/11/2018;MAD;NA;online;5;i2
+user8;01/11/2018;MAD;NA;online;38;i2
+user1;30/10/2018;TXL;NA;online;34;i2
+user9;01/11/2018;MAD;NA;online;20;i2
+user5;01/11/2018;MAD;NA;travel agency;4;i2
+user8;01/11/2018;CDG;NA;online;5;i2
+user10;01/11/2018;MAD;NA;travel agency;60;i2
+user5;29/10/2018;MAD;NA;travel agency;49;i2
+user7;01/11/2018;MAD;NA;online;2;i2
+user8;01/11/2018;VGO;NA;online;42;i2
+user7;29/10/2018;LYS;NA;travel agency;5;i2
+user10;30/10/2018;CDG;NA;online;1;i2
+user3;01/11/2018;MAD;NA;travel agency;37;i2
+user8;01/11/2018;MAD;NA;online;49;i2
+user9;01/11/2018;MAD;NA;online;2;i2
+user5;01/11/2018;MAD;NA;online;51;i2
+user1;02/11/2018;MAD;NA;online;86;i2
+user7;01/11/2018;MAD;NA;travel agency;59;i2
+user2;02/11/2018;MAD;NA;travel agency;3;i2
+user1;29/10/2018;NAP;NA;travel agency;4;i2
+user1;01/11/2018;ACE;NA;online;1;i2
+user1;01/11/2018;MAD;NA;travel agency;2;i2
+user7;01/11/2018;MAD;NA;online;4;i2
+user6;01/11/2018;LPA;NA;online;19;i2
+user9;29/10/2018;MAD;NA;travel agency;16;i2
+user6;01/11/2018;MAD;NA;online;7;i2
+user10;31/10/2018;SVQ;NA;travel agency;6;i2
+user7;30/10/2018;LPA;NA;online;3;i2
+user1;01/11/2018;LPA;NA;online;0;i2
+user9;01/11/2018;MAD;NA;travel agency;5;i2
+user6;01/11/2018;ALC;NA;travel agency;33;i2
+user8;01/11/2018;ALC;NA;online;26;i2
+user7;01/11/2018;MAD;NA;travel agency;30;i2
+user9;01/11/2018;MAD;NA;online;2;i2
+user6;01/11/2018;TXL;NA;online;16;i2
+user8;29/10/2018;LGW;NA;travel agency;75;i2
+user4;01/11/2018;TFN;NA;online;6;i2
+user10;01/11/2018;AMS;NA;online;7;i2
+user10;01/11/2018;MAD;NA;travel agency;17;i2
+user5;29/10/2018;LGW;NA;online;23;i2
+user8;01/11/2018;MAD;NA;online;4;i2
+user9;30/10/2018;LGW;NA;online;2;i2
+user2;01/11/2018;MAD;NA;online;5;i2
+user6;01/11/2018;MAD;NA;online;44;i2
+user9;01/11/2018;PMI;NA;travel agency;65;i2
+user6;01/11/2018;MAD;NA;travel agency;33;i2
+user4;01/11/2018;TFN;NA;online;3;i2
+user10;03/11/2018;MAD;NA;travel agency;46;i2
+user8;03/11/2018;TFN;NA;online;95;i2
+user8;01/11/2018;MAD;NA;online;85;i2
+user4;01/11/2018;MAD;NA;travel agency;35;i2
+user9;01/11/2018;MAD;NA;online;3;i2
+user8;02/11/2018;SVQ;NA;online;54;i2
+user9;29/10/2018;NTE;NA;online;12;i2
+user5;01/11/2018;MAD;NA;online;30;i2
+user10;01/11/2018;MAD;NA;online;64;i2
+user6;01/11/2018;AMS;NA;travel agency;18;i2
+user1;29/10/2018;TXL;NA;online;50;i2
+user7;01/11/2018;MAD;NA;online;32;i2
+user2;03/11/2018;CDG;NA;travel agency;60;i2
+user10;01/11/2018;MAD;NA;online;33;i2
+user1;01/11/2018;MAD;NA;travel agency;51;i2
+user10;01/11/2018;TFN;NA;travel agency;26;i2
+user1;01/11/2018;KRK;NA;online;29;i2
+user10;01/11/2018;SVQ;NA;travel agency;48;i2
+user1;30/10/2018;AMS;NA;travel agency;19;i2
+user3;30/10/2018;SVQ;NA;online;59;i2
+user5;29/10/2018;MAD;NA;online;26;i2
+user3;01/11/2018;MAD;NA;online;4;i2
+user8;01/11/2018;MAD;NA;travel agency;55;i2
+user6;01/11/2018;PMI;NA;online;61;i2
+user6;31/10/2018;MAD;NA;online;40;i2
+user5;01/11/2018;SVQ;NA;travel agency;38;i2
+user3;01/11/2018;MAD;NA;travel agency;43;i2
+user9;01/11/2018;MAD;NA;online;37;i2
+user2;01/11/2018;MAD;NA;travel agency;28;i2
+user2;01/11/2018;TFN;220.4600067;online;28;i2
+user9;01/11/2018;MAD;112.9700012;online;28;i2
+user3;01/11/2018;MAD;131.2100067;online;7;i2
+user4;30/10/2018;MAD;22.68000031;online;54;i2
+user6;01/11/2018;MAD;34.63000107;travel agency;2;i2
+user6;01/11/2018;MAD;122.1999969;call center;11;i2
+user3;01/11/2018;MAD;67.09999847;online;3;i2
+user9;01/11/2018;MAD;41.83000183;online;57;i2
+user5;01/11/2018;MAD;139.7200012;travel agency;3;i2
+user10;30/10/2018;MAN;104.6299973;online;6;i2
+user3;01/11/2018;PMI;34;online;72;i2
+user1;01/11/2018;TFS;100.0699997;online;1;i2
+user5;01/11/2018;AGP;21.29000092;online;40;i2
+user5;01/11/2018;MAH;24.30999947;online;59;i2
+user8;30/10/2018;SCQ;35.97000122;travel agency;30;i2
+user8;29/10/2018;TFN;22.20999908;travel agency;48;i2
+user9;01/11/2018;MAD;35.16999817;call center;25;i2
+user10;01/11/2018;TFN;16.42000008;call center;40;i2
+user3;29/10/2018;MAD;79.44000244;online;3;i2
+user1;01/11/2018;MAD;51.33000183;online;6;i2
+user4;01/11/2018;MAD;21.29000092;online;6;i2
+user5;01/11/2018;MAD;20.80999947;online;8;i2
+user3;01/11/2018;MAD;42.97999954;online;68;i2
+user1;01/11/2018;ALC;30.70000076;travel agency;20;i2
+user7;29/10/2018;MAD;172.4400024;online;39;i2
+user6;01/11/2018;PMI;83.65000153;online;23;i2
+user3;01/11/2018;TFN;250.9299927;call center;4;i2
+user1;01/11/2018;MAD;34.13999939;online;7;i2
+user1;01/11/2018;MAD;158.6000061;online;12;i2
+user10;01/11/2018;IBZ;51.77000046;online;85;i2
+user6;01/11/2018;SVQ;42.45000076;travel agency;6;i2
+user10;01/11/2018;MAD;48.34999847;online;46;i2
+user3;01/11/2018;DUS;90.58999634;travel agency;5;i2
+user1;30/10/2018;CPH;85.97000122;online;45;i2
+user2;01/11/2018;MAD;209.8000031;travel agency;30;i2
+user9;01/11/2018;MAD;88.27999878;online;49;i2
+user6;02/11/2018;NCE;95.44000244;travel agency;2;i2
+user10;01/11/2018;TXL;43.63000107;online;37;i2
+user8;31/10/2018;MAD;48.93999863;online;15;i2
+user3;01/11/2018;PMI;30.84000015;travel agency;6;i2
+user6;01/11/2018;SDU;7.510000229;travel agency;22;i2
+user2;01/11/2018;TXL;157.1399994;travel agency;24;i2
+user2;01/11/2018;TXL;96.62999725;online;85;i2
+user2;01/11/2018;SCQ;34.13999939;online;5;i2
+user10;01/11/2018;MAD;22.68000031;online;15;i2
+user2;01/11/2018;TFS;158.2100067;travel agency;13;i2
+user9;01/11/2018;TFS;43.77000046;online;62;i2
+user6;02/11/2018;CDG;41.84000015;travel agency;2;i2
+user1;30/10/2018;PMI;21.20999908;online;1;i2
+user2;01/11/2018;AMS;48.66999817;online;5;i2
+user8;01/11/2018;PMI;16.97999954;online;5;i2
+user2;01/11/2018;DUB;138.5099945;online;32;i2
+user6;01/11/2018;MAD;35.83000183;travel agency;3;i2
+user10;01/11/2018;TFN;71.94000244;travel agency;6;i2
+user5;01/11/2018;MAD;22.53000069;online;2;i2
+user3;01/11/2018;MAD;183.0299988;travel agency;26;i2
+user7;01/11/2018;MAD;66.37999725;travel agency;10;i2
+user7;01/11/2018;MAD;194.0700073;online;2;i2
+user7;01/11/2018;SCQ;115.0899963;travel agency;38;i2
+user7;01/11/2018;PMI;60.86000061;online;2;i2
+user1;01/11/2018;MAD;81.5922617;online;2;i2
+user10;02/11/2018;MAD;69.83000183;online;9;i2
+user6;31/10/2018;MAD;41.83000183;online;2;i2
+user4;02/11/2018;MAD;60.65999985;online;49;i2
+user4;01/11/2018;MAD;54.66999817;online;5;i2
+user5;01/11/2018;MAD;18.95000076;online;6;i2
+user3;01/11/2018;MAD;105.9100037;online;11;i2
+user9;01/11/2018;PMI;10.97000027;online;38;i2
+user3;01/11/2018;MAD;60.22000122;travel agency;5;i2
+user4;01/11/2018;LPA;NA;travel agency;14;i2
+user1;01/11/2018;MAD;NA;travel agency;34;i2
+user3;01/11/2018;MAD;NA;online;0;i2
+user5;01/11/2018;TFN;NA;travel agency;1;i2
+user2;30/10/2018;MAD;NA;online;71;i2
+user6;01/11/2018;TFN;68.98999786;online;1;i2
+user2;01/11/2018;AMS;204.3800049;online;5;i2
+user8;01/11/2018;MAD;70.08000183;online;40;i2
+user6;03/11/2018;TFS;105.8000031;travel agency;32;i2
+user9;03/11/2018;MAD;148.4400024;online;25;i2
+user3;01/11/2018;VGO;51.70999908;online;4;i2
+user10;01/11/2018;FUE;46.27999878;online;24;i2
+user5;01/11/2018;MAD;91.02999878;online;46;i2
+user2;29/10/2018;SCQ;38.25999832;travel agency;0;i2
+user8;01/11/2018;PMI;40.08000183;travel agency;11;i2
+user4;01/11/2018;MAD;55.41999817;online;1;i2
+user10;01/11/2018;MAD;81.5922617;travel agency;4;i2
+user7;01/11/2018;MAD;108.1699982;online;48;i2
+user5;31/10/2018;PMI;42.66999817;online;35;i2
+user10;01/11/2018;MAD;48.34999847;online;24;i2
+user2;01/11/2018;VGO;54.74000168;online;3;i2
+user10;01/11/2018;JMK;103.5999985;online;65;i2
+user2;29/10/2018;MAD;105.2099991;online;1;i2
+user6;01/11/2018;MAD;54.02999878;travel agency;53;i2
+user5;01/11/2018;MAD;131.3399963;online;60;i2
+user9;01/11/2018;MAD;268.4700012;travel agency;0;i2
+user1;01/11/2018;MAD;139.7100067;travel agency;0;i2
+user6;01/11/2018;MAD;27;travel agency;24;i2
+user7;01/11/2018;MAD;70.27999878;call center;40;i2
+user6;01/11/2018;SCQ;15.85000038;online;2;i2
+user1;31/10/2018;SPC;94.16000366;travel agency;20;i2
+user8;01/11/2018;MAD;5;online;3;i2
+user10;01/11/2018;MAD;42.72999954;online;47;i2
+user3;29/10/2018;MAD;NA;online;76;i2
+user6;01/11/2018;ALC;NA;online;17;i2
+user7;02/11/2018;MAD;NA;online;5;i2
+user1;01/11/2018;MAD;NA;travel agency;2;i2
+user10;01/11/2018;MAD;NA;online;43;i2
+user2;01/11/2018;MAD;248.7400055;online;47;i2
+user3;01/11/2018;LPA;65.54000092;online;45;i2
+user4;02/11/2018;MAD;97.13999939;online;6;i2
+user1;29/10/2018;MAD;30.12999916;online;37;i2
+user6;01/11/2018;MAD;174.7799988;travel agency;27;i2
+user3;01/11/2018;MAD;150.2100067;online;64;i2
+user4;29/10/2018;SVQ;135.1900024;travel agency;6;i2
+user1;02/11/2018;MAD;84.30999756;online;18;i2
+user1;01/11/2018;MAD;135.4400024;online;31;i2
+user2;31/10/2018;TXL;86.52999878;travel agency;0;i2
+user8;30/10/2018;MAD;76.66999817;travel agency;23;i2
+user4;01/11/2018;SCQ;114.8399963;travel agency;7;i2
+user7;01/11/2018;MAD;403;travel agency;16;i2
+user4;01/11/2018;SCQ;21.18000031;online;22;i2
+user4;01/11/2018;TFN;37.81999969;travel agency;25;i2
+user1;01/11/2018;CDG;247.8800049;travel agency;10;i2
+user10;01/11/2018;MAN;0;online;43;i2
+user10;01/11/2018;LPA;58.95999908;online;3;i2
+user4;01/11/2018;LPA;34.72999954;online;34;i2
+user3;01/11/2018;SVQ;22;travel agency;3;i2
+user9;01/11/2018;MAD;121.7900009;online;17;i2
+user4;02/11/2018;TFN;25.80999947;online;11;i2
+user1;29/10/2018;LGW;38.13000107;online;24;i2
+user9;01/11/2018;MAD;58.33000183;travel agency;12;i2
+user3;01/11/2018;MAD;194.8699951;travel agency;1;i2
+user1;01/11/2018;ACE;281.2099915;travel agency;12;i2
+user3;01/11/2018;MAD;36.25999832;online;47;i2
+user4;01/11/2018;MAD;48.59000015;online;20;i2
+user7;29/10/2018;TXL;144.0299988;travel agency;10;i2
+user8;01/11/2018;LPA;16.70999908;online;7;i2
+user3;01/11/2018;PMI;NA;online;2;i2
+user7;03/11/2018;MAD;NA;travel agency;12;i2
+user3;01/11/2018;TFN;NA;online;34;i2
+user6;01/11/2018;LPA;NA;travel agency;88;i2
+user5;01/11/2018;NCE;NA;online;69;i2
+user9;01/11/2018;GIG;NA;travel agency;2;i2
+user10;01/11/2018;MAD;100.5100021;call center;10;i2
+user8;01/11/2018;IBZ;35.93000031;online;6;i2
+user6;01/11/2018;PMI;85.68000031;online;26;i2
+user4;01/11/2018;MAD;24.67000008;online;21;i2
+user7;01/11/2018;MAD;182.4900055;online;5;i2
+user9;29/10/2018;TFS;18.21999931;travel agency;11;i2
+user10;01/11/2018;MAD;52.20999908;online;6;i2
+user1;01/11/2018;PMI;37.95999908;travel agency;36;i2
+user10;01/11/2018;TFN;24.04999924;travel agency;6;i2
+user5;01/11/2018;AMS;5;online;20;i2
+user2;01/11/2018;DUS;175.1999969;travel agency;27;i2
+user2;01/11/2018;PMI;45.16999817;travel agency;54;i2
+user3;01/11/2018;MAD;122.0899963;online;5;i2
+user9;01/11/2018;MAD;76.94999695;travel agency;4;i2
+user4;01/11/2018;ALC;122.5299988;online;2;i2
+user2;01/11/2018;MAD;19.04999924;travel agency;62;i2
+user8;01/11/2018;TFS;85.97000122;online;21;i2
+user2;01/11/2018;MAD;174.1100006;travel agency;14;i2
+user7;01/11/2018;MAD;31.62000084;online;4;i2
+user2;01/11/2018;MAD;34.61999893;online;22;i2
+user5;01/11/2018;AMS;83.94000244;travel agency;27;i2
+user2;01/11/2018;JMK;103.5999985;online;7;i2
+user8;01/11/2018;MAD;45.5;online;26;i2
+user9;01/11/2018;TXL;62.83000183;travel agency;42;i2
+user10;31/10/2018;MAD;26.43000031;travel agency;54;i2
+user6;30/10/2018;LGW;34.00999832;travel agency;74;i2
+user3;29/10/2018;MAD;44.27999878;travel agency;77;i2
+user6;01/11/2018;ALC;34.90000153;online;45;i2
+user8;01/11/2018;PMI;12.96000004;travel agency;19;i2
+user2;02/11/2018;LGW;NA;online;6;i2
+user5;03/11/2018;TXL;NA;travel agency;2;i2
+user9;30/10/2018;MAD;NA;online;44;i2
+user10;01/11/2018;MAD;NA;travel agency;2;i2
+user2;03/11/2018;MAD;NA;travel agency;55;i2
+user5;01/11/2018;MAD;NA;online;10;i2
+user3;01/11/2018;MAD;NA;online;39;i2
+user1;01/11/2018;MAD;21.86000061;online;5;i2
+user6;01/11/2018;MAD;110.0899963;online;55;i2
+user1;02/11/2018;LGW;34.88999939;online;4;i2
+user9;01/11/2018;MAD;26.92000008;online;7;i2
+user10;31/10/2018;MAD;33.84999847;travel agency;25;i2
+user10;01/11/2018;MAD;55.97999954;online;0;i2
+user10;31/10/2018;DUB;41.54000092;online;34;i2
+user8;01/11/2018;IBZ;20.86000061;online;4;i2
+user9;01/11/2018;TFN;33.81000137;online;24;i2
+user9;01/11/2018;MAD;175.4799957;travel agency;14;i2
+user4;29/10/2018;MAD;24.77000046;travel agency;33;i2
+user9;01/11/2018;MAH;57.04000092;online;1;i2
+user7;29/10/2018;MAD;42.56999969;travel agency;4;i2
+user7;31/10/2018;MAD;133.7400055;online;5;i2
+user3;01/11/2018;MAD;68.33000183;online;1;i2
+user6;30/10/2018;SCQ;30.70000076;online;34;i2
+user4;01/11/2018;PMI;60.06000137;online;18;i2
+user10;01/11/2018;MAD;23.29000092;online;5;i2
+user7;01/11/2018;MAD;109.3300018;online;58;i2
+user6;01/11/2018;MAD;18.67000008;online;4;i2
+user3;01/11/2018;BOD;54.88000107;online;6;i2
+user1;29/10/2018;MAD;97.13999939;online;4;i2
+user5;01/11/2018;ACE;35.31000137;online;1;i2
+user9;01/11/2018;MAD;148.75;call center;14;i2
+user10;01/11/2018;SCQ;84.91000366;online;0;i2
+user8;01/11/2018;TFS;15;travel agency;75;i2
+user3;01/11/2018;SVQ;52.02000046;travel agency;39;i2
+user5;31/10/2018;TFN;110.6699982;travel agency;34;i2
+user4;01/11/2018;MAD;97.72000122;online;2;i2
+user5;01/11/2018;SVQ;50.13000107;travel agency;12;i2
+user1;01/11/2018;MAD;88.80999756;online;0;i2
+user5;01/11/2018;PMI;42.08000183;travel agency;73;i2
+user7;02/11/2018;MAD;304.3800049;travel agency;2;i2
+user10;30/10/2018;NAP;104.4000015;online;28;i2
+user10;01/11/2018;MAD;24.80999947;online;3;i2
+user1;01/11/2018;MAD;72.11000061;travel agency;3;i2
+user2;01/11/2018;MAD;34.43999863;travel agency;21;i2
+user6;01/11/2018;MAN;40.18999863;online;0;i2
+user1;01/11/2018;MAD;147.1199951;travel agency;7;i2
+user1;01/11/2018;MAD;12.60000038;travel agency;18;i2
+user4;01/11/2018;SCQ;52.36000061;travel agency;12;i2
+user9;01/11/2018;MAD;NA;online;12;i2
+user3;29/10/2018;MAD;NA;travel agency;125;i2
+user10;01/11/2018;MAD;NA;online;8;i2
+user9;03/11/2018;MAD;NA;travel agency;23;i2
+user2;31/10/2018;MAD;NA;online;0;i2
+user6;01/11/2018;CPH;NA;travel agency;59;i2
+user8;01/11/2018;MAH;NA;online;1;i2
+user6;01/11/2018;TFN;NA;travel agency;51;i2
+user5;02/11/2018;TFN;15.13000011;travel agency;6;i2
+user4;02/11/2018;MAD;29.13999939;travel agency;26;i2
+user4;01/11/2018;MAD;28;travel agency;66;i2
+user4;01/11/2018;LPA;188.7599945;travel agency;4;i2
+user7;01/11/2018;CPH;175.4600067;travel agency;38;i2
+user7;01/11/2018;MAD;93.18000031;travel agency;24;i2
+user7;01/11/2018;MAD;266.7399902;online;36;i2
+user8;01/11/2018;CDG;41.25;travel agency;6;i2
+user3;01/11/2018;TFS;98;travel agency;52;i2
+user1;01/11/2018;DUB;117.6100006;online;5;i2
+user4;01/11/2018;SCQ;127.1200027;travel agency;29;i2
+user4;01/11/2018;MAD;48.97000122;online;52;i2
+user2;01/11/2018;PMI;23;online;40;i2
+user4;02/11/2018;RNS;133.5299988;online;52;i2
+user2;31/10/2018;LGW;46.36000061;online;44;i2
+user10;01/11/2018;MAD;76.19999695;online;22;i2
+user5;01/11/2018;TFN;31.55999947;online;32;i2
+user2;01/11/2018;PMI;13;travel agency;13;i2
+user2;01/11/2018;SCQ;76.26000214;travel agency;0;i2
+user2;01/11/2018;AMS;6.179999828;travel agency;0;i2
+user8;01/11/2018;SPC;102.1999969;travel agency;14;i2
+user7;30/10/2018;LGW;27.06999969;online;39;i2
+user5;30/10/2018;AGP;288.75;online;8;i2
+user6;30/10/2018;TFN;33.13999939;online;3;i2
+user2;01/11/2018;MAD;53.20000076;online;0;i2
+user1;01/11/2018;PMI;37.59999847;travel agency;43;i2
+user8;01/11/2018;MAD;63.40999985;online;2;i2
+user9;01/11/2018;LGA;8.710000038;travel agency;73;i2
+user6;01/11/2018;LPA;19.32999992;online;2;i2
+user6;01/11/2018;MAD;11.55000019;online;27;i2
+user1;01/11/2018;MAD;115.0999985;online;29;i2
+user1;31/10/2018;MAD;35.50999832;travel agency;49;i2
+user7;01/11/2018;MAD;100.4599991;travel agency;27;i2
+user8;01/11/2018;MAD;25.11000061;call center;3;i2
+user7;01/11/2018;MAD;34.5;travel agency;54;i2
+user4;01/11/2018;VGO;38.24000168;online;10;i2
+user1;01/11/2018;PMI;100.3300018;online;45;i2
+user2;01/11/2018;VGO;140.1199951;travel agency;61;i2
+user10;01/11/2018;MAD;NA;travel agency;0;i2
+user7;01/11/2018;MAD;NA;travel agency;6;i2
+user1;01/11/2018;MAD;NA;online;59;i2
+user9;01/11/2018;CPH;NA;online;5;i2
+user9;01/11/2018;TFN;NA;online;6;i2
+user7;02/11/2018;AGP;NA;travel agency;0;i2
+user9;01/11/2018;MAD;NA;travel agency;2;i2
+user6;01/11/2018;MAD;NA;online;23;i2
+user8;01/11/2018;MAD;45.79999924;online;0;i2
+user4;01/11/2018;NCE;81.20999908;online;6;i2
+user8;01/11/2018;MAD;174.6199951;travel agency;3;i2
+user1;01/11/2018;TFN;60.50999832;online;24;i2
+user8;01/11/2018;LPA;31.61000061;travel agency;1;i2
+user5;30/10/2018;MAD;63.06000137;travel agency;2;i2
+user9;29/10/2018;AMS;83.94999695;travel agency;58;i2
+user1;01/11/2018;MAD;86.90000153;online;13;i2
+user8;01/11/2018;LYS;54.97000122;online;2;i2
+user2;01/11/2018;MAD;81.5922617;online;2;i2
+user8;01/11/2018;MAD;29.02000046;online;21;i2
+user9;01/11/2018;SCQ;57.61999893;online;16;i2
+user2;01/11/2018;JMK;NA;online;29;i2
+user10;01/11/2018;SVQ;NA;online;39;i2
+user4;30/10/2018;MAD;NA;online;5;i2
+user10;02/11/2018;CDG;NA;online;4;i2
+user6;01/11/2018;MAD;98.33999634;online;0;i2
