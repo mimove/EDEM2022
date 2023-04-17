@@ -284,3 +284,27 @@ Es el método que más recursos consume. Selecciona una variable que ajuste bien
   - Computacionalmente costosos
   - Riesgo de overfitting
   - Dependientes del training set
+
+
+
+
+<br>
+
+<br>
+
+## _Clase 15/04/2023_
+
+
+## PCA
+
+Es un método de reducción de dimensionalidad. El primer paso es estandarizar los datos. Se busca el punto medio de los datos, y añadimo un vector hacia donde están concetnrados la mayor parte de datos. Se hace un vector perpendicular a este que apunta hacia el resto de la variación. 
+
+
+### Problemas del PCA
+
+- No funciona con variables categóricas
+
+- No funciona con variables con alta correlación
+
+- ¿Cuánta varianza queremos perder?
+
