@@ -741,6 +741,365 @@ Sin embargo, si la secuencia es muy larga, el context vector puede no ser sufici
 
 <br>
 
+## _Clase 20-05-2023_
+
+# Redes Neuronales Convolucionales
 
 
+## Visión Artificial
+
+La visión artificial ov isión por ordenador es una disciplina científica que incluye métodos para adquirir, procesar y analizar las imágenes del mundo real con el fin de proudcir información numérica o simbólica para que puedan ser tratados por un ordenador.
+
+El procesamiento de imágnes digitales es el conjunto de téncicas que se aplican a las imágenes digitales con el objetivo de mejorar la calidad o facilitar la búsqueda de información
+
+<p align="center">
+<img src="intro.png" width=600px>
+</p>
+
+
+Se llama análisis de imágenes a la extracción de información derivada de imágenes digitales de forma automática o semiautomática mediante algoritmos.
+
+La visión artificial comenzó como un proyecto de verano, cuyo objetivo era conectar una cámara a un ordeandor para que este "describiera lo que veía"
+
+
+Dentro de la visión artificial, existen tres tipos de problemas que se pueden tratar:
+
+- **Clasificación**: se trata de asignar una etiqueta a una imagen. Por ejemplo, si la imagen es un perro o un gato.
+
+<p align="center">
+<img src="clasif.png" width=600px>
+</p>
+
+
+- **Detección**: se trata de detectar objetos en una imagen y asignarles una etiqueta. Por ejemplo, si la imagen es un perro o un gato y dónde se encuentran en la imagen.
+
+<p align="center">
+<img src="deteccion.png" width=600px>
+</p>
+
+
+- **Segmentación**: se trata de decirme cada uno de los píxeles de la imagen a que clase pertenece.
+
+<p align="center">
+<img src="segmentacion.png" width=600px>
+</p>
+
+
+## Imagen Digital
+
+Las imágenes digitales se codifican mediante matrices bidimensionales de píxeles. Cada píxel tiene asociado un valor concreto dependiendo de la intensidad lumínica que se quiera representar.
+
+<p align="center">
+<img src="pixel.png" width=600px>
+</p>
+
+El valor de un píxel es más elevado cuanto más blanco sea y menor cuanto más tienda al negro.
+
+La intensidad de los píxeles se representa en dos rangos bien definidos:
+
+- [0, 255] si la información se codifica como números enteros sin signo de 8 bits
+- [0.0, 1.0] si la información se representa en número en coma flotante de 32 bits.
+
+<p align="center">
+<img src="pixel2.png" width=600px>
+</p>
+
+
+Los colores se representan en imagen digital como la combinación de intensidad de los canales R (red), G (green), B (blue)
+
+<p align="center">
+<img src="color.png" width=600px>
+</p>
+
+
+## Herramientas 
+
+La resolución de una imagen se define por el número de columnas (width) y filas (height) que las componen.
+
+El histograma de una imagen nos permite evaluar la frecuencia de aparición de cada uno de los distintos niveles de intensidad.
+
+<p align="center">
+<img src="intensidad.png" width=600px>
+</p>
+
+
+Si mi histograma está desplazado hacia la izquierda significa que los colores negros predominan. Si está desplazado hacia la derecha significa que los blancos predominan.
+
+
+La ecualización de histograma permite mejorar el contraste de las imágenes. Para ello utiliza la distribución acumulada de probabilidad como función de transferencia. Se utiliza información global de la imagen. El resultado es un histograma más distribuido entre los distintos niveles de gris.
+
+CLAHE (Contras Limited Adaptive Histogram Equalization) ecualiza la imagen utilizando histogramas de subregiones de la imagen.
+
+Se limita la amplificación del contraste en regiones constantes para no aumentar ruido. Los resultados son generalmente mejores que con la ecualización global del histograma, a cambio de más coste computacional.
+
+<p align="center">
+<img src="clahe.png" width=600px>
+</p>
+
+
+## Convolución
+
+Una convolución es una operación que permite aplicar un filtro a una imagen para modificarla. un filtro es una matriz pequeña (3x3, 5x5, 7x7, ...) que define como se va a modificar la imagen.
+
+Se aplican multiplicaciones y sumas de la vecindad de cada píxel del aimagen de entrada con el filtro para calcular los valores de la imagen de salida.
+
+
+<p align="center">
+<img src="convol.gif" width=400px>
+</p>
+
+
+Se aplican multiplicaciones y sumas de la vecindad de cada píxel de la imagen de entrada con el filtro para calcular los valores de la imagen de salida.
+
+Al aplicar una convolución la imagen de salida es más pequeña que la imagen de entrada. Para solventar esto se utiliza el padding. Existen diversos tipos de paddding, pero el más común es rellenar con ceros.
+
+El filtro promedio permite filtrar altas frecuencias en las imágenes. Los valores del filtro se definen a partir del tamaño de la matriz. Cuanto más grande sea la matriz, más información se eliminará.
+
+<p align="center">
+<img src="promed.png" width=600px>
+</p>
+
+El filtro gaussiano es una forma más robusta de eliminar altas frecuencias, a cambio de un mayor coste computacional. Los valores del fitro se definen a partir del tamaño de la matriz y de la desviación típica.
+
+
+
+<p align="center">
+<img src="gauss.png" width=600px>
+</p>
+
+
+Los filtros de Sobel permiten obtener los gradientes (derivadas de primer orden) de cambio en horizontal y vertical.
+
+<p align="center">
+<img src="sohel.png" width=600px>
+</p>
+
+
+
+## Segmentación
+
+La segmentación permite identificar los píxeles de la imagen que pertenecen a un determinado objeto mediante máscaras. Los píxeles de las máscaras de segementación son fijados a 1 (o 255) si peretencen al objeto en cuestión. Estas máscaras permiten la obtención de una gran variedad de parámetros del objeto.
+
+<p align="center">
+<img src="segmentacion2.png" width=600px>
+</p>
+
+Algunos de los parámetros que se pueden obtener mediante las máscaras de segmentación son:
+
+- Área
+- Relación de aspecto
+- Diámetro de contorno
+- Boundig box
+- Orientación
+- ...
+
+
+<p align="center">
+<img src="segmentacion3.png" width=400px>
+</p>
+
+
+### Mensajes clave
+
+La visión artificial es un campo de estudio muy extenso, que lleva en desarrollo desde la década de 1960. Los conceptos desarrollados en visión artificial son la base de las redes neuroanles convolucionales, por tanto su estudio es necesario para comprender en que se basan. Las técnicas de pre-procesado son fundamentales en los proyectos de IA basados en imagen.
+
+
+<br>
+
+<br>
+
+# Teoría Redes Neuronales Convolucionales 
+
+Las CNN están diseñadas para extraer patrones bidimensionales a diferentes escalas y niveles de complejidad.
+
+<p align="center">
+<img src="intro1.png" width=600px>
+</p>
+
+Según la imagen de entrada se procesa en capas más profundas de la red las características extraídas son más complejas.
+
+<p align="center">
+<img src="intro2.png" width=600px>
+</p>
+
+
+
+La popularización de las CNN para resolver problemas complejos de Visión Artificial comenzó en 2012 con el challenge ILSVRC (ImageNet Large Scale Visual Recognition Competition). 
+
+
+ImageNet es un conjunto aproximadamente 15 millones de imágenes anotadas con 22000 clases diferentes.
+
+ILSVRC proponía un subconjunto de 1.2 millones de imágenes y 1000 clases.
+
+Este desafía era extremadamente complejo de afrontar con metodologías de
+Visión Artificial o Machine Learning tradicionales.
+
+A partir de la utilización de CNN para afrontar el desafío el error se redujo de forma exponencial.
+
+Desde entonces las aplicaciones de CNN a problemas reales no han parado de multiplicarse.
+
+<p align="center">
+<img src="intro3.png" width=600px>
+</p>
+
+
+
+## Bloques CNN
+
+Los bloques convolucionales son los encargados de extraer patrones bidimensionales de las imágenes.
+
+Los principales parámetros a configurar en los bloques convolucionales son:
+
+- Número de filtros
+- Tamaño de los filtros
+- Stride
+- Padding
+- Función de activación
+
+
+La principal diferencia de esta red con las vistas anteriormente es que las capas van a contener filtros convolucionales en vez de neuronas. Estos filtros convolucionales se van a encargar de extraer patrones de la imagen de entrada.
+
+A la salida de un filtro convolución voy a tener un número de imágenes igual al número de filtros que hay en cada capa.
+
+El tamaño de los filtros del bloque define cuantas files y columnas van a tener los filtros que componen el bloque.
+
+El padding va a definir si se añaden píxeles en los bordes de los mapas de activaciokn para mantener el número de filas y columnas en las que realizar la convolución. El número de píxeles a añadir depende del tamaño de los filtros.
+
+El stride define el número de píxeles que se van a desplazar los filtros en cada convolución. Si el stride es 1, los filtros se desplazan de 1 en 1. Si el stride es 2, los filtros se desplazan de 2 en 2.
+
+La función de activación determina como reacciona una neurona a una determinada entrada. En los bloques convolucionales se suele utilizar ReLU como función de activación.
+
+La fórmula para calcular el output size de la imagen es:
+
+$$output\_size = \frac{input\_size - filter\_size + 2*padding}{stride} + 1$$
+
+El número de padding a añadir depende del tamaño de los filtros. Si el tamaño de los filtros es impar, el número de píxeles a añadir es igual a la mitad del tamaño de los filtros. Si el tamaño de los filtros es par, el número de píxeles a añadir es igual a la mitad del tamaño de los filtros menos 1.
+
+$$padding = \frac{filter\_size - 1}{2}$$
+
+<p align="center">
+<img src="conv1.png" width=600px>
+</p>
+
+
+Los bloques de pooling se utilizan para reducir el tamaño de las imágenes para aumentar la escala de la ifnormaciónq ue van a extraer los bloques convolucionales posteriores. 
+
+Los princiapeles parámetros a configurar en los blouqes convolucionales son:
+
+- Tamaño del pooling
+- Stride
+- Padding
+
+Los tipos de pooling más habituales son el max pooling y el average pooling.
+
+Generalmente, se configuran los bloques de Pooling con tamaño 2x2 y stride 2 para reducir el tamaño de los mapas de activación a la mitad.
+
+<p align="center">
+<img src="pooling1.png" width=400px>
+</p>
+
+
+
+El bloque flatten se utiliza para convertir los mapas de activación a un vector unidimensional que pueda ser procesado por blooques fully-connected.
+
+
+Hasta este punto lo que hemos conseguido con nuestra red convolucional es extraer las características más relevantes de una imagen.
+
+
+Los bloques fully connected son los que componen las redes neuronales tradicionales. Generalmente se utilizan como bloques finales en las CNN. Los principales parámetros a configurar en los bloques convolucionales son:
+
+• Número de neuronas.
+
+• Función de activación.
+
+
+### Mensaje clave
+
+El uso de CNN ha crecido de forma exponencial desde 2012.
+
+
+Los principales bloques constituyentes de las CNN son:
+
+- Bloques convolucionales.
+
+- Bloques de pooling.
+
+- Bloque flatten.
+
+- Bloques fully-connected.
+
+Existen una gran variedad adicional de bloques, pero estos pertenecen a dominios concretos, menos generalistas.
+
+
+<br>
+
+<br>
+
+# Redes Neuronales Convolucionales: Técnicas avanzadas
+
+
+Las CNN requieren una gran cantidad de datos etiquetados para funcionar de forma apropiada, pero existen ciertas técnicas que permiten reducir considerablemente el número de muestras de entrenamiento manteniendo niveles muy altos de desempeño.
+
+Estas técnicas se basan:
+
+1- La reducción del overfitting.
+
+2- El procesado de los datos en la CNN.
+
+3- La generación de muestras artificiales.
+
+4- La reutilización de pesos obtenidos con otras conjuntos de datos.
+
+
+
+## Dropout
+
+El principal objetivo del Dropout es prevenir el sobreajuste de la red. Consiste en desactivar de forma aleatoria neuronas de la red durante la fase de entrenamiento. El porcentaje de neuronas a desactivar es fijado por el desarrollador.
+
+<p align="center">
+<img src="dropout.png" width=600px>
+</p>
+
+
+
+## Batch Normalization
+
+Es una téncica que permite utilizar Learning Rates más grandes manteniendo la estabilidad de la red. Consiste en normalizar los valores de las activaciones de cada capa a una distribución normal con media 0 y varianza 1.
+
+
+## Data Augmentation
+
+Permite reducir el sobreajuste a la vez que aumenta el desempeño de la redes neuronales. Esta técnica consiste en la aplicación de transformaciones aleatorias a los datos durante el proceso de entrada. 
+
+<p align="center">
+<img src="datag.png" width=600px>
+</p>
+
+
+## Transfer Learning
+
+El Transfer Learning permite reducir significativamente el número de muestras de entrenamiento necesarias para entrenar CNNs.
+
+Esta técnica se basa en la utilización de los pesos de un modelo entrenado con una gran base de datos (habitualmente Imagenet) como estado inicial para posteriormente ajustar estos pesos a la tarea específica que se requiere resolver.
+
+<p align="center">
+<img src="transferlearn.png" width=500px>
+</p>
+
+
+### Mensaje clave
+
+Existen una gran variedad de técnicas que permiten reducir el número de muestras de entrenamiento necesarias para entrenar CNNs.
+
+Las principales técnicas son:
+
+- Dropout.
+- Batch Normalization.
+- Data Augmentation.
+- Transfer Learning.
+
+
+<br>
+
+<br>
 
