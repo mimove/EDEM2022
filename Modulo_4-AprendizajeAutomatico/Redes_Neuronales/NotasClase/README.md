@@ -1103,3 +1103,46 @@ Las principales técnicas son:
 
 <br>
 
+
+------------
+
+
+## _Clase 26/05/2023_
+
+
+## Segmentación
+
+La segmentación mediante CNN asigna a cada píxel de una imagen de entrada la probabilidad de formar parte de una clase determinada.
+
+El mapa de probabilidades que genera recibe el nombre de máscara de segmentación.
+
+
+UNet es una de las arquitecturas más utilizadas para segmentación.  Se caracteriza por tener una fase de compresión basada en bloques convolucionales y maxpooling, y de una fase de expansión formada por bloques convoluciones y bloques de convluciones transpuestas.
+
+
+El coeficiente de Dice se utiliza como métrica e incluso como función de pérdidas en tareas de segmentación. Se utiliza para evaluar el solapamiento entre dos máscaras de segmentación, donde 1 equivale a un solapamiento perfecto y 0 a la ausencia de solapamiento.
+
+$$Dice = \frac{2*\mathbf{TP}}{2*\mathbf{TP} + \mathbf{FP} + \mathbf{FN}}$$
+
+
+## Detección de Objetos
+
+La Detección de Objetos consiste en generar una bounding box con una probabilidad de clase asociada por cada objeto que se encuentra en la imagen de entrada.
+
+YOLO (You Only Look Once) fue una de las primeras arquitecturas que consiguió una implementación eficaz y en tiempo real de la detección de objetos. Está compuesta por bloques convolucionales, maxpooling y fully connected.
+
+<p align="center">
+<img src="yolo.png" width=500px>
+</p>
+
+
+YOLO afronta la detección de objetos como un problema de diversos parámetros.
+
+La función de pérdidas es una combinación de diversos errores cuadráticos:
+
+- Centro de la bounding box
+- Altura y anchura de la bounding box
+- "Objetidad" de la bounding box
+- Clase de la bounding box
+
+
