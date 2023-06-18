@@ -600,6 +600,20 @@ Target - La etiqueta asignada a cada muestra.
 
 <br>
 
+## Equipo
+
+- [Julio Sahuquillo](https://www.linkedin.com/in/juliosahuquillohuerta/): Ingeniero en Organización Industrial.
+
+
+- [Marina Pérez](https://www.linkedin.com/in/marinaperezbarber/): Graduada en Matemáticas y Física. 
+
+- [Miguel Moratilla](https://github.com/mimove): Doctor en Ing. Aeroespacial. 
+
+
+<br>
+
+<br>
+
 ## Preparación del entorno de trabajo
 
 Para poder realizar este proyecto, es necesario ejecutar el .ipynb en un entorno de trabajo que disponga de una GPU sufiencientemente potente para poder entrenar el modelo. En este caso, se ha utilizado Google Colab, que es un entorno de trabajo gratuito que nos permite ejecutar el .ipynb en la nube, con una GPU de forma gratuita. También se puede optar por usar Colab Pro, que es de pago, pero que nos permite usar una GPU más potente y durante más tiempo.
