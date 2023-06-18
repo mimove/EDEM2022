@@ -157,7 +157,7 @@ Para cargar el archivo en Tableu hay que conectarse a la base de datos con los s
 
 <br>
 
-## DATA PROJECT 2 (On Premise) [^1]
+## [DATA PROJECT 2 (On Premise)](https://github.com/mimove/DATAPROJECT2_ONPREMISE) [^1]
 
 
 <p align="center">
@@ -328,7 +328,160 @@ En la parte de visualización, se ha creado un dashboard que se muestra en la si
 
 <br>
 
-## DATA PROJECT 3
+## [DATA PROJECT 3](https://github.com/mimove/DATAPROJECT3)
+
+## Detección de Enfermedad Cardíaca
+
+Este proyecto de datos tiene como objetivo la detección de enfermedad cardiaca mediante el análisis de un conjunto de datos que contiene información sobremúltiples pacientes con diferentes grados de enfermedad o ausencia de la misma.
+
+Esta tarea parece sencilla, sin embargo, debemos ser conscientes de la importancia de proporcionar una solución a este tipo de problemas y el gran avance que supone en la práctica clínica. La detección temprana de enfermedades cardiovasculares en el momento del ingreso o la consulta médica puede salvar o mejorar la calidad de vida de los pacientes, por ello, desarrollar modelos precisos y eficientes puede ayudar a los profesionales médicos en la toma de decisiones clínicas y en la personalización de los tratamientos.
+
+Este desafío consiste en entrenar un modelo de aprendizaje automático que pueda predecir la presencia de enfermedad en el corazón basándose en las características recogidas en diferentes pruebas médicas como variables clínicas.
+
+## Descripción del dataset
+
+### Etiquetas
+
+El conjunto de datos se proporciona en formato CSV y contiene información sobre 866 pacientes con diferentes grados de enfermedad (1-4) o ausencia de la misma (0). Este dato puede obtenerse de la columna 'label'
+
+### Características
+
+Además, el conjunto de datos está compuesto por 13 características adicionales que describen las condiciones de salud de cada uno de los pacientes. Estas características se describen a continuación:
+
+```
+1. age: edad del paciente       
+  2. sex: sexo del paciente       
+  3. cp: tipo de dolor de pecho:
+                1: angina típica
+                2: angina atípica
+                3: dolor no-anginoso
+                4: asintomático
+  4. trestbps: presión arterial en reposo (en mm Hg al ingreso en el hospital)
+  5. chol: colesterol sérico en mg/dl
+  6. fbs: nivel de azúcar en ayunas > 120 mg/dl  (1 = verdadero; 0 = falso)
+  7. restecg: resultados electrocardiográficos en reposo
+                         0: normal
+                         1: presenta anormalidad de la onda ST-T (inversiones de la onda T y/o elevación o depresión del 
+                             ST elevación o depresión del ST > 0,05 mV)
+                         2: presenta probable o definida hipertrofia ventricular izquierda
+  8. thalach: frecuencia cardiaca máxima
+  9. exang: angina inducida por el ejercicio (1 = sí; 0 = no)
+  10. oldpeak: depresión del ST inducida por el ejercicio en relación con el reposo
+  11. slope: la pendiente del segmento ST en ejercicio máximo
+                        1: pendiente ascendente
+                        2: plano
+                        3: pendiente descendente
+  12. ca: número de vasos mayores (0-3) coloreados por flouroscopia      
+  13. thal: 3 = normal
+                6 = defecto fijo 
+                7 = defecto reversible
+
+```
+
+## Equipo
+
+- [Julio Sahuquillo](https://www.linkedin.com/in/juliosahuquillohuerta/): Ingeniero en Organización Industrial.
+
+
+- [Dario Fernández](https://www.linkedin.com/in/dar%C3%ADo-fern%C3%A1ndez-fern%C3%A1ndez/): Economista. 
+
+- [Miguel Moratilla](https://github.com/mimove): Doctor en Ing. Aeroespacial. 
+
+
+## Split
+
+La columna "split" identifica si esa muestra pertenece al conjunto de entrenamiento 'train' o de validación 'val'.
+
+
+<br>
+
+<br>
+
+**Nota:** Los siguientes apartados son un resumen de las notas que se pueden ver en los notebooks de las carpetas CasoA y CasoB.
+
+<br>
+
+## Data Cleaning y Análisis
+
+El data set consta de:
+
+- 866 registros
+- 14 variables y una columna con si la muestra corresponde al set de entrenamiento o al de validación. La variable a predecir es la columna "label".
+
+Aunque muchas variables aparecen como float64 al hacer un dtypes, las variables se pueden clasificar en numéricas y categóricas según la siguiente lista:
+
+Variables categóricas:
+
+- sex (sexo del paciente)
+- cp (tipo de dolor de pecho)
+- fbs ((nivel de azúcar en ayunas > 120 mg/dl)  (1 = verdadero; 0 = falso))
+- restecg (resultados electrocardiográficos en reposo)
+- exang (angina inducida por el ejercicio)
+- slope (la pendiente del segmento ST en ejercicio máximo)
+- ca (número de vasos mayores coloreados por flouroscopia)
+- thal (tipo de defecto)
+- label (variable de clasificación, no mencionada en la lista inicial)
+- split (variable de división de datos, no mencionada en la lista inicial)
+
+
+Variables numéricas:
+
+- age (edad del paciente)
+- trestbps (presión arterial en reposo)
+- chol (colesterol sérico)
+- thalach (frecuencia cardiaca en máxima capacidad)
+- oldpeak (depresión del ST inducida por el ejercicio en relación con el reposo)
+
+
+Al hacer un describe y agrupar por clases, las clases definidas por 'label' están desbalanceadas, ya que hay más casos de la clase 0 que del resto de clases, y muy pocos casos de la clase 4.
+
+
+### Missing values y valores erróneos
+
+A primera vista se ve como hay gran cantidad de valores no informados en las variables slope, ca y thal. También se ve como la variable chol (colesterol) tiene 159 valores nulos, lo cuál no puede ser ya que el colesterol no puede ser nulo.
+
+
+### Matriz de correlación
+
+A través de la matriz de correlación, podemos ver como para las variables cp, thalach, exang, oldpeak, slope, ca y thal, la correlación es mayor que para el resto de variables
+
+
+
+## Descripción CasoA y CasoB
+
+A partir de esta información inicial obtenida del análisis preliminar de los datos, se planteo el estudio de 2 casos diferentes:
+
+### CasoA
+
+En este caso, se plantea un estudio eliminando aquellas variables que resultan problemáticas, como son todas aquellas en las que hay gran cantidad de valores nulos, y aquellas que tienen valores erróneos. Por lo tanto, las variables con las que nos quedamos fueron:
+
+- Age
+- Sex
+- Cp
+- tresbps
+- fbs
+- restecg
+- thalach
+- exang
+- oldpeak
+
+Al hacer esto, también se eliminan aquellas variables con mayor correlación con la variable 'label'. Esto hizo que obtuvieramos una mejor puntación según el f1_score en el dataset público, ya que los profesores nos dijeron que, a pesar del que dataset de training y validacióne estaba desbalanceado, el dataset de test en el ranking publico estaba balanceado. El F1-score máximo que obtuvimos en el ranking público fue de 0.5742 con un modelo de Random Forest, mientras que en el privado fue de 0.3333.
+
+### CasoB
+
+En este caso, se plantea un estudio en el se cogen aquellas variables con mayor correlación con la categoría label, rellenando los valores nulos y erróneos de las variables problemáticas. Para ello, se han utilizado diferentes técnicas para predecir los valores nulos y erróneos de las variables 'chol', 'slope', 'ca' y 'thal'. Las variables de este segundo caso por tanto son:
+
+- Age
+- Sex
+- cp
+- thalach
+- exang
+- oldpeak
+- slope
+- ca
+- thal
+
+Al tener las variables con mayor correlación con 'label' era de esperar que obtuvieramos una menor puntuación en el ranking público, cuyo dataset de test estaba balanceado. Sin embargo, al volver a tomar una pequeña muestra aleatoria de test solo con el 30% de los datos para el ranking privado, podíamos suponer que dicho ranking iba a volver a estar desbalanceado. El F1-score máximo que obtuvimos fue de 0.54285 con un modelo de Random Forest en el ranking público, mientras que en el privado fue de 0.46666.
 
 
 <br>
