@@ -108,3 +108,7 @@ Las calves primarias, candidatas y las claves externas o ajenas se pueden especi
 - La claúsula foreign key incluye una lista de los atributos que comprende la clave externa y el nombre de la relación a la que hce referencia mediante la clave externa. Por defecto, una clave externa hace referencia a los atributos de la clave primaria de la tabla referenciada.
 
 
+
+## Pagina web preguntas entrevistas
+
+https://datalemur.com
