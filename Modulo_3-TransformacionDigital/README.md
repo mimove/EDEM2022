@@ -13,3 +13,5 @@ La estructura de este tercer módulo en el repositorio es la siguiente:
 | CARPETA | CONTENIDO |
 | ------ | ------ |
 | [Blockchain](Blockchain/) | Contiene las notas y ejercicios hechos en clase sobre Blochchain, criptos y NFTs |
+| [Location_Intelligence](Location_Intelligence/) | Contiene las notas y ejercicios hechos en clase sobre Location Intelligence y datos geoespaciales |
+
